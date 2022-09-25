@@ -1,0 +1,25 @@
+format: jb-book
+root: docs/intro.md
+parts:
+  - caption: Course information
+    chapters:
+    - file: docs/course-overview.md
+    - file: docs/course-schedule.md
+    - file: docs/course-syllabus.md
+    - file: docs/course-support.md
+ #  - file: docs/course-faq.md
+  - caption: Programming
+    chapters:
+    - file: docs/programming-toolkit.md
+      sections:
+      - file: docs/programming-syntax.ipynb
+      - file: docs/programming-semantics.ipynb
+  - caption: Project
+    chapters:
+    - file: docs/project-description.md
+    - file: docs/project-tips-resources.md
+  - caption: Weekly materials
+    chapters:
+    - file: weeks/weeks-overview.md
+      sections:
+      - file: weeks/week1.md
