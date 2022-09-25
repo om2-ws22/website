@@ -1,0 +1,1433 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Project description &#8212; Course template</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tips &amp; resources" href="project-tips-resources.html" />
+    <link rel="prev" title="Python Semantics" href="programming-semantics.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Course template</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-overview.html">
+   Course overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-schedule.html">
+   Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-syllabus.html">
+   Course syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-support.html">
+   Course support
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programming
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="programming-toolkit.html">
+   Programming toolkit
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="programming-syntax.html">
+     Python Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="programming-semantics.html">
+     Python Semantics
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Project description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-tips-resources.html">
+   Tips &amp; resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Weekly materials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../weeks/weeks-overview.html">
+   Overview
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../weeks/week1.html">
+     Week 1
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/kirenz/course-template"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/kirenz/course-template/issues/new?title=Issue%20on%20page%20%2Fdocs/project-description.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/project-description.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#timeline">
+   Timeline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logistics">
+     Logistics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-ideas">
+   Topic ideas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction-and-data">
+     Introduction and data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#research-question">
+     Research question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview-of-data">
+     Overview of data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-proposal">
+   Project proposal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Introduction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-description">
+     Data description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-approach">
+     Analysis approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-dictionary">
+     Data dictionary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submission">
+     Submission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proposal-grading">
+     Proposal grading
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#draft-analysis">
+   Draft analysis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peer-review-draft-analysis">
+   Peer review draft analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#issue-template">
+     Issue template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#report">
+   Report
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Introduction and data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#grading-criteria">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methodology">
+     Methodology
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results">
+     Results
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discussion-conclusion">
+     Discussion + Conclusion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organization-formatting">
+     Organization + formatting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#slides-video-presentation">
+   Slides &amp; video presentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slides">
+     Slides
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#video-presentation">
+     Video presentation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-repo">
+   GitHub repo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presentation-comments">
+   Presentation comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#teamwork-evaluation">
+   Teamwork evaluation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overall-grading">
+   Overall grading
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grading-summary">
+     Grading summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-work-policy">
+     Late work policy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Project description</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#timeline">
+   Timeline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logistics">
+     Logistics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-ideas">
+   Topic ideas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction-and-data">
+     Introduction and data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#research-question">
+     Research question
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview-of-data">
+     Overview of data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-proposal">
+   Project proposal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Introduction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-description">
+     Data description
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis-approach">
+     Analysis approach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-dictionary">
+     Data dictionary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submission">
+     Submission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proposal-grading">
+     Proposal grading
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#draft-analysis">
+   Draft analysis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peer-review-draft-analysis">
+   Peer review draft analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#issue-template">
+     Issue template
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#report">
+   Report
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Introduction and data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#grading-criteria">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methodology">
+     Methodology
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#results">
+     Results
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discussion-conclusion">
+     Discussion + Conclusion
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organization-formatting">
+     Organization + formatting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Grading criteria
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#slides-video-presentation">
+   Slides &amp; video presentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slides">
+     Slides
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#video-presentation">
+     Video presentation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-repo">
+   GitHub repo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presentation-comments">
+   Presentation comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#teamwork-evaluation">
+   Teamwork evaluation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overall-grading">
+   Overall grading
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grading-summary">
+     Grading summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#late-work-policy">
+     Late work policy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="project-description">
+<h1>Project description<a class="headerlink" href="#project-description" title="Permalink to this headline">#</a></h1>
+<section id="timeline">
+<h2>Timeline<a class="headerlink" href="#timeline" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
+<th class="head"><p>Deadline</p></th>
+<th class="head"><p>GitHub folder &amp; hints</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#topic-ideas"><span class="std std-ref">Topic ideas</span></a></p></td>
+<td><p>Fri, Oct 4</p></td>
+<td><p>references/</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#project-proposal"><span class="std std-ref">Project proposal</span></a></p></td>
+<td><p>Fri, Nov 25</p></td>
+<td><p>references/</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#draft-analysis"><span class="std std-ref">Draft analysis</span></a></p></td>
+<td><p>Fri, Dec 9</p></td>
+<td><p>notebooks/</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#peer-review-draft"><span class="std std-ref">Peer review draft analysis</span></a></p></td>
+<td><p>Fri, Dec 16</p></td>
+<td><p>use <a class="reference internal" href="#issue-template"><span class="std std-ref">Issue template</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#report"><span class="std std-ref">Report</span></a></p></td>
+<td><p>Fr, Feb 3</p></td>
+<td><p>reports/</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#slides-video"><span class="std std-ref">Slides &amp; video presentation</span></a></p></td>
+<td><p>Fri, Feb 10</p></td>
+<td><p>reports/</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#github-repo"><span class="std std-ref">GitHub repo</span></a></p></td>
+<td><p>Fri, Feb 10</p></td>
+<td><p>“Repo in final state”</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#comments"><span class="std std-ref">Presentation comments</span></a></p></td>
+<td><p>We, Feb 15</p></td>
+<td><p>“Comment in Moodle”</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#team-eval"><span class="std std-ref">Teamwork evaluation</span></a></p></td>
+<td><p>Fri,Feb 17</p></td>
+<td><p>“Fill out survey”</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p><strong>TL;DR</strong>: <em>Pick a data set and use the concepts and methods covered in our course. That is your final project.</em></p>
+<p>The goal of the final project is for you to use analytical methods to analyze a data set of your own choosing.
+The data set may already exist or you may collect your own data by scraping the web.</p>
+<p>Choose the data based on your group’s interests or work you all have done in other courses or research projects.
+The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a data set to analyze it in a meaningful way.</p>
+<p>All analyses must be done in Python, and all components of the project <strong>must be reproducible</strong> (with the exception of the final presentation) placed inside the provided GitHub repo.</p>
+<section id="logistics">
+<h3>Logistics<a class="headerlink" href="#logistics" title="Permalink to this headline">#</a></h3>
+<p>You will work on the project with your team. Use the provided Github-repo and template files for your project.</p>
+<p>The primary deliverables for the final project are</p>
+<ul class="simple">
+<li><p>A draft analysis (“draft-analysis.ipynb”)</p></li>
+<li><p>A written, reproducible report detailing your analysis (“report.ipynb”)</p></li>
+<li><p>A GitHub repository corresponding to your report</p></li>
+<li><p>Slides + a video presentation</p></li>
+<li><p>Formal peer review on another team’s project</p></li>
+</ul>
+</section>
+</section>
+<section id="topic-ideas">
+<span id="id1"></span><h2>Topic ideas<a class="headerlink" href="#topic-ideas" title="Permalink to this headline">#</a></h2>
+<p>Identify 2 data sets you’re interested in potentially using for the final project.
+If you’re unsure where to find data, you can use the list of potential data sources in the <a class="reference internal" href="project-tips-resources.html"><span class="doc std std-doc">Tips + Resources</span></a> section as a starting point.
+It may also help to think of topics you’re interested in investigating and find data sets on those topics.</p>
+<p>The purpose of submitting project ideas is to give you time to find data for the project and to make sure you have a data set that can help you be successful in the project.
+<strong>Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified.</strong></p>
+<p>The data sets should meet the following criteria:</p>
+<ul class="simple">
+<li><p>At least 500 observations</p></li>
+<li><p>At least 10 columns</p></li>
+<li><p>At least 6 of the columns must be useful and unique predictor variables.</p>
+<ul>
+<li><p>Identifier variables such as “name”, “social security number”, etc. are not useful predictor variables.</p></li>
+<li><p>If you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique predictors.</p></li>
+</ul>
+</li>
+<li><p>At least one variable that can be identified as a reasonable response variable.</p>
+<ul>
+<li><p>The response variable can be quantitative or categorical.</p></li>
+</ul>
+</li>
+<li><p>A mix of quantitative and categorical variables that can be used as predictors.</p></li>
+<li><p>Observations should reasonably meet the independence condition.
+Therefore, avoid data with repeated measures, data collected over time, etc.</p></li>
+<li><p>You may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.</p></li>
+</ul>
+<p><strong>Please ask me if you’re unsure whether your data set meets the criteria.</strong></p>
+<p>For each data set, include the following:</p>
+<section id="introduction-and-data">
+<h3>Introduction and data<a class="headerlink" href="#introduction-and-data" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>State the source of the data set.</p></li>
+<li><p>Describe when and how it was originally collected (by the original data curator, not necessarily how you found the data)</p></li>
+<li><p>Describe the observations and the general characteristics being measured in the data</p></li>
+</ul>
+</section>
+<section id="research-question">
+<h3>Research question<a class="headerlink" href="#research-question" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Describe a research question you’re interested in answering using this data.</p></li>
+</ul>
+</section>
+<section id="overview-of-data">
+<h3>Overview of data<a class="headerlink" href="#overview-of-data" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Use the Pandas functions to provide an overview of each data set</p></li>
+</ul>
+<p>Submit the HTML or PDF of the topic ideas to Moodle.</p>
+</section>
+</section>
+<section id="project-proposal">
+<span id="id2"></span><h2>Project proposal<a class="headerlink" href="#project-proposal" title="Permalink to this headline">#</a></h2>
+<p>The purpose of the project proposal is to help you think about your analysis strategy early.</p>
+<p>Include the following in the proposal:</p>
+<section id="id3">
+<h3>Introduction<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>The introduction section includes</p>
+<ul class="simple">
+<li><p>an introduction to the subject matter you’re investigating</p></li>
+<li><p>the motivation for your research question (citing any relevant literature)</p></li>
+<li><p>the general research question you wish to explore</p></li>
+<li><p>your hypotheses regarding the research question of interest.</p></li>
+</ul>
+</section>
+<section id="data-description">
+<h3>Data description<a class="headerlink" href="#data-description" title="Permalink to this headline">#</a></h3>
+<p>In this section, you will describe the data set you wish to explore.
+This includes</p>
+<ul class="simple">
+<li><p>description of the observations in the data set,</p></li>
+<li><p>description of how the data was originally collected (not how you found the data but how the original curator of the data collected it).</p></li>
+</ul>
+</section>
+<section id="analysis-approach">
+<h3>Analysis approach<a class="headerlink" href="#analysis-approach" title="Permalink to this headline">#</a></h3>
+<p>In this section, you will provide a brief overview of your analysis approach.
+This includes:</p>
+<ul class="simple">
+<li><p>Description of the response variable.</p></li>
+<li><p>Visualization and summary statistics for the response variable.</p></li>
+<li><p>List of variables that will be considered as predictors</p></li>
+<li><p>Your model type (what kind of model(s) will you use … e.g. linear regression)</p></li>
+</ul>
+</section>
+<section id="data-dictionary">
+<h3>Data dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">#</a></h3>
+<p>Create a data dictionary for all the variables in your data set. Include the following information for every variable: Name, description, role, type and format.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Role</span></code>: response, predictor, ID (ID columns are not used in a model but can help to better understand the data)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: nominal, ordinal or numeric</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Format</span></code>: int, float, string, category, date or object</p></li>
+</ul>
+</section>
+<section id="submission">
+<h3>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">#</a></h3>
+<p>Push all of your final changes to the GitHub repo, and submit the HTML or PDF file of your proposal to Moodle.</p>
+</section>
+<section id="proposal-grading">
+<h3>Proposal grading<a class="headerlink" href="#proposal-grading" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Total</p></th>
+<th class="head"><p>10 pts</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction</strong></p></td>
+<td><p>3 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Data description</strong></p></td>
+<td><p>2 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Analysis plan</strong></p></td>
+<td><p>4 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Data dictionary</strong></p></td>
+<td><p>1 pts</p></td>
+</tr>
+</tbody>
+</table>
+<p>Each component will be graded as follows:</p>
+<ul class="simple">
+<li><p><strong>Meets expectations (full credit)</strong>: All required elements are completed and are accurate.
+The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.</p></li>
+<li><p><strong>Close to expectations (half credit)</strong>: There are some elements missing and/or inaccurate.
+There are some issues with formatting.</p></li>
+<li><p><strong>Does not meet expectations (no credit)</strong>: Major elements missing.
+Work is not neatly formatted and would not be presentable in a professional setting.</p></li>
+</ul>
+</section>
+</section>
+<section id="draft-analysis">
+<span id="id4"></span><h2>Draft analysis<a class="headerlink" href="#draft-analysis" title="Permalink to this headline">#</a></h2>
+<p>The purpose of the draft analysis is to give you an opportunity to get early feedback on your analysis. Each team should push their final version of the draft analysis to their GitHub repo by the due date.</p>
+<p>The structure of the draft analysis is as follows:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span> Introduction
+<span class="k">-</span> Setup
+<span class="k">-</span> Data
+    <span class="k">-</span> Import data
+    <span class="k">-</span> Data structure
+    <span class="k">-</span> Data corrections
+    <span class="k">-</span> Variable lists
+    <span class="k">-</span> Data splitting
+<span class="k">-</span> Analysis
+<span class="k">-</span> Model
+    <span class="k">-</span> Select model
+    <span class="k">-</span> Training and validation
+    <span class="k">-</span> Fit model
+    <span class="k">-</span> Evaluation on test set
+    <span class="k">-</span> Save model
+<span class="k">-</span> Conclusion
+</pre></div>
+</div>
+<p>Below is a brief description of the sections to focus on in the draft.</p>
+<ul class="simple">
+<li><p><em>Introduction</em>: This section includes an introduction to the project motivation, a data dictionary and research question.</p></li>
+<li><p><em>Setup</em>: Import all necessary Python libraries.</p></li>
+<li><p><em>Data</em>: Includes all data prepartion steps.</p></li>
+<li><p><em>Analysis</em>: Focus on the descriptive statistics and EDA for the response variable and a few other interesting variables and relationships. Interpret the results.</p></li>
+<li><p><em>Model</em>: Explain the reasoning for the type of model you’re fitting and predictor variables considered for the model. Save the model in your models/ folder.</p></li>
+<li><p><em>Conclusion</em>: This section includes initial interpretations and conclusions drawn from the model.</p></li>
+</ul>
+</section>
+<section id="peer-review-draft-analysis">
+<span id="peer-review-draft"></span><h2>Peer review draft analysis<a class="headerlink" href="#peer-review-draft-analysis" title="Permalink to this headline">#</a></h2>
+<p>Critically reviewing others’ work is a crucial part of the scientific process, and our course is no exception. Each team will be assigned two other teams’s projects to review.</p>
+<p>During the peer review process, you will be provided read-only access to your partner teams’ GitHub repos.</p>
+<p>Provide your review in the form of <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">GitHub issues</a> to your partner team’s GitHub repo using the issue template provided (see below).</p>
+<p>The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team’s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.</p>
+<section id="issue-template">
+<span id="id5"></span><h3>Issue template<a class="headerlink" href="#issue-template" title="Permalink to this headline">#</a></h3>
+<p>Spend ~30 mins to review each team’s project.</p>
+<ol class="simple">
+<li><p>Find your team to review in Moodle.</p></li>
+<li><p>Open the repo of the team you’re reviewing, read their project draft, and browser around the rest of their repo.</p></li>
+<li><p>Then, go to the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> tab in that repo, click on <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">issue</span></code> and fill out the issue by answering the following questions (copy the following content and replace it with your feedback):</p></li>
+</ol>
+<p>Issue template:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">### Peer review team</span>
+
+<span class="k">-</span> Peer review by: \[NAME OF TEAM DOING THE REVIEW\]
+<span class="k">-</span> Names of team members that participated in this review: \[FULL NAMES OF TEAM MEMBERS DOING THE REVIEW\]
+
+<span class="gu">### Goal of the project</span>
+
+<span class="k">-</span> Describe the goal of the project.
+
+<span class="gu">### Data</span>
+
+<span class="k">-</span> Describe the data used or collected, if any. Is the data adequate for the project?
+
+<span class="gu">### Approach, tools and methods</span>
+
+<span class="k">-</span> Describe the approaches, tools, and methods that will be used.
+
+<span class="gu">### Lack of clarity</span>
+
+<span class="k">-</span> Is there anything that is unclear from the proposal? 
+
+<span class="gu">### Possible improvements</span>
+
+<span class="k">-</span> Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
+
+<span class="gu">### Presentation</span>
+
+<span class="k">-</span> What aspect of this project are you most interested in and would like to see highlighted in the final presentation?
+
+<span class="gu">### Organization</span>
+
+<span class="k">-</span> Provide constructive feedback on any issues with file and/or code organization.
+
+<span class="gu">### Further comments</span>
+
+<span class="k">-</span> (Optional) Any further comments or feedback?
+</pre></div>
+</div>
+<p>If you are done, click on <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">new</span> <span class="pre">issue</span></code>.</p>
+</section>
+</section>
+<section id="report">
+<span id="id6"></span><h2>Report<a class="headerlink" href="#report" title="Permalink to this headline">#</a></h2>
+<p>Your final report has to be created in the <code class="docutils literal notranslate"><span class="pre">report.ipynb</span></code> file (see folder <code class="docutils literal notranslate"><span class="pre">reports/</span></code>) and must be reproducible. Assume that it will be used to communicate your results to other data analysts who are interested in your findings.</p>
+<p>All team members should contribute to the GitHub repository, with regular meaningful commits.</p>
+<p><strong>You also need to submit the HTML of your final report in Moodle</strong> (the HTML you submit must match the files in your GitHub repository <em>exactly</em>).</p>
+<p>The mandatory components of the report are below. You are free to add additional sections as necessary.
+The report, including visualizations, should be <strong>no more than 10 pages long.</strong> There is no minimum page requirement; however, you should comprehensively address all of the analysis and report.</p>
+<p>Be selective in what you include in your final write-up.
+The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.</p>
+<p>You are welcome to include an appendix with additional work at the end of the written report document; however, grading will largely be based on the content in the main body of the report.
+You should assume the reader will not see the material in the appendix unless prompted to view it in the main body of the report.
+The appendix should be neatly formatted and easy for the reader to navigate.
+It is not included in the 10-page limit.</p>
+<p>The written report is worth 40 points, broken down as follows</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Total</p></th>
+<th class="head"><p>40 pts</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction/data</strong></p></td>
+<td><p>6 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Methodology</strong></p></td>
+<td><p>10 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Results</strong></p></td>
+<td><p>14 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Discussion + conclusion</strong></p></td>
+<td><p>6 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Organization + formatting</strong></p></td>
+<td><p>4 pts</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1gaLs43KiLSguhoHNIQlw5DcWPZfGyrLmjv7HTVQ3_uM/edit?usp=sharing">Click here</a> for an overview of the written report rubric.</p>
+<section id="id7">
+<h3>Introduction and data<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<p>This section includes an introduction to the project motivation, data, and research question.
+Describe the data and definitions of key variables.
+It should also include some exploratory data analysis.
+All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.</p>
+<section id="grading-criteria">
+<h4>Grading criteria<a class="headerlink" href="#grading-criteria" title="Permalink to this headline">#</a></h4>
+<p>The research question and motivation are clearly stated in the introduction, including citations for the data source and any external research.
+The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report.
+The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) The explanatory data analysis helps the reader better understand the observations in the data along with interesting and relevant relationships between the variables.
+It incorporates appropriate visualizations and summary statistics.</p>
+</section>
+</section>
+<section id="methodology">
+<h3>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">#</a></h3>
+<p>This section includes a brief description of your modeling process.
+Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model.
+Additionally, show how you arrived at the final model by describing the model selection process, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.</p>
+<section id="id8">
+<h4>Grading criteria<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<p>The analysis steps are appropriate for the data and research question.
+The group used a thorough and careful approach to select the final model; the approach is clearly described in the report.
+The model selection process took into account any violations in model conditions.
+The model conditions and diagnostics are thoroughly and accurately assessed for their model.
+If violations of model conditions are still present, there was a reasonable attempt to address the violations based on the course content.</p>
+</section>
+</section>
+<section id="results">
+<h3>Results<a class="headerlink" href="#results" title="Permalink to this headline">#</a></h3>
+<p>This is where you will output the final model with any relevant model fit statistics.</p>
+<p>Describe the key results from the model.
+The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions.
+Focus on the variables that help you answer the research question and that provide relevant context for the reader.</p>
+<section id="id9">
+<h4>Grading criteria<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<p>The model fit is clearly assessed, and interesting findings from the model are clearly described.
+Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient.
+If the primary modeling objective is prediction, the model’s predictive power is thoroughly assessed.</p>
+</section>
+</section>
+<section id="discussion-conclusion">
+<h3>Discussion + Conclusion<a class="headerlink" href="#discussion-conclusion" title="Permalink to this headline">#</a></h3>
+<p>In this section you’ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions.
+In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved.
+Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here.
+Lastly, this section will include ideas for future work.</p>
+<section id="id10">
+<h4>Grading criteria<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<p>Overall conclusions from analysis are clearly described, and the model results are put into the larger context of the subject matter and original research question.
+There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.</p>
+</section>
+</section>
+<section id="organization-formatting">
+<h3>Organization + formatting<a class="headerlink" href="#organization-formatting" title="Permalink to this headline">#</a></h3>
+<p>This is an assessment of the overall presentation and formatting of the written report.</p>
+<section id="id11">
+<h4>Grading criteria<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
+<p>The report neatly written and organized with clear section headers and appropriately sized figures with informative labels.
+Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted.
+All citations and links are properly formatted.
+If there is an appendix, it is reasonably organized and easy for the reader to find relevant information.
+All code, warnings, and messages are suppressed.
+The main body of the written report (not including the appendix) is no longer than 10 pages.</p>
+</section>
+</section>
+</section>
+<section id="slides-video-presentation">
+<span id="slides-video"></span><h2>Slides &amp; video presentation<a class="headerlink" href="#slides-video-presentation" title="Permalink to this headline">#</a></h2>
+<section id="slides">
+<span id="id12"></span><h3>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">#</a></h3>
+<p>In addition to the report, your team will also create presentation slides (e.g. <a class="reference external" href="https://www.google.com/intl/en_en/slides/about/">Google Slides</a> with an adequate <a class="reference external" href="https://slidesgo.com/themes">template</a>). Additionaly, you have to record a video (screencast) that summarize and showcase your project (see <a class="reference internal" href="#video"><span class="std std-ref">Video presentation</span></a>).</p>
+<p>Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions.
+These slides should serve as a brief visual addition to your report and will be graded for content and quality.</p>
+<p>If your presentation slides are online, you can put a link to the slides in a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file in the <code class="docutils literal notranslate"><span class="pre">reports/</span></code> folder.</p>
+<p><strong>For submission, convert these slides to a .pdf document, and submit the file on Moodle.</strong></p>
+<p>The slide deck should have no more than 6 content slides + 1 title slide.
+Here is a <em>suggested</em> outline as you think through the slides; you <strong>do not</strong> have to use this exact format for the 6 slides.</p>
+<ul class="simple">
+<li><p>Title Slide</p></li>
+<li><p>Slide 1: Introduce the topic and motivation</p></li>
+<li><p>Slide 2: Introduce the data</p></li>
+<li><p>Slide 3: Highlights from EDA</p></li>
+<li><p>Slide 4: Final model</p></li>
+<li><p>Slide 5: Interesting findings from the model</p></li>
+<li><p>Slide 6: Conclusions + future work</p></li>
+</ul>
+</section>
+<section id="video-presentation">
+<span id="video"></span><h3>Video presentation<a class="headerlink" href="#video-presentation" title="Permalink to this headline">#</a></h3>
+<p>For the video presentation (i.e., screencast), you can speak over your slide deck.
+<strong>The video presentation must be no longer than 8 minutes.</strong> It is fine if the video is shorter than 8 minutes, but it cannot exceed 8 minutes.
+You may use any platform that works best for your group to record your presentation.
+Below are a few resources on recording videos:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://kb.siue.edu/61721">Recording presentations in Zoom</a></p></li>
+<li><p><a class="reference external" href="https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac">Apple Quicktime for screen recording</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=OfPbr1mRDuo">Windows 10 built-in screen recording functionality</a></p></li>
+<li><p><a class="reference external" href="https://getkap.co/">Kap for screen recording</a></p></li>
+</ul>
+<p>Once your video is ready, upload the video to Moodle.</p>
+</section>
+</section>
+<section id="github-repo">
+<span id="id13"></span><h2>GitHub repo<a class="headerlink" href="#github-repo" title="Permalink to this headline">#</a></h2>
+<p>All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not change the content or structure of the repo after the stated deadline.</p>
+</div>
+<p>You will find an overview of the GitHub structure in the <a class="reference external" href="http://README.md">README.md</a> file of the GitHub repo (the project structure is based on DrivenData’s <a class="reference external" href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter Data Science-Template</a>).</p>
+<p>Points for reproducibility + organization will be based on the reproducibility of the report and the organization of the project GitHub repo. The repo should be neatly organized, there should be no extraneous files, all text in the README should be easily readable.</p>
+</section>
+<section id="presentation-comments">
+<span id="comments"></span><h2>Presentation comments<a class="headerlink" href="#presentation-comments" title="Permalink to this headline">#</a></h2>
+<p>Each student will be assigned 2 presentations to watch (your viewing assignments will be posted later in the semester)</p>
+<p>Watch the group’s video, then use the Moodle Forum to post a question for the group.
+You may not post a question that’s already been asked on the discussion thread.</p>
+<p>Additionally, the question should be</p>
+<ul class="simple">
+<li><p>substantive (i.e. it shouldn’t be “Why did you use a bar plot instead of a pie chart”?)</p></li>
+<li><p>demonstrate your understanding of the content from the course, and</p></li>
+<li><p>relevant to that group’s specific presentation, i.e demonstrating that you’ve watched the presentation.</p></li>
+</ul>
+<p><em>This portion of the project will be assessed individually.</em></p>
+</section>
+<section id="teamwork-evaluation">
+<span id="team-eval"></span><h2>Teamwork evaluation<a class="headerlink" href="#teamwork-evaluation" title="Permalink to this headline">#</a></h2>
+<p>You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member.</p>
+<p>Filling out the survey is a prerequisite for getting credit on the team member evaluation.
+If you are suggesting that an individual did less than half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please provide some explanation.
+If any individual gets an average peer score indicating that this was the case, their grade will be assessed accordingly.</p>
+<p>If you have concerns with the teamwork and/or contribution from any team members, please email me by the project video deadline.
+<strong>You only need to email me if you have concerns</strong>.
+Otherwise, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade.</p>
+</section>
+<section id="overall-grading">
+<span id="grading"></span><h2>Overall grading<a class="headerlink" href="#overall-grading" title="Permalink to this headline">#</a></h2>
+<p>The grade breakdown is as follows:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Total</p></th>
+<th class="head"><p>100 pts</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Topic ideas</strong></p></td>
+<td><p>5 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Project proposal</strong></p></td>
+<td><p>10 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Peer review</strong></p></td>
+<td><p>10 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Report</strong></p></td>
+<td><p>40 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Slides + video presentation</strong></p></td>
+<td><p>20 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Reproducibility + orga (GitHub)</strong></p></td>
+<td><p>5 pts</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Video comments</strong></p></td>
+<td><p>5 pts</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Peer teamwork evaluation</strong></p></td>
+<td><p>5 pts</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: No late project reports or videos are accepted.</em></p>
+<section id="grading-summary">
+<h3>Grading summary<a class="headerlink" href="#grading-summary" title="Permalink to this headline">#</a></h3>
+<p>Grading of the project will take into account the following:</p>
+<ul class="simple">
+<li><p>Content - What is the quality of the research question and relevancy of data to those questions?</p></li>
+<li><p>Correctness - Are statistical procedures carried out and explained correctly?</p></li>
+<li><p>Writing and Presentation - What is the quality of the statistical presentation, writing, and explanations?</p></li>
+<li><p>Creativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?</p></li>
+</ul>
+<p>A general breakdown of scoring is as follows:</p>
+<ul class="simple">
+<li><p><em>90%-100%</em>: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.</p></li>
+<li><p><em>80%-89%</em>: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.</p></li>
+<li><p><em>70%-79%</em>: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.</p></li>
+<li><p><em>60%-69%</em>: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.</p></li>
+<li><p><em>Below 60%</em>: Student is not making a sufficient effort.</p></li>
+</ul>
+</section>
+<section id="late-work-policy">
+<h3>Late work policy<a class="headerlink" href="#late-work-policy" title="Permalink to this headline">#</a></h3>
+<p>Projects may be submitted up to 2 days late. There will be a 25% deduction for each 24-hour period the project is late.</p>
+<p>Be sure to turn in your work early to avoid any technological mishaps.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="programming-semantics.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Python Semantics</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="project-tips-resources.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tips &amp; resources</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jan Kirenz<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

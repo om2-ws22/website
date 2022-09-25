@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Programming toolkit &#8212; Course template</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Syntax" href="programming-syntax.html" />
+    <link rel="prev" title="Course support" href="course-support.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Course template</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-overview.html">
+   Course overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-schedule.html">
+   Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-syllabus.html">
+   Course syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="course-support.html">
+   Course support
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programming
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Programming toolkit
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="programming-syntax.html">
+     Python Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="programming-semantics.html">
+     Python Semantics
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-description.html">
+   Project description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project-tips-resources.html">
+   Tips &amp; resources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Weekly materials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../weeks/weeks-overview.html">
+   Overview
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../weeks/week1.html">
+     Week 1
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/kirenz/course-template"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/kirenz/course-template/issues/new?title=Issue%20on%20page%20%2Fdocs/programming-toolkit.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/programming-toolkit.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentals">
+   Fundamentals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-notebook">
+     Jupyter Notebook
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colab">
+     Colab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anaconda">
+     Anaconda
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#basics">
+       Basics
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#if-you-already-have-it">
+       If you already have it
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#installation">
+       Installation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#set-up-environment">
+       Set up environment
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#install-or-update-modules">
+       Install or update Modules
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visual-studio-code">
+     Visual Studio Code
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Basics
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Installation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#install-extensions">
+       Install extensions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebooks">
+       Jupyter Notebooks
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#optional-tutorials">
+       Optional tutorials
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#troubleshooting">
+       Troubleshooting
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-and-github">
+     Git and GitHub
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional">
+   Optional
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniforge">
+     Miniforge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#helpful">
+   Helpful
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackoverflow">
+     Stackoverflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#command-line-interface">
+     Command-line interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stay-up-to-data">
+   Stay up to data
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Programming toolkit</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fundamentals">
+   Fundamentals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-notebook">
+     Jupyter Notebook
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colab">
+     Colab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anaconda">
+     Anaconda
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#basics">
+       Basics
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#if-you-already-have-it">
+       If you already have it
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#installation">
+       Installation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#set-up-environment">
+       Set up environment
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#install-or-update-modules">
+       Install or update Modules
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visual-studio-code">
+     Visual Studio Code
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Basics
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Installation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#install-extensions">
+       Install extensions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jupyter-notebooks">
+       Jupyter Notebooks
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#optional-tutorials">
+       Optional tutorials
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#troubleshooting">
+       Troubleshooting
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-and-github">
+     Git and GitHub
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional">
+   Optional
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miniforge">
+     Miniforge
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#helpful">
+   Helpful
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stackoverflow">
+     Stackoverflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#command-line-interface">
+     Command-line interface
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stay-up-to-data">
+   Stay up to data
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="programming-toolkit">
+<h1>Programming toolkit<a class="headerlink" href="#programming-toolkit" title="Permalink to this headline">#</a></h1>
+<p>This section contains an overview about the programming toolkit you will need for our course.</p>
+<p>You will simply need to (we cover this topic in detail in the section <a class="reference internal" href="#tools"><span class="std std-ref">“Tools”</span></a>):</p>
+<ol class="simple">
+<li><p>Install <a class="reference internal" href="#anaconda"><span class="std std-ref">Anaconda</span></a> (includes Python and some toolkits)</p></li>
+<li><p>Install <a class="reference internal" href="#vscode"><span class="std std-ref">Visual Studio Code</span></a> (a code editor)</p></li>
+<li><p>Create an acount at <a class="reference internal" href="#github"><span class="std std-ref">GitHub</span></a> (for software development and version control)</p></li>
+</ol>
+<p>Please read all the instructions and complete the tasks listed in the following two sections (“Fundamentals” and “Tools”).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you aren’t familiar with the terminal, you may want to look at this <a class="reference internal" href="#terminal"><span class="std std-ref">short introduction</span></a></p>
+</div>
+<hr class="docutils" />
+<section id="fundamentals">
+<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Permalink to this headline">#</a></h2>
+<section id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h3>
+<p>Python is an object-oriented language (an object is an entity that contains data along with associated metadata and/or functionality).</p>
+<p>One thing that distinguishes Python from many other programming languages is that it is interpreted rather than compiled. This means that it is executed line by line which is particular useful for data analysis, as well as the creation of interactive, executable documents like Jupyter Notebooks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python is an interpreted language. The Python interpreter runs a program by executing one statement at a time.</p>
+</div>
+<p>On top of this, there is a broad ecosystem of third-party tools and modules (like Jupyter Notebook) that offer more specialized data science functionality.</p>
+</section>
+<hr class="docutils" />
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://jupyter.org/">Jupyter Notebook</a> is an open-source application that allows you to create and share documents that contain code, equations, visualizations and narrative text.</p>
+<br>
+<a class="bg-primary mb-1 reference internal image-reference" href="_static/img/jupyter.png"><img alt="jupyter" class="bg-primary mb-1 align-center" src="_static/img/jupyter.png" style="width: 300px;" /></a>
+<br>
+<p>A notebook is basically a list of cells and the cells contain either</p>
+<ol class="simple">
+<li><p>explanatory text (written in markdown)</p></li>
+<li><p>executable code</p></li>
+<li><p>code output</p></li>
+</ol>
+<p>Note that we will use Jupyter Notebook inside the coding editor Visual Studio Code or Google Colab.</p>
+</section>
+<section id="colab">
+<span id="id1"></span><h3>Colab<a class="headerlink" href="#colab" title="Permalink to this headline">#</a></h3>
+<p>Colaboratory, or “Colab” for short, is a free to use product from Google Research. Colab allows anybody to write and execute python code through the browser, and is especially well suited to perform data analysis and machine learning.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Colab is a free Jupyter notebook environment that requires no setup, and runs entirely on the Cloud.</p>
+</div>
+<p>Watch this video to get a first impression of Colab:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/inN8seMm7UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Let`s start your first Colab notebook to get an overview about some basic features:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb">Colab basic features overview</a></p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h3>
+<p>Markdown is one of the world’s most popular markup languages used in data science. Jupyter Notebooks use Markdown to provide an unified authoring framework for data science, combining code, its results, and commentary in Markdown.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Markdown is a simple way to format text that looks great on any device.</p>
+</div>
+<p>According to <span id="id2"></span>, Markdown files are designed to be used in three ways:</p>
+<ol class="simple">
+<li><p>For communicating to decision makers, who want to focus on the conclusions, not the code behind the analysis.</p></li>
+<li><p>For collaborating with other data scientists, who are interested in both your conclusions, and how you reached them (i.e. the code).</p></li>
+<li><p>As an environment in which to do data science, as a modern day lab notebook where you can capture not only what you did, but also what you were thinking.</p></li>
+</ol>
+<p>Review this sites to learn more about Markdown:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://colab.research.google.com/notebooks/markdown_guide.ipynb">Interactive Colab Markdown guide</a></p></li>
+<li><p><a class="reference external" href="https://commonmark.org/help/">Interactive 10 minute Markdown tutorial</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="tools">
+<span id="id3"></span><h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h2>
+<section id="anaconda">
+<span id="id4"></span><h3>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">#</a></h3>
+<section id="basics">
+<h4>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h4>
+<p>The open-source <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a> is one of the easiest ways to get started with data science projects. It already includes Python and the most important data science modules.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Anaconda is a data science toolkit which already includes most of the data science modules we need.</p>
+</div>
+<p>Anaconda’s package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code> makes it easy to manage multiple data environments that can be maintained and run separately without interference from each other (in so called virtual environments). <code class="docutils literal notranslate"><span class="pre">conda</span></code> analyses the current environment including everything currently installed, and, together with any version limitations specified (e.g. the user may wish to have TensorFlow version 2,0 or higher), works out how to install a compatible set of dependencies, and shows a warning if this cannot be done. Instead of conda, you can also use <code class="docutils literal notranslate"><span class="pre">pip</span></code> (the standard package installer for Python) to install packages. Note that you should only use either conda or pip in one environment (we usually use conda).</p>
+</section>
+<section id="if-you-already-have-it">
+<h4>If you already have it<a class="headerlink" href="#if-you-already-have-it" title="Permalink to this headline">#</a></h4>
+<p>If you already have Anaconda on your machine, make sure that you use the latest version (in our course, we use Python 3.9). In your terminal, type <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> to see which Python version you are using in your Anaconda base environment.</p>
+<p><em>You may also uninstall your current Anaconda environment from your machine and install the latest version: here a guide of how to <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">uninstall Anaconda</a>.</em></p>
+</section>
+<section id="installation">
+<h4>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h4>
+<p>Install the latest version of the Anaconda Individual Edition:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda installation</a></p></li>
+</ul>
+</div>
+<p>After you have installed Anaconda, you can update it. The following commands will update all packages in the default “base” environment to the latest version but will not update Python:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p>On <em>Windows</em> open the Start menu and open an <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda">“Anaconda Command Prompt”</a>.</p></li>
+<li><p>On <em>macOS</em> or <em>Linux</em> open a <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda">terminal window</a>.</p></li>
+<li><p>In your terminal, type: conda update –all</p></li>
+</ul>
+</div>
+<p>Now follow the steps described in the next section.</p>
+</section>
+<section id="set-up-environment">
+<h4>Set up environment<a class="headerlink" href="#set-up-environment" title="Permalink to this headline">#</a></h4>
+<p>After you have installed and updated Anaconda, you can install the modules we need for our course in a new environment.</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p>Install <a class="reference external" href="https://github.com/kirenz/environments">GitHub course environments</a></p></li>
+<li><p>Use the following course environment: env-ds.yml</p></li>
+</ul>
+</div>
+</section>
+<section id="install-or-update-modules">
+<h4>Install or update Modules<a class="headerlink" href="#install-or-update-modules" title="Permalink to this headline">#</a></h4>
+<p>Take a look at all the modules in your environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda list
+</pre></div>
+</div>
+<p>Make sure that you use <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code> in version 1.0.2 or higher. If this is not the case, update Anaconda. If you only want to <strong>update specific modules</strong>, use conda update and the name of the module (e.g., scikit-learn)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda update scikit-learn
+</pre></div>
+</div>
+<p>If you want to <strong>install new modules</strong> in your environment, you should always use conda (and not the package installer for Python: <a class="reference external" href="https://pypi.org/project/pip/">pip</a>). Here is an example of how to install scikit-learn <a class="reference external" href="https://anaconda.org/anaconda/scikit-learn">see conda documentation</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install scikit-learn
+</pre></div>
+</div>
+<p>Or, if you want to install a specific version</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install scikit-learn<span class="o">=</span><span class="m">1</span>.0.2
+</pre></div>
+</div>
+<p>Finally, take a look at the <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf">Anaconda Cheat Sheet</a> which provides a list of useful commands.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="visual-studio-code">
+<span id="vscode"></span><h3>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">#</a></h3>
+<section id="id5">
+<h4>Basics<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<p>Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with a rich ecosystem of extensions for Python.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.</p>
+</div>
+<br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KMxo3T_MTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+</section>
+<section id="id6">
+<h4>Installation<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h4>
+<p>Install VS Code:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Install Code</a></p></li>
+</ul>
+</div>
+</section>
+<section id="install-extensions">
+<h4>Install extensions<a class="headerlink" href="#install-extensions" title="Permalink to this headline">#</a></h4>
+<p>The features that Visual Studio Code includes out-of-the-box are just the start. VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow.</p>
+<p>Let’s install some important extensions:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension</a></p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter extension</a></p></li>
+</ul>
+</div>
+</section>
+<section id="jupyter-notebooks">
+<h4>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h4>
+<p>We usually work with Jupyter Notebook files in VS Code:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">How to use Jupyter Notebooks in VS Code</a></p></li>
+</ul>
+</div>
+</section>
+<section id="optional-tutorials">
+<h4>Optional tutorials<a class="headerlink" href="#optional-tutorials" title="Permalink to this headline">#</a></h4>
+<p>Here some resources to get familiar with VS Code:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/introvideos">Take a look at the intro videos</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/data-science-tutorial">Data Science in VS Code tutorial</a></p></li>
+<li><p>Pro tips: <a class="reference external" href="https://www.youtube.com/watch?v=ifTF3ags0XI">25 VS Code Productivity Tips and Speed Hacks</a></p></li>
+</ul>
+</section>
+<section id="troubleshooting">
+<h4>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h4>
+<p>If you have troubles to use Anaconda in Visual Studio Code, follow these instructions:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stackoverflow.com/a/61937090/14796848">Windows</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/a/55203534/14796848">Mac</a></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<section id="git-and-github">
+<span id="github"></span><h3>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://github.com/">GitHub</a> is a provider of internet hosting for software development and version control using Git. We will use GitHub as a platform for web hosting and collaboration.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Git is a version control system – like the “Track Changes” features from Microsoft Word with many more additional features.</p>
+</div>
+<ul class="simple">
+<li><p>Git can be used to store content</p></li>
+<li><p>Code can be changed and other developers can add code in parallel.</p></li>
+<li><p>Git has a remote repository which is stored in a server and a local repository which is stored in the computer of each developer.</p></li>
+</ul>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<br>
+<p>You need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/join">Create a GitHub account with your HdM-email</a></p></li>
+<li><p>Verify your GitHub email</p></li>
+<li><p>You may also sign up fot the free <a class="reference external" href="https://education.github.com/pack">student developer pack</a></p></li>
+<li><p>Install the <a class="reference external" href="https://code.visualstudio.com/docs/editor/github">VS Code GitHub extension</a></p></li>
+<li><p><a class="reference external" href="https://desktop.github.com/">Install GitHub desktop to synchronize your machine with GitHub</a></p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="optional">
+<h2>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">#</a></h2>
+<!--
+### GitHub SSH Key
+
+Using the SSH protocol, you can connect and authenticate to remote servers and services from your terminal. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
+
+1. [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+1. [Generate a SSH-Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [Add a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+1. [Test connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+-->
+<section id="miniforge">
+<span id="id7"></span><h3>Miniforge<a class="headerlink" href="#miniforge" title="Permalink to this headline">#</a></h3>
+<p>As an alternative to Anaconda, you can also use the open-source project <a class="reference external" href="https://github.com/conda-forge/miniforge">Miniforge</a>.</p>
+<p>Miniforge is a small, bootstrap version of the data science platform Anaconda that includes only Python, the open source package management system <a class="reference external" href="https://docs.conda.io/en/latest/">conda</a> and a small number of other useful packages.</p>
+<p>Miniforge also uses Anaconda’s package manager <code class="docutils literal notranslate"><span class="pre">conda</span></code>, which makes it easy to manage multiple data environments that can be maintained and run separately without interference from each other (in so called virtual environments).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Miniforge is an community-led alternative to the data science platforms Anaconda and Miniconda, provided by Anaconda, Inc.</p>
+</div>
+<p>Compared to Anaconda, Miniforge provides more up-to-date packages, and is more user-friendly. Therefore, I recommend using Miniforge for data science projects.</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<p>Install the latest version of the Miniforge</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0">Miniforge installation tutorial</a></p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="helpful">
+<h2>Helpful<a class="headerlink" href="#helpful" title="Permalink to this headline">#</a></h2>
+<section id="stackoverflow">
+<span id="id8"></span><h3>Stackoverflow<a class="headerlink" href="#stackoverflow" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="https://stackoverflow.com/">Stackoverflow</a> is a public platform with a massive collection of coding questions &amp; answers. So whenever you run into issues with your code, Stackoverlow is a great place to find answers!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A community-based space to find and contribute answers to technical challenges.</p>
+</div>
+<p>The website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down similar to <a class="reference external" href="https://www.reddit.com/">Reddit</a> and edit questions and answers in a fashion similar to a wiki.</p>
+<hr class="docutils" />
+</section>
+<section id="command-line-interface">
+<span id="terminal"></span><h3>Command-line interface<a class="headerlink" href="#command-line-interface" title="Permalink to this headline">#</a></h3>
+<p>Operating systems like Windows and macOS implement a command-line interface (other names for the command line are: cmd, CLI, prompt, console or terminal) in a shell for interactive access to operating system functions or services.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A command-line interface (CLI) processes commands to a computer program in the form of lines of text.</p>
+</div>
+<p>We sometimes use the command line interface so you should be familiar with basic commands. If you aren’t familiar with the terminal, read this short introduction to the command-line interface:</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tutorial.djangogirls.org/en/intro_to_command_line/">Introduction to the command-line interface</a></p></li>
+</ul>
+</div>
+<p>Here is a summary of some useful commands:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command (Windows)</p></th>
+<th class="head"><p>Command (Mac OS / Linux)</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>exit</p></td>
+<td><p>exit</p></td>
+<td><p>close the window</p></td>
+<td><p><strong>exit</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>cd</p></td>
+<td><p>cd</p></td>
+<td><p>change directory</p></td>
+<td><p><strong>cd test</strong>, <strong>cd..</strong> (Windows) or <strong>cd ..</strong> (Mac)</p></td>
+</tr>
+<tr class="row-even"><td><p>cd</p></td>
+<td><p>pwd</p></td>
+<td><p>show the current directory</p></td>
+<td><p><strong>cd</strong> (Windows) or <strong>pwd</strong> (Mac OS / Linux)</p></td>
+</tr>
+<tr class="row-odd"><td><p>dir</p></td>
+<td><p>ls</p></td>
+<td><p>list directories/files</p></td>
+<td><p><strong>dir</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>copy</p></td>
+<td><p>cp</p></td>
+<td><p>copy file</p></td>
+<td><p><strong>copy c:\test\test.txt c:\windows\test.txt</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>move</p></td>
+<td><p>mv</p></td>
+<td><p>move file</p></td>
+<td><p><strong>move c:\test\test.txt c:\windows\test.txt</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>mkdir</p></td>
+<td><p>mkdir</p></td>
+<td><p>create a new directory</p></td>
+<td><p><strong>mkdir testdirectory</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>rmdir (or del)</p></td>
+<td><p>rm</p></td>
+<td><p>delete a file</p></td>
+<td><p><strong>del c:\test\test.txt</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>rmdir /S</p></td>
+<td><p>rm -r</p></td>
+<td><p>delete a directory</p></td>
+<td><p><strong>rm -r testdirectory</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>[CMD] /?</p></td>
+<td><p>man [CMD]</p></td>
+<td><p>get help for a command</p></td>
+<td><p><strong>cd /?</strong> (Windows) or <strong>man cd</strong> (Mac OS / Linux)</p></td>
+</tr>
+</tbody>
+</table>
+<!--
+## Cookiecutter
+
+Cookiecutter is a command-line utility that creates projects from cookiecutters (project templates), e.g. creating a Python package project from a Python package project template.
+
+Here we use the `cookiecutter-data-science` to create a logical, reasonably standardized, but flexible project structure for doing and sharing data science work. It creates the following folder structure:
+
+
+```nohighlight
+├── LICENSE
+├── Makefile           <- Makefile with commands like `make data` or `make train`
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator's initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── setup.py           <- Make this project pip installable with `pip install -e`
+├── src                <- Source code for use in this project.
+│   ├── __init__.py    <- Makes src a Python module
+│   │
+│   ├── data           <- Scripts to download or generate data
+│   │   └── make_dataset.py
+│   │
+│   ├── features       <- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models         <- Scripts to train models and then use trained models to make
+│   │   │                 predictions
+│   │   ├── predict_model.py
+│   │   └── train_model.py
+│   │
+│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│       └── visualize.py
+│
+└── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+```
+
+
+```{admonition} To do
+:class: tip
+
+- Use conda to install cookiecutter: `conda install -c conda-forge cookiecutter` 
+
+- Read the [getting started guide](http://drivendata.github.io/cookiecutter-data-science/#getting-started) 
+```
+
+To start a new project, run this command in the terminal (in the folder you want to create your project):
+
+```bash
+cookiecutter -c v1 https://github.com/drivendata/cookiecutter-data-science
+```
+-->
+</section>
+</section>
+<hr class="docutils" />
+<section id="stay-up-to-data">
+<h2>Stay up to data<a class="headerlink" href="#stay-up-to-data" title="Permalink to this headline">#</a></h2>
+<p>To stay up to date in Data Science, take a look at these two free weekly newsletters featuring curated news, articles and jobs related to Data Science:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.datascienceweekly.org/">Data science weekly</a></p></li>
+<li><p><a class="reference external" href="https://dataelixir.com/">Data Elixir</a></p></li>
+</ul>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="course-support.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Course support</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="programming-syntax.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python Syntax</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jan Kirenz<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
