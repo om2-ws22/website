@@ -112,9 +112,12 @@ Homework must be completed in the provided Jupyter Notebooks in your course GitH
 There will be three, "take-home", open-note exams in Moodle.
 Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
 
-The exams will focus on the conceptual understanding of the content and will be related to the content of the weekly prepare, practice, and perform assignments (see [weeks overview](../weeks/weeks-overview.md)).
 
-More detail about the exams will be given during the semester.
+:::{Note}
+The exams will focus on the conceptual understanding of the content
+:::
+
+More details about the exams will be given during the semester.
 
 (project)=
 ### Project
