@@ -5,9 +5,8 @@ This page contains an outline of the topics, content, and assignments for the se
 
 |		|	Week	|	Date	|	Topic	|	Slides	|	Prepare	|	Assignment			|
 |	---	|	---	|	---	|	---	|	---	|	---	|	---			|
-|	Lecture	|	1	|	05.10.	|	Online marketing overview	|	[📘](https://docs.google.com/presentation/d/1-gmLRl6Au1DbFF8Stw5A_JOQPdWsLogPGu_nePRK7pYexport/pdf)	|		|				|
-|		|		|		|	Data driven decision making	|	[📘](https://docs.google.com/presentation/d/1AfzqhjEAfJ5X4Q8YC9GK14jEBfdDXEIRmXonriwYHNYexport/pdf)	|		|				|
-|	Lab	|	1	|	05.10.	|	Programming Toolkit	|	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-cexport/pdf)	|		|				|
-|		|		|		|		|		|		|				|											
-
+|	Lecture	|	1	|	05.10.	|	Online marketing overview	|	[📘](https://docs.google.com/presentation/d/1-gmLRl6Au1DbFF8Stw5A_JOQPdWsLogPGu_nePRK7pY/export/pdf)	|		|				|
+|		|		|		|	Data driven decision making	|	[📘](https://docs.google.com/presentation/d/1AfzqhjEAfJ5X4Q8YC9GK14jEBfdDXEIRmXonriwYHNY/export/pdf)	|		|				|
+|	Lab	|	1	|	05.10.	|	Programming Toolkit	|	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)	|		|				|
+|		|		|		|		|		|		|				|
 
