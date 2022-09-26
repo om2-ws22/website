@@ -4,13 +4,13 @@ In this course you will gain data skills applicable to marketing. You will learn
 
 In particular, you will learn:
 
-- how to collect data with web scraping and web APIs like the Twitter-API.
+- how to collect data with web scraping and web APIs.
 
-- about different data-driven marketing methods like clustering and text mining to gain consumer and market insights.
+- the characteristics of big data and modern data management.
+
+- about different data-driven marketing methods like clustering, text mining and deep learning to gain consumer and market insights.
 
 - how to use statistics and visuals to find and communicate insights with Python.
-
-- the characteristics of big data and modern data architectures.
 
 - about a wide range of marketing metrics, and how to evaluate marketing efforts.
 
