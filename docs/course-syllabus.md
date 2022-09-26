@@ -13,8 +13,8 @@
 ```{image} ../_static/img/room.png
 :alt: course location
 :class: bg-primary mb-1
-:width: 200px
-:align: center
+:width: 400px
+:align: left
 ```
 
 
