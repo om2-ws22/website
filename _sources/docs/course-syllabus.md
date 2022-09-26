@@ -4,21 +4,36 @@
 
 ## Course info
 
-|           | Day       | Time              | Location                       |
-|-----------|-----------|-------------------|--------------------------------|
-| Lecture   | x         | x pm - x pm |  X  |
-| Lab       | x         | x pm - x pm |  X  |
+|           | Day       | Time                  | Location    |
+|-----------|-----------|-------------------    |-------------|
+| Lecture   | Wednesday | 11:45 am - 13:15 pm   |  Room 016b  |
+| Lab       | Wednesday | 14:15 pm - 15:00 pm   |  Room 016b  |
+
+
+```{image} ../_static/img/room.png
+:alt: course location
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+```
 
 
 ## Learning objectives
 
 By the end of the semester, you will be able to...
 
--   analyze real-world data to answer questions about multivariable relationships.
--   fit and evaluate linear and logistic regression models.
--   assess whether a proposed model is appropriate and describe its limitations.
--   use Python to write reproducible reports and GitHub for version control and collaboration.
--   communicate results from statistical analyses to a general audience.
+- use marketing metrics to evaluate marketing efforts.
+
+- use Google Analytics and Data Studio to create reports and analyze results.
+
+- use statistics like A/B-testing and visuals to find and communicate insights with Python.
+
+- collect data with web scraping and web APIs.
+
+- define the characteristics of big data and modern data architectures.
+
+- use analytical methods like clustering, network analysis and text mining to gain consumer insights.
+
 
 
 ## Where to get help
