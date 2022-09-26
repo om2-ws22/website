@@ -42,8 +42,11 @@ Install programming tools:
 (perform)=
 ## Perform
 
-💯 No assignments this week 
+📄 Homework
 
+💯 Exam 
+
+📁 Project
 
 
 ---
