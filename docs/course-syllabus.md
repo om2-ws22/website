@@ -22,18 +22,17 @@
 
 By the end of the semester, you will be able to...
 
-- use marketing metrics to evaluate marketing efforts.
-
-- use Google Analytics and Data Studio to create reports and analyze results.
-
-- use statistics like A/B-testing and visuals to find and communicate insights with Python.
-
 - collect data with web scraping and web APIs.
+
+- use analytical methods like clustering and text mining to gain insights.
+
+- use statistics and visuals to find and communicate insights with Python.
 
 - define the characteristics of big data and modern data architectures.
 
-- use analytical methods like clustering, network analysis and text mining to gain consumer insights.
+- use marketing metrics to evaluate marketing efforts.
 
+- use Google Analytics and Data Studio to create reports and analyze results.
 
 
 ## Where to get help
