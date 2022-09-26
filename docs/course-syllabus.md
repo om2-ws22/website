@@ -14,7 +14,7 @@
 :alt: course location
 :class: bg-primary mb-1
 :width: 400px
-:align: left
+:align: center
 ```
 
 
