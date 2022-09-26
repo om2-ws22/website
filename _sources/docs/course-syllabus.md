@@ -13,8 +13,8 @@
 ```{image} ../_static/img/room.png
 :alt: course location
 :class: bg-primary mb-1
-:width: 200px
-:align: center
+:width: 400px
+:align: left
 ```
 
 
@@ -92,14 +92,14 @@ AEs should be completed and **submitted individually**.
 AEs are due within three days after lecture
 :::
 
-The AEs are due within **three days** after the corresponding lecture. For example, AEs from a Monday lecture would be due Thursday by 11:59 pm and AEs from a Tuesday lecture would be due Friday by 11:59 pm ET.
+The AEs are due within **three days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Saturday by 11:59 pm.
 
 Because these AEs are for practice, they will be graded based on completion. Successful on-time completion of at least 80% of every AE will result in full credit in the final course grade. 
 
 (hw)=
 ### Homework
 
-In homeworks (HW), you will apply what you've learned during lectures to complete data analysis tasks using data not covered during lectures.
+In homeworks (HW), you will apply what you've learned during lectures to complete tasks not explicitly covered during lectures.
 
 You may discuss homework assignments with other students; however, homework should be completed and **submitted individually**.
 
