@@ -4,17 +4,17 @@ In this course you will gain data skills applicable to marketing. You will learn
 
 In particular, you will learn:
 
-- about a wide range of marketing metrics, and how to evaluate marketing efforts.
-
-- to use Google Analytics and Data Studio, as you learn to apply reporting techniques and analyze results.
-
-- how to use statistics like A/B-testing and visuals to find and communicate insights with Python.
-
 - how to collect data with web scraping and web APIs like the Twitter-API.
+
+- about different data-driven marketing methods like clustering and text mining to gain consumer and market insights.
+
+- how to use statistics and visuals to find and communicate insights with Python.
 
 - the characteristics of big data and modern data architectures.
 
-- about different data-driven marketing methods like clustering, network analysis and text mining to gain consumer insights.
+- about a wide range of marketing metrics, and how to evaluate marketing efforts.
+
+- to use Google Analytics and Data Studio, as you learn to apply reporting techniques and analyze results.
 
 
 ---
