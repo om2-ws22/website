@@ -1,29 +1,32 @@
 # Course overview
 
-Learn ... for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression.
+In this course you will gain data skills applicable to marketing. You will learn how to collect and analyze data, model marketing scenarios, and communicate your findings with Google Analytics, Data Studio and Python.
 
-Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models.
+In particular, you will learn:
 
-Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data.
+- about a wide range of marketing metrics, and how to evaluate marketing efforts.
 
-This class emphasizes data analysis over mathematical theory.
+- to use Google Analytics and Data Studio, as you learn to apply reporting techniques and analyze results.
+
+- how to use statistics like A/B-testing and visuals to find and communicate insights with Python.
+
+- how to collect data with web scraping and web APIs like the Twitter-API.
+
+- the characteristics of big data and modern data architectures.
+
+- about different data-driven marketing methods like clustering, network analysis and text mining to gain consumer insights.
+
 
 ---
 
 Important links:
 
-- [GitHub repo for project]()
+- [GitHub repo for project](https://github.com/om2-ws22/project)
 
-- [Moodle discussion forum]()
+- [Moodle discussion forum](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/view.php?id=87724)
 
-- [Moodle assignment upload]()
+- [Moodle assignment upload](https://e-learning.hdm-stuttgart.de/moodle/course/view.php?id=2233#section-2)
 
 ---
 
 
-```{image} ../_static/img/course-overview.png
-:alt: text
-:class: bg-primary mb-1
-:width: 600px
-:align: center
-```

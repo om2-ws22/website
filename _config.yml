@@ -1,4 +1,4 @@
-title: Course template
+title: Big Data & Web Analytics
 author: Jan Kirenz
 logo: logo.png
 
@@ -13,7 +13,7 @@ bibtex_bibfiles:
    - _bibliography/references.bib
 
 repository:
-  url: https://github.com/kirenz/course-template
+  url: https://github.com/orgs/om2-ws22/repositories
   branch: main
 
 html:
