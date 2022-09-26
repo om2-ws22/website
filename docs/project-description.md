@@ -18,13 +18,19 @@
 
 ## Introduction
 
-**TL;DR**: *Pick a data set and use the concepts and methods covered in our course. That is your final project.*
+The goal of the final project is for you to use analytical methods to analyze data of your own choosing.
 
-The goal of the final project is for you to use analytical methods to analyze a data set of your own choosing.
-The data set may already exist or you may collect your own data by scraping the web.
+You need to include the following methods in your project:
+
+- Data extraction with web scraping or web APIs
+- Data wrangling with Pandas
+- Data exploration with Altair
+- Perform cluster analysis 
+- Use text mining (sentiment analysis) with Twitter tweets  
+- Create a dashboard with Streamlit
 
 Choose the data based on your group's interests or work you all have done in other courses or research projects.
-The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a data set to analyze it in a meaningful way.
+The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a data set (or multiple datasets) to analyze it in a meaningful way.
 
 All analyses must be done in Python, and all components of the project **must be reproducible** (with the exception of the final presentation) placed inside the provided GitHub repo.
 
