@@ -12,13 +12,13 @@ There are likely other students with the same question, so by asking you will cr
 
 Prefer to write out your question in detail rather than asking in person?
 The online discussion forum is the best venue for these!
-We will use the [Moodle forum][]() as the online discussion forum.
+We will use the [Moodle forum](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/view.php?id=87724) as the online discussion forum.
 There is a chance another student has already asked a similar question, so please check the other posts before adding a new question.
 If you know the answer to a question that is posted, I encourage you to respond!
 
 ## Email
 
-Please refrain from emailing any course content questions (those should go to [Moodle]()), and only use email for questions about personal matters that may not be appropriate for the public course forum. 
+Please refrain from emailing any course content questions (those should go to [Moodle](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/view.php?id=87724)), and only use email for questions about personal matters that may not be appropriate for the public course forum. 
 For such matters, you may email me at [kirenz@hdm-stuttgart.de](mailto:kirenz@hdm-stuttgart.de).
 
 If there is a question that's not appropriate for the public forum, you are welcome to email me directly.
