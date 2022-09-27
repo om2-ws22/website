@@ -1,6 +1,6 @@
 # Course overview
 
-In this course you will gain data skills applicable to marketing. You will learn how to collect and analyze data, model marketing scenarios, and communicate your findings with Google Analytics, Data Studio and Python.
+In this course you will gain data skills applicable to marketing. You will learn how to collect and analyze data, model marketing scenarios, and communicate your findings with Google Analytics, Data Studio and Python Dashboards.
 
 In particular, you will learn:
 
@@ -14,7 +14,7 @@ In particular, you will learn:
 
 - about a wide range of marketing metrics, and how to evaluate marketing efforts.
 
-- to use Google Analytics and Data Studio, as you learn to apply reporting techniques and analyze results.
+- to use Google Analytics, Data Studio and Streamlit, as you learn to apply reporting techniques and analyze results.
 
 
 ---
