@@ -32,7 +32,7 @@ By the end of the semester, you will be able to...
 
 - apply marketing metrics to evaluate marketing efforts.
 
-- use Google Analytics and Data Studio to create reports and analyze results.
+- use Google Analytics, Data Studio and Streamlit to create reports and analyze results.
 
 
 ## Where to get help
