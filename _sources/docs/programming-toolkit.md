@@ -6,7 +6,7 @@ You will simply need to (we cover this topic in detail in the section ["Tools"](
 
 1. Install [Anaconda](anaconda) (includes Python and some toolkits)
 2. Install [Visual Studio Code](vscode) (a code editor)
-3. Create an acount at [GitHub](github) (for software development and version control)
+3. Create an acount at [GitHub](github) and install GitHub Desktop (for software development and version control).
 
 Please read all the instructions and complete the tasks listed in the following two sections ("Fundamentals" and "Tools").
 

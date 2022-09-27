@@ -6,25 +6,25 @@
 (prepare)=
 ## Prepare
 
-📚 Read the [syllabus](../docs/course-syllabus.md)
+- 📚 Read the [syllabus](../docs/course-syllabus.md)
 
-📚 Read the [support resources](../docs/course-support.md)
-
-📚 Review the [programming toolkit](../docs/programming-toolkit.md)
+- 📚 Read the [support resources](../docs/course-support.md)
 
 ---
 
 (participate)=
 ## Participate
 
-- Introduction | [📘](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)	|
+Download slides:
+
+- Introduction: [📘](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)	
 	
-- Programming Toolkit	|	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)	|	
+- Programming Toolkit:	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)
 
 
-Install programming tools:
+Programming tools:
 
-- [programming toolkit](../docs/programming-toolkit.md)
+- 💾 Install the [programming toolkit](../docs/programming-toolkit.md)
 
 
 ---
@@ -32,24 +32,22 @@ Install programming tools:
 (practice)=
 ## Practice
 
-💻 [AE 0](/ae/ae-0-movies.html)
+Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the repo titled:
 
-Open a pull request and let me know that you’ve finished this course.
+💻 git-github-fundamentals-YOUR_GITHUB_USERNAME 
+
+to get started.
+
+- Read the instructions.
+- Clone the GitHub-repo to your local machine (with [GitHub Desktop](https://desktop.github.com/))
+- Open a pull request and let me know that you’ve finished this course.
 
 ---
 
 (perform)=
 ## Perform
 
-There are no assignments this week
-
-
-📄 Homework
-
-💯 Exam 
-
-📁 Project
-
+None
 
 ---
 
