@@ -6,9 +6,9 @@
 (prepare)=
 ## Prepare
 
-📚 Read the [syllabus](../docs/course-syllabus.md)
+- 📚 Read the [syllabus](../docs/course-syllabus.md)
 
-📚 Read the [support resources](../docs/course-support.md)
+- 📚 Read the [support resources](../docs/course-support.md)
 
 ---
 
@@ -17,16 +17,14 @@
 
 Download slides:
 
-- Introduction | [📘](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)	|
+- Introduction: [📘](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)	
 	
-- Programming Toolkit	|	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)	|	
+- Programming Toolkit:	[📘](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)
 
 
 Programming tools:
 
-- Review the [programming toolkit](../docs/programming-toolkit.md)
-
-- [programming toolkit](../docs/programming-toolkit.md)
+- 💾 Install the [programming toolkit](../docs/programming-toolkit.md)
 
 
 ---
@@ -49,8 +47,7 @@ to get started.
 (perform)=
 ## Perform
 
-There are no assignments this week
-
+None
 
 ---
 
