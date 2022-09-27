@@ -45,12 +45,7 @@ Check out the [Support](course-support.md) page for more resources.
 
 ## Textbooks
 
-While there is no official textbook for the course, we will be assigning readings from the following textbooks.
-
-- [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) by Mine Çetinkaya-Rundel and Johanna Hardin
-
-- [Python for Data Analysis, 3E](https://wesmckinney.com/book/) by Wes McKinney
-
+There is no official textbook for the course.
 
 ## Lectures
 
