@@ -34,12 +34,12 @@ Programming tools:
 
 Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the repo titled:
 
-💻 git-github-fundamentals-YOUR_GITHUB_USERNAME 
+- 💻 git-github-fundamentals-YOUR_GITHUB_USERNAME 
 
 to get started.
 
 - Read the instructions.
-- Clone the GitHub-repo to your local machine (with [GitHub Desktop](https://desktop.github.com/))
+- Clone the GitHub-repo to your local machine (with [GitHub Desktop](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
 - Open a pull request and let me know that you’ve finished this course.
 
 ---
