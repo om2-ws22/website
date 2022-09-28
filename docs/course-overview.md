@@ -25,7 +25,8 @@ Important links:
 
 - [Moodle discussion forum](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/view.php?id=87724)
 
-- [Moodle assignment upload](https://e-learning.hdm-stuttgart.de/moodle/course/view.php?id=2233#section-2)
+
+- [Moodle exams](https://e-learning.hdm-stuttgart.de/moodle/course/view.php?id=2233#section-2)
 
 ---
 
