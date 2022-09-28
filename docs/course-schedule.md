@@ -1,6 +1,6 @@
 # Course schedule
 
-This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
+Welcome to our course! This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
 
 
 |		|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Resources	|	AE	|	HW	|	Exam	|
