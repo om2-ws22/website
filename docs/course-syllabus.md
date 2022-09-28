@@ -26,7 +26,7 @@ By the end of the semester, you will be able to...
 
 - systematically take care of (big) data.
 
-- use methods like clustering, text mining and deep learning to gain insights.
+- use methods like clustering, text mining and deep learning to gain insights from data.
 
 - make use of statistics and visuals to find and communicate insights with Python.
 
@@ -57,28 +57,18 @@ Additionally, some lectures will feature application exercises that will be grad
 You are expected to bring a laptop to each class so that you can take part in the in-class exercises.
 
 
-## Teams
-
-You will be assigned to a team at the beginning of the semester.
-
-All team members are expected to contribute equally to the completion of the labs and project and you will be asked to evaluate your team members throughout the semester.
-Failure to adequately contribute to an assignment will result in a penalty to your mark relative to the team's overall mark.
-
-You are expected to make use of the provided GitHub repository as the central collaborative platform. [Commits](https://github.com/git-guides/git-commit) to this repository will be used as a metric (one of several) of each team member's relative contribution for each project.
-
 ## Assessment
 
-Assessment for the course is comprised of four components: 
+Assessment for the course is comprised of three components: 
 
 - [application exercises](application-exercises)
 - [homework assignments](hw) 
 - [exams](exams)
-- [project](project)
 
 (application-exercises)=
 ### Application exercises
 
-Parts of some lectures will be dedicated to working on "Application Exercises" (AE). These small exercises will give you an opportunity to practice apply the concepts and code introduced in the readings and lectures. 
+Parts of some lectures will be dedicated to working on "Application Exercises" (AE). These  exercises will give you an opportunity to practice apply the concepts and code introduced in the readings and lectures. 
 
 AEs should be completed and **submitted individually**.
 
@@ -86,9 +76,7 @@ AEs should be completed and **submitted individually**.
 AEs are due within three days after lecture
 :::
 
-The AEs are due within **three days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Saturday by 11:59 pm.
-
-Because these AEs are for practice, they will be graded based on completion. Successful on-time completion of at least 80% of every AE will result in full credit in the final course grade. 
+The AEs are usually due within **six days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Thursday by 11:59 pm. 
 
 (hw)=
 ### Homework
@@ -113,12 +101,6 @@ The exams will focus on the conceptual understanding of the content
 
 More details about the exams will be given during the semester.
 
-(project)=
-### Project
-
-The purpose of the [project](project-description.md) is to apply what you've learned throughout the semester to analyze an interesting, data-driven research question. The project will be completed in **teams**.
-
-More information about the project will be provided during the semester.
 
 ## Grading
 
@@ -126,12 +108,11 @@ The final course grade will be calculated as follows:
 
 | Category              | Percentage      |
 |-----------------------|-----------------|
-| Application exercises | 10%              |
-| Homework              | 25% (5 x 5%)    |
-| Project               | 35%             |
-| Exam 01               | 10%             |
-| Exam 02               | 10%             |
-| Exam 03               | 10%             |
+| Application exercises | 20%             |
+| Homework              | 35%             |
+| Exam 01               | 15%             |
+| Exam 02               | 15%             |
+| Exam 03               | 15%             |
 
 The final grade will be determined based on the following thresholds:
 
@@ -205,6 +186,5 @@ The due dates for assignments are there to help you keep up with the course mate
 
 -   There is no late work policy for *exams* (they need to be completed in a specific timeframe)
 
--   Projects may be submitted up to 2 days late. There will be a 25% deduction for each 24-hour period the project is late.
 
 If there are important circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email me at [kirenz@hdm-stuttgart.de](mailto:kirenz@hdm-stuttgart.de) before the deadline.
