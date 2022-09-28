@@ -73,7 +73,7 @@ Parts of some lectures will be dedicated to working on "Application Exercises" (
 AEs should be completed and **submitted individually**.
 
 :::{Note}
-AEs are due within three days after lecture
+AEs are due within six days after lecture
 :::
 
 The AEs are usually due within **six days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Thursday by 11:59 pm. 
@@ -91,7 +91,7 @@ Homework must be completed in the provided Jupyter Notebooks in your course GitH
 (exams)=
 ### Exams
 
-There will be three, "take-home", open-note exams in Moodle.
+There will be two, "take-home", open-note exams in Moodle.
 Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
 
 
