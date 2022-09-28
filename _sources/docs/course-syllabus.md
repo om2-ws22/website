@@ -109,10 +109,9 @@ The final course grade will be calculated as follows:
 | Category              | Percentage      |
 |-----------------------|-----------------|
 | Application exercises | 20%             |
-| Homework              | 35%             |
-| Exam 01               | 15%             |
-| Exam 02               | 15%             |
-| Exam 03               | 15%             |
+| Homeworks             | 30%             |
+| Exam 01               | 25%             |
+| Exam 02               | 25%             |
 
 The final grade will be determined based on the following thresholds:
 
