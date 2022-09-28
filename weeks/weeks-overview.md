@@ -28,12 +28,10 @@ This section contains the weekly course resources and is structured as follows:
 
 ---
 
-**Perform**: Homeworks (HW) and important assignment dates (exams and projects)
+**Perform**: Homeworks (HW) exams
 
 📄 Homework
 
 💯 Exam 
-
-📁 Project
 
 ---
