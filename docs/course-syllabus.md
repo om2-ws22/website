@@ -43,10 +43,6 @@ By the end of the semester, you will be able to...
 
 Check out the [Support](course-support.md) page for more resources.
 
-## Textbooks
-
-There is no official textbook for the course.
-
 ## Lectures
 
 A lot of what you do in this course will involve writing code, and coding is a skill that is best learned by doing.
@@ -76,12 +72,16 @@ AEs should be completed and **submitted individually**.
 AEs are due within six days after lecture
 :::
 
-The AEs are usually due within **six days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Thursday by 11:59 pm. 
+The AEs are due within **six days** after the corresponding lecture. For example, AEs from a Wednesday lecture would be due Tuesday by 11:59 pm. 
 
 (hw)=
 ### Homework
 
-In homeworks (HW), you will apply what you've learned during lectures to complete tasks not explicitly covered during lectures.
+In homeworks (HW), you will apply what you've learned during lectures.
+
+:::{Note}
+Homeworks are - like application exercises - coding tasks
+:::
 
 You may discuss homework assignments with other students; however, homework should be completed and **submitted individually**.
 
@@ -92,6 +92,7 @@ Homework must be completed in the provided Jupyter Notebooks in your course GitH
 ### Exams
 
 There will be two, "take-home", open-note exams in Moodle.
+
 Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
 
 
