@@ -16,17 +16,13 @@
 (participate)=
 ## Participate
 
-Download slides:
-
 Introduction: [📑](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)
 
 
 Programming Toolkit: [📑](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)
 
 
-Programming tools:
-
-💾 Install the [programming toolkit](../docs/programming-toolkit.md)
+Install the programming toolkit: [💾](../docs/programming-toolkit.md)
 
 
 ---
