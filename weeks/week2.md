@@ -23,6 +23,7 @@
 
 💾 Download the [Google Chrome Web-Browser](https://www.google.com/intl/de_de/chrome/)
 
+
 💾 Install the [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb) extension in Google Chrome
 
 
@@ -39,7 +40,9 @@
 (practice)=
 ## Practice
 
-💻 Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the application exercise titled:
+💻 Application exercise 1:
+
+Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the application exercise titled:
 
 `ae-1-scraping-quotes-YOUR_GITHUB_USERNAME` 
 
