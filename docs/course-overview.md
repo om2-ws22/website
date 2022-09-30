@@ -21,8 +21,6 @@ In particular, you will learn:
 
 Important links:
 
-- [GitHub repo for project](https://github.com/om2-ws22/project)
-
 - [Moodle discussion forum](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/view.php?id=87724)
 
 - [Moodle assignment upload](https://e-learning.hdm-stuttgart.de/moodle/course/view.php?id=2233#section-2)
