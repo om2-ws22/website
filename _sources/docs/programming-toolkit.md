@@ -69,6 +69,14 @@ Now activate the new environment:
 conda activate bigdata
 ```
 
+
+### Troubleshooting
+
+If you should have troubles with Anaconda, first make sure that you use the latest version (in our course, we use Python 3.9). In your terminal, type `python --version` to see which Python version you are using in your Anaconda base environment.
+
+If you have an older version, I recommend to uninstall your current Anaconda environment from your machine and install the latest version: here a guide of how to [uninstall Anaconda](https://docs.anaconda.com/anaconda/install/uninstall/).
+
+
 ---
 
 (vscode)=
@@ -130,6 +138,15 @@ Here some resources to get familiar with VS Code:
 - Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
 
+### Troubleshooting
+
+If you have troubles to use Anaconda in Visual Studio Code, follow these instructions: 
+
+- [Windows](https://stackoverflow.com/a/61937090/14796848)
+- [Mac](https://stackoverflow.com/a/55203534/14796848)
+
+
+
 ---
 
 (github)=
@@ -162,19 +179,6 @@ You need a free GitHub-account for our course. Please follow the instructions be
 - Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
 - [Install GitHub desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
-
----
-
-## Troubleshooting
-
-Make sure that you use the latest version (in our course, we use Python 3.9). In your terminal, type `python --version` to see which Python version you are using in your Anaconda base environment.
-
-*You may also uninstall your current Anaconda environment from your machine and install the latest version: here a guide of how to [uninstall Anaconda](https://docs.anaconda.com/anaconda/install/uninstall/).*
-
-If you have troubles to use Anaconda in Visual Studio Code, follow these instructions: 
-
-- [Windows](https://stackoverflow.com/a/61937090/14796848)
-- [Mac](https://stackoverflow.com/a/55203534/14796848)
 
 
 
