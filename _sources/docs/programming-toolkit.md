@@ -6,6 +6,7 @@ You will simply need to:
 
 1. Install [Anaconda](anaconda) (includes Python and some toolkits)
 2. Install [Visual Studio Code](vscode) (a code editor)
+3. Create an acount at [GitHub](github) (for software development and version control)
 
 Please read the following instructions about Anaconda and Visual Studio Code.
 
@@ -128,6 +129,41 @@ Here some resources to get familiar with VS Code:
 
 - Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
+
+---
+
+(github)=
+### Git and GitHub
+
+[GitHub](https://github.com/) is a provider of internet hosting for software development and version control using Git. We will use GitHub as a platform for web hosting and collaboration.
+
+:::{note}
+Git is a version control system -- like the “Track Changes” features from Microsoft Word with many more additional features.
+:::
+
+- Git can be used to store content 
+- Code can be changed and other developers can add code in parallel.
+- Git has a remote repository which is stored in a server and a local repository which is stored in the computer of each developer.  
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+<br>
+
+You need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
+
+```{admonition} To do
+:class: tip
+
+- [Create a GitHub account with your HdM-email](https://github.com/join)
+- Verify your GitHub email
+- You may also sign up fot the free [student developer pack](https://education.github.com/pack)  
+- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
+- [Install GitHub desktop to synchronize your machine with GitHub](https://desktop.github.com/)
+```
+
+---
 
 ## Troubleshooting
 
