@@ -43,11 +43,20 @@ Follow the steps described in the next section.
 - On *macOS*: [Open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
 
 
-Let's update Anaconda:
+Instead of the conda defaults channel, we want to use the community-led alternative `conda-forge` to install Python modules. 
+
+Type this in your terminal to add `conda-forge`:
 
 ```bash
-conda update --all
+conda config --add channels conda-forge
 ```
+
+Then make `conda-forge` the priority channel: 
+
+```bash
+conda config --set channel_priority strict
+```
+
 
 Now you can install the modules we need for our course in a new environment (we call this new environment `mr`). 
 

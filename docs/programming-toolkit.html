@@ -606,8 +606,13 @@ title="Print to PDF"
 <li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
 <li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open your terminal</a></p></li>
 </ul>
-<p>Let’s update Anaconda:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda update --all
+<p>Instead of the conda defaults channel, we want to use the community-led alternative <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> to install Python modules.</p>
+<p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
+</pre></div>
+</div>
+<p>Then make <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> the priority channel:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --set channel_priority strict
 </pre></div>
 </div>
 <p>Now you can install the modules we need for our course in a new environment (we call this new environment <code class="docutils literal notranslate"><span class="pre">mr</span></code>).</p>
