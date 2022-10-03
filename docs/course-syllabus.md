@@ -26,7 +26,7 @@ By the end of the semester, you will be able to...
 
 - systematically take care of (big) data.
 
-- use methods like clustering, text mining and deep learning to gain insights from data.
+- use methods like clustering, text mining and machine learning models to gain insights from data.
 
 - make use of statistics and visuals to find and communicate insights with Python.
 
