@@ -1,21 +1,37 @@
 # Course overview
 
-In this course you will gain data skills applicable to marketing. You will learn how to collect and analyze data, model marketing scenarios, and communicate your findings with Google Analytics, Data Studio and Python Dashboards.
+Welcome to our course Big Data and Web Analytics! 👋  
 
-In particular, you will learn:
 
-- how to collect data with web scraping and web APIs.
+:::{Note}
+This page contains a weekly overview about the topics for the semester.
+:::
 
-- the characteristics of big data and modern data management.
+For a more detailed semester overview, take a look at the [course-schedule](../docs/course-schedule.md). 
 
-- about different data-driven marketing methods like clustering, text mining and deep learning to gain consumer and market insights.
+<br>
+<br>
 
-- how to use statistics and visuals to find and communicate insights with Python.
 
-- about a wide range of marketing metrics, and how to evaluate marketing efforts.
+|	Week	|	Date	|	Content	|
+|	---	|	---	|	---	|
+|	1	|	05.10.	|	Introduction	|
+|	2	|	12.10.	|	Web scraping	|
+|	3	|	19.10.	|	Web APIs	|
+|	4	|	26.10.	|	Text mining I	|
+|	5	|	02.11.	|	Text mining II	|
+|	6	|	09.11.	|	Data visualization	|
+|	7	|	16.11.	|	Dashboards	|
+|	8	|	23.11.	|	Clustering	|
+|	9	|	30.11.	|	Network analysis	|
+|	10	|	07.12.	|	Web metrics	|
+|	11	|	14.12.	|	Social media metrics	|
+|	12	|	21.12.	|	Web tracking 	|
+|	13	|	11.01.	|	Web analytics I	|
+|	14	|	18.01.	|	Web analytics II	|
 
-- to use Google Analytics, Data Studio and Streamlit, as you learn to apply reporting techniques and analyze results.
-
+<br>
+<br>
 
 ---
 
