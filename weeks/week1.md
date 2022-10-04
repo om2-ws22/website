@@ -25,6 +25,9 @@ Programming Toolkit: [📑](https://docs.google.com/presentation/d/1AHDCyelaOumv
 Install the programming toolkit: [💾](../docs/programming-toolkit.md)
 
 
+[Please fill out this short survey](https://docs.google.com/forms/d/e/1FAIpQLSekYrHQz2FjcNaZjXfCAJsu7x5yw55zJeiWj8xBub6W7_NreA/viewform?usp=sf_link)
+
+
 ---
 
 (practice)=
