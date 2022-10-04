@@ -20,13 +20,13 @@
 
 ## Learning objectives
 
+In this course you will gain data skills applicable to marketing. You will learn how to collect and analyze data and communicate your findings with Google Analytics, Data Studio and Python Dashboards.
+
 By the end of the semester, you will be able to...
 
 - collect data with web scraping and web APIs.
 
-- systematically take care of (big) data.
-
-- use methods like clustering, text mining and machine learning models to gain insights from data.
+- use methods like clustering and text mining to gain insights from data.
 
 - make use of statistics and visuals to find and communicate insights with Python.
 
