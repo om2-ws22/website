@@ -8,6 +8,9 @@ This page contains an outline of the topics, content, and assignments for the se
 This overview will be updated as the semester progresses.
 :::
 
+For a semester overview, take a look at the [course-overview](../docs/course-overview.md). 
+
+
 
 |		|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Resources	|	AE	|	HW	|	Exam	|	
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	
