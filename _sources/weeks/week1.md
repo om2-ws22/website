@@ -9,17 +9,15 @@
 📚 Read the [syllabus](../docs/course-syllabus.md)
 
 
-📚 Read the [support resources](../docs/course-support.md)
-
 ---
 
 (participate)=
 ## Participate
 
-Introduction: [📑](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)
+Introduction (Nr. 1): [📑](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)
 
 
-Programming Toolkit: [📑](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)
+Programming Toolkit (Nr. 2): [📑](https://docs.google.com/presentation/d/1AHDCyelaOumvZ9-MRLEaSGCulXvvo-hcoFRrTESQW-c/export/pdf)
 
 
 Install the programming toolkit: [💾](../docs/programming-toolkit.md)
@@ -31,6 +29,9 @@ After you created a [GitHub-account](https://github.com/) (use your HdM-email), 
 
 (practice)=
 ## Practice
+
+*You first need to create an account at [GitHub](https://github.com/) (with your HdM-email)*
+
 
 💻 Application exercise 0: 
 
