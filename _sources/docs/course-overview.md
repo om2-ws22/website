@@ -27,8 +27,9 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	10	|	07.12.	|	Web metrics	|
 |	11	|	14.12.	|	Social media metrics	|
 |	12	|	21.12.	|	Web tracking I	|
-|	13	|	11.01.	|	Web analytics I	|
-|	14	|	18.01.	|	Web analytics II	|
+|	13	|	11.01.	|	Web tracking II	|
+|	14	|	18.01.	|	Web analytics I	|
+|	15	|	25.01.	|	Web analytics II	|
 
 <br>
 <br>
