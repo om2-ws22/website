@@ -16,7 +16,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 
 |	Week	|	Date	|	Content	|	Slides	|	Materials	|	
 |	---	|	---	|	---	|	---	|	---	|	
-|	1	|	05.10.	|	Introduction	|	[📑](https://drive.google.com/file/d/1-4cLyD1QI9YLoYJH5_QuYz0AvdyKyZOu/view?usp=sharing)	|	[📁](../weeks/week1.md)	|	
+|	1	|	05.10.	|	Introduction	|	[📑](https://drive.google.com/file/d/1-3Es_A6LagrLePe7okTchhp7iMQUTFgA/view?usp=sharing)	|	[📁](../weeks/week1.md)	|	
 |	2	|	12.10.	|	Web scraping	|		|		|	
 |	3	|	19.10.	|	Web APIs	|		|		|	
 |	4	|	26.10.	|	Text mining I	|		|		|	
