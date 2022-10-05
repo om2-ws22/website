@@ -63,7 +63,7 @@ Now you can install the modules we need for our course in a new environment (we 
 Copy this code and run it in your terminal (command prompt): 
 
 ```bash
-conda create -n bigdata python=3.9 requests pandas jupyter tweepy networkx tensorflow beautifulsoup4 altair vega_datasets matplotlib seaborn streamlit scikit-learn sqlalchemy psycopg2
+conda create -n bigdata python=3.9 requests pandas jupyter tweepy networkx beautifulsoup4 altair vega_datasets matplotlib seaborn streamlit scikit-learn sqlalchemy psycopg2
 ```
 
 When conda asks you: 
