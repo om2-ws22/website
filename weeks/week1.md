@@ -24,8 +24,7 @@ Programming Toolkit: [📑](https://docs.google.com/presentation/d/1AHDCyelaOumv
 
 Install the programming toolkit: [💾](../docs/programming-toolkit.md)
 
-
-[Please fill out this short survey](https://docs.google.com/forms/d/e/1FAIpQLSekYrHQz2FjcNaZjXfCAJsu7x5yw55zJeiWj8xBub6W7_NreA/viewform?usp=sf_link)
+After you created a [GitHub-account](https://github.com/) (use your HdM-email), fill out the ["GitHub"-survey in Moodle](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=261404)
 
 
 ---
