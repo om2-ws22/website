@@ -143,7 +143,7 @@ In your terminal, type:
 mkdir big_data
 ```
 
-You can noew close the terminal.
+You can now close the terminal.
 
 ---
 
