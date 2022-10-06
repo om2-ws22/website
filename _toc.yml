@@ -11,6 +11,7 @@ parts:
     chapters:
     - file: docs/programming-toolkit.md
       sections:
+      - file: docs/programming-fundamentals.md 
       - file: docs/programming-syntax.ipynb
       - file: docs/programming-semantics.ipynb
   - caption: Weekly materials
