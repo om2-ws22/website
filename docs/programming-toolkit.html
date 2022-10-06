@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Syntax" href="programming-syntax.html" />
+    <link rel="next" title="Fundamentals" href="programming-fundamentals.html" />
     <link rel="prev" title="Course support" href="course-support.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -152,6 +152,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="programming-fundamentals.html">
+     Fundamentals
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="programming-syntax.html">
      Python Syntax
@@ -451,33 +456,6 @@ title="Print to PDF"
    Git and GitHub
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fundamentals">
-   Fundamentals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#python">
-     Python
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#jupyter-notebook">
-     Jupyter Notebook
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#colab">
-     Colab
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#markdown">
-     Markdown
-    </a>
-   </li>
-  </ul>
- </li>
 </ul>
 
     </nav>
@@ -577,33 +555,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#git-and-github">
    Git and GitHub
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fundamentals">
-   Fundamentals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#python">
-     Python
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#jupyter-notebook">
-     Jupyter Notebook
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#colab">
-     Colab
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#markdown">
-     Markdown
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -833,73 +784,6 @@ conda update anaconda
 </ul>
 </section>
 <hr class="docutils" />
-<section id="fundamentals">
-<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Permalink to this headline">#</a></h2>
-<section id="python">
-<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h3>
-<p>Python is an object-oriented language (an object is an entity that contains data along with associated metadata and/or functionality).</p>
-<p>One thing that distinguishes Python from many other programming languages is that it is interpreted rather than compiled. This means that it is executed line by line which is particular useful for data analysis, as well as the creation of interactive, executable documents like Jupyter Notebooks.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Python is an interpreted language. The Python interpreter runs a program by executing one statement at a time.</p>
-</div>
-<p>On top of this, there is a broad ecosystem of third-party tools and modules (like Jupyter Notebook) that offer more specialized data science functionality.</p>
-</section>
-<hr class="docutils" />
-<section id="jupyter-notebook">
-<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">#</a></h3>
-<p><a class="reference external" href="https://jupyter.org/">Jupyter Notebook</a> is an open-source application that allows you to create and share documents that contain code, equations, visualizations and narrative text.</p>
-<br>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/jupyter.png"><img alt="jupyter" class="bg-primary mb-1 align-center" src="../_images/jupyter.png" style="width: 300px;" /></a>
-<br>
-<p>A notebook is basically a list of cells and the cells contain either</p>
-<ol class="simple">
-<li><p>explanatory text (written in markdown)</p></li>
-<li><p>executable code</p></li>
-<li><p>code output</p></li>
-</ol>
-<p>Note that we will use Jupyter Notebook inside the coding editor Visual Studio Code or Google Colab.</p>
-</section>
-<section id="colab">
-<span id="id3"></span><h3>Colab<a class="headerlink" href="#colab" title="Permalink to this headline">#</a></h3>
-<p>Colaboratory, or “Colab” for short, is a free to use product from Google Research. Colab allows anybody to write and execute python code through the browser, and is especially well suited to perform data analysis and machine learning.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Colab is a free Jupyter notebook environment that requires no setup, and runs entirely on the Cloud.</p>
-</div>
-<p>Watch this video to get a first impression of Colab:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/inN8seMm7UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Let`s start your first Colab notebook to get an overview about some basic features:</p>
-<div class="tip admonition">
-<p class="admonition-title">Resources</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://colab.research.google.com/notebooks/basic_features_overview.ipynb">Colab basic features overview</a></p></li>
-</ul>
-</div>
-</section>
-<hr class="docutils" />
-<section id="markdown">
-<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h3>
-<p>Markdown is one of the world’s most popular markup languages used in data science. Jupyter Notebooks use Markdown to provide an unified authoring framework for data science, combining code, its results, and commentary in Markdown.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Markdown is a simple way to format text that looks great on any device.</p>
-</div>
-<p>Markdown files are designed to be used in three ways:</p>
-<ol class="simple">
-<li><p>For communicating to decision makers, who want to focus on the conclusions, not the code behind the analysis.</p></li>
-<li><p>For collaborating with other data scientists, who are interested in both your conclusions, and how you reached them (i.e. the code).</p></li>
-<li><p>As an environment in which to do data science, as a modern day lab notebook where you can capture not only what you did, but also what you were thinking.</p></li>
-</ol>
-<p>Review this site to learn more about Markdown:</p>
-<div class="tip admonition">
-<p class="admonition-title">Resources</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://colab.research.google.com/notebooks/markdown_guide.ipynb">Interactive Colab Markdown guide</a></p></li>
-</ul>
-</div>
-</section>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -938,10 +822,10 @@ conda update anaconda
             <p class="prev-next-title">Course support</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="programming-syntax.html" title="next page">
+    <a class='right-next' id="next-link" href="programming-fundamentals.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Syntax</p>
+        <p class="prev-next-title">Fundamentals</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
