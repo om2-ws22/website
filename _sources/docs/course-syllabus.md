@@ -6,8 +6,8 @@
 
 |           | Day       | Time                  | Location    |
 |-----------|-----------|-------------------    |-------------|
-| Lecture   | Wednesday | 11:45 am - 13:15 pm   |  Room 016b  |
-| Lab       | Wednesday | 14:15 pm - 15:00 pm   |  Room 016b  |
+| Lecture   | Wednesday | 11:45 am - 13:15 pm   |  [Room 171](https://www.hdm-stuttgart.de/horst)  |
+| Lab       | Wednesday | 14:15 pm - 15:00 pm   |  [Room 171](https://www.hdm-stuttgart.de/horst)  |
 
 
 ```{image} ../_static/img/room.png
