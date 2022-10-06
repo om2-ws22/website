@@ -97,6 +97,10 @@ conda update anaconda
 
 Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules. 
 
+- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+
+- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
+
 Type this in your terminal to add `conda-forge`:
 
 ```bash
@@ -108,6 +112,7 @@ Then make `conda-forge` the priority channel:
 ```bash
 conda config --set channel_priority strict
 ```
+
 
 ### Create a new environment
 
@@ -127,8 +132,18 @@ When conda asks you:
 simply type `y` and press enter.
 
 
-You can close the terminal if the installation is completed.
+(create-folder)=
+### Create a new folder for this course
 
+We also want to create a new folder called `big_data` for our course. 
+
+In your terminal, type:
+
+```bash
+mkdir big_data
+```
+
+You can noew close the terminal.
 
 ---
 
@@ -231,9 +246,19 @@ You need a free GitHub-account for our course. Please follow the instructions be
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
-- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
-- [Install GitHub desktop to synchronize your machine with GitHub](https://desktop.github.com/)
+- Go to Moodle and accept the invitation to the first [demo application exercise](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/discuss.php?d=104582)
+- [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
+
+If you do not have any repositories associated with **GitHub Desktop**, you will see a "Let's get started!" view, where you can choose to create and clone a tutorial repository, clone an existing repository from the Internet, create a new repository, or add an existing repository from your hard drive.
+
+![](https://docs.github.com/assets/cb-67627/images/help/desktop/lets-get-started.png)
+
+If you already accepted the invitation to the first application exercise, you can:
+
+- select this repo (it will be shown in the right box)
+- choose the folder `big_data` to install it to (we created this folder in [this step](create-folder)) 
+
 
 
 ---
