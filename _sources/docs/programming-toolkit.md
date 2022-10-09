@@ -4,9 +4,9 @@ This section contains an overview about the programming toolkit you will need fo
 
 You will need to:
 
-1. Uninstall your old version of Anaconda and install the latest version of [Anaconda](anaconda) (includes Python and some toolkits)
+1. Install the latest version of [Anaconda](anaconda) (includes Python and some toolkits) 
 2. Install [Visual Studio Code](vscode) (a code editor)
-3. Create an acount at [GitHub](github) (for software development and version control)
+3. Install [Git and create an acount at GitHub](github) (for software development and version control)
 
 Please read the following instructions.
 
@@ -116,6 +116,10 @@ conda config --set channel_priority strict
 
 ### Create a new environment
 
+- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+
+- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
+
 Now you can install some modules in a new Anaconda environment. The first environment will mainly be used for webscraping, therefore we call this new environment `webscraping`. 
 
 Copy this code and run it in your terminal (command prompt): 
@@ -198,7 +202,7 @@ We usually work with Jupyter Notebook files in VS Code. Open a Juptyer Notebook 
 
 ```
 
-If you can't select a kernel (like `base`or `webscraping`), try to close and restart VS Code.
+If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code.
 
 ### Optional tutorials
 
@@ -223,10 +227,12 @@ If you have troubles to use Anaconda in Visual Studio Code, follow these instruc
 (github)=
 ## Git and GitHub
 
-[GitHub](https://github.com/) is a provider of internet hosting for software development and version control using Git. We will use GitHub as a platform for web hosting and collaboration.
+Git is a version control system -- like the “Track Changes” features from Microsoft Word with many more additional features.
+
+[GitHub](https://github.com/) is a provider of internet hosting for software development and version control using Git. 
 
 :::{note}
-Git is a version control system -- like the “Track Changes” features from Microsoft Word with many more additional features.
+We will use GitHub as a platform for web hosting and collaboration.
 :::
 
 - Git can be used to store content 
@@ -239,17 +245,48 @@ Git is a version control system -- like the “Track Changes” features from Mi
 
 <br>
 
-You need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
+
+To see if Git is already installed, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
+
+```bash
+git --version
+```
+
+If you don't see the version, you need to install Git
+
+```{admonition} To do
+:class: tip
+
+- [Install Git](https://git-scm.com/downloads)
+```
+
+You also need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
 
 ```{admonition} To do
 :class: tip
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
-- Go to Moodle and accept the invitation to the first [demo application exercise](https://e-learning.hdm-stuttgart.de/moodle/mod/forum/discuss.php?d=104582)
+- Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account. 
 - [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
 
+
+Before you install the next extension, make sure you have the following prerequisites:
+
+- An active GitHub account
+- Membership in our GitHub Classroom course
+- Git installed on your computer
+
+```{admonition} To do
+:class: tip
+
+- Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
+
+```
+
+
+<!--
 If you do not have any repositories associated with **GitHub Desktop**, you will see a "Let's get started!" view, where you can choose to create and clone a tutorial repository, clone an existing repository from the Internet, create a new repository, or add an existing repository from your hard drive.
 
 ![](https://docs.github.com/assets/cb-67627/images/help/desktop/lets-get-started.png)
@@ -259,7 +296,7 @@ If you already accepted the invitation to the first application exercise, you ca
 - select this repo (it will be shown in the right box)
 - choose the folder `big_data` to install it to (we created this folder in [this step](create-folder)) 
 
-
+-->
 
 ---
 

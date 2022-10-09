@@ -571,9 +571,9 @@ title="Print to PDF"
 <p>This section contains an overview about the programming toolkit you will need for our course.</p>
 <p>You will need to:</p>
 <ol class="simple">
-<li><p>Uninstall your old version of Anaconda and install the latest version of <a class="reference internal" href="#anaconda"><span class="std std-ref">Anaconda</span></a> (includes Python and some toolkits)</p></li>
+<li><p>Install the latest version of <a class="reference internal" href="#anaconda"><span class="std std-ref">Anaconda</span></a> (includes Python and some toolkits)</p></li>
 <li><p>Install <a class="reference internal" href="#vscode"><span class="std std-ref">Visual Studio Code</span></a> (a code editor)</p></li>
-<li><p>Create an acount at <a class="reference internal" href="#github"><span class="std std-ref">GitHub</span></a> (for software development and version control)</p></li>
+<li><p>Install <a class="reference internal" href="#github"><span class="std std-ref">Git and create an acount at GitHub</span></a> (for software development and version control)</p></li>
 </ol>
 <p>Please read the following instructions.</p>
 <hr class="docutils" />
@@ -668,6 +668,10 @@ conda update anaconda
 </section>
 <section id="create-a-new-environment">
 <h3>Create a new environment<a class="headerlink" href="#create-a-new-environment" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
+<li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p></li>
+</ul>
 <p>Now you can install some modules in a new Anaconda environment. The first environment will mainly be used for webscraping, therefore we call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
 <p>Copy this code and run it in your terminal (command prompt):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter   beautifulsoup4 altair matplotlib seaborn 
@@ -730,7 +734,7 @@ conda update anaconda
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">How to use Jupyter Notebooks in VS Code</a></p></li>
 </ul>
 </div>
-<p>If you can’t select a kernel (like <code class="docutils literal notranslate"><span class="pre">base</span></code>or <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>), try to close and restart VS Code.</p>
+<p>If you can’t select a kernel (like the so called <code class="docutils literal notranslate"><span class="pre">base</span></code> kernel), try to close and restart VS Code.</p>
 </section>
 <section id="optional-tutorials">
 <h3>Optional tutorials<a class="headerlink" href="#optional-tutorials" title="Permalink to this headline">#</a></h3>
@@ -752,10 +756,11 @@ conda update anaconda
 </section>
 <section id="git-and-github">
 <span id="github"></span><h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h2>
-<p><a class="reference external" href="https://github.com/">GitHub</a> is a provider of internet hosting for software development and version control using Git. We will use GitHub as a platform for web hosting and collaboration.</p>
+<p>Git is a version control system – like the “Track Changes” features from Microsoft Word with many more additional features.</p>
+<p><a class="reference external" href="https://github.com/">GitHub</a> is a provider of internet hosting for software development and version control using Git.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Git is a version control system – like the “Track Changes” features from Microsoft Word with many more additional features.</p>
+<p>We will use GitHub as a platform for web hosting and collaboration.</p>
 </div>
 <ul class="simple">
 <li><p>Git can be used to store content</p></li>
@@ -765,23 +770,50 @@ conda update anaconda
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 <br>
-<p>You need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
+<p>To see if Git is already installed, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git --version
+</pre></div>
+</div>
+<p>If you don’t see the version, you need to install Git</p>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/downloads">Install Git</a></p></li>
+</ul>
+</div>
+<p>You also need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/join">Create a free GitHub account with your HdM-email</a></p></li>
 <li><p>Verify your GitHub email</p></li>
-<li><p>Go to Moodle and accept the invitation to the first <a class="reference external" href="https://e-learning.hdm-stuttgart.de/moodle/mod/forum/discuss.php?d=104582">demo application exercise</a></p></li>
+<li><p>Go to our <a class="reference external" href="https://classroom.github.com/classrooms/114360953-om2-ws22/roster">GitHub course classroom</a>, find your HdM id and link it with your GitHub account.</p></li>
 <li><p><a class="reference external" href="https://desktop.github.com/">Install GitHub Desktop to synchronize your machine with GitHub</a></p></li>
 </ul>
 </div>
-<p>If you do not have any repositories associated with <strong>GitHub Desktop</strong>, you will see a “Let’s get started!” view, where you can choose to create and clone a tutorial repository, clone an existing repository from the Internet, create a new repository, or add an existing repository from your hard drive.</p>
-<p><img alt="" src="https://docs.github.com/assets/cb-67627/images/help/desktop/lets-get-started.png" /></p>
-<p>If you already accepted the invitation to the first application exercise, you can:</p>
+<p>Before you install the next extension, make sure you have the following prerequisites:</p>
 <ul class="simple">
-<li><p>select this repo (it will be shown in the right box)</p></li>
-<li><p>choose the folder <code class="docutils literal notranslate"><span class="pre">big_data</span></code> to install it to (we created this folder in <a class="reference internal" href="#create-folder"><span class="std std-ref">this step</span></a>)</p></li>
+<li><p>An active GitHub account</p></li>
+<li><p>Membership in our GitHub Classroom course</p></li>
+<li><p>Git installed on your computer</p></li>
 </ul>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<ul class="simple">
+<li><p>Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&amp;ssr=false#overview">VS Code GitHub Classroom extension</a></p></li>
+</ul>
+</div>
+<!--
+If you do not have any repositories associated with **GitHub Desktop**, you will see a "Let's get started!" view, where you can choose to create and clone a tutorial repository, clone an existing repository from the Internet, create a new repository, or add an existing repository from your hard drive.
+
+![](https://docs.github.com/assets/cb-67627/images/help/desktop/lets-get-started.png)
+
+If you already accepted the invitation to the first application exercise, you can:
+
+- select this repo (it will be shown in the right box)
+- choose the folder `big_data` to install it to (we created this folder in [this step](create-folder)) 
+
+-->
 </section>
 <hr class="docutils" />
 <div class="toctree-wrapper compound">
