@@ -2,11 +2,11 @@
 
 This section contains an overview about the programming toolkit you will need for our course. 
 
-You will need to:
+You will need to install:
 
-1. Install the latest version of [Anaconda](anaconda) (includes Python and some toolkits) 
-2. Install [Visual Studio Code](vscode) (a code editor)
-3. Install [Git and create an acount at GitHub](github) (for software development and version control)
+1. the latest version of [Anaconda](anaconda) (includes Python and some toolkits) 
+2. [Visual Studio Code](vscode) (a code editor)
+3. [Git and create an acount at GitHub](github) (for software development and version control)
 
 Please read the following instructions.
 
@@ -36,7 +36,7 @@ To avoid compatibility problems with old versions of Anaconda, I recommend to un
 #### macOS
 
 1. [Open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-1. Remove your entire Anaconda directory with `rm -rf`. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just silently uninstall Anaconda. 
+2. Remove your entire Anaconda directory with `rm -rf`. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just silently uninstall Anaconda. 
 
 First try the opt folder:
 
@@ -64,34 +64,9 @@ Install the latest version of the Anaconda Individual Edition:
 ```{admonition} To do
 :class: tip
 
-- [Anaconda installation](https://www.anaconda.com/products/individual)
+- 💾 [Anaconda installation](https://www.anaconda.com/products/individual)
 
 ```
-
-<!--
-
-### Update Anaconda 
-
-- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
-
-- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-
-
-Let's first update to the latest version of Anaconda (note that this may take a while):
-
-Update the conda package manager to the latest version:
-
-```bash
-conda update conda
-```
-
-Update Anaconda to the latest version
-
-```bash
-conda update anaconda
-```
-
--->
 
 ### Use conda-forge
 
@@ -125,9 +100,8 @@ Now you can install some modules in a new Anaconda environment. The first enviro
 Copy this code and run it in your terminal (command prompt): 
 
 ```bash
-conda create -n webscraping python=3.9 requests pandas jupyter   beautifulsoup4 altair matplotlib seaborn 
+conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn 
 ```
-
 
 When conda asks you: 
 
@@ -173,7 +147,7 @@ Install VS Code:
 
 ```{admonition} To do
 :class: tip
-- [Install Code](https://code.visualstudio.com/)
+- 💾 Install [VS Code](https://code.visualstudio.com/)
 ```
 
 ### Install extensions
@@ -185,11 +159,12 @@ Let's install some extensions:
 ```{admonition} To do
 :class: tip
 
-- [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+- 💾 Install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+- 💾 Install the [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 ```
 
-Now **close and restart** VS Code.
+Now close and restart VS Code.
 
 ### Jupyter Notebook extension
 
@@ -197,22 +172,26 @@ We usually work with Jupyter Notebook files in VS Code.
 
 ```{admonition} To do
 :class: tip
-- [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) 
+
+- 💾 Install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
 ```
+
 Now close and restart VS Code.
 
 Open a Juptyer Notebook in VS Code:
 
 ```{admonition} To do
 :class: tip
-- [How to use Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+- Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 ```
 
 If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code once again.
 
+
 ### Optional tutorials
 
-Here some resources to get familiar with VS Code:
+Here some optional resources to get familiar with VS Code:
 
 - [Take a look at the intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)
 
@@ -221,7 +200,7 @@ Here some resources to get familiar with VS Code:
 - Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
 
-## Troubleshooting
+### Troubleshooting
 
 If you have troubles to use Anaconda in Visual Studio Code, follow these instructions: 
 
@@ -263,7 +242,7 @@ If you don't see the version, you need to install Git
 ```{admonition} To do
 :class: tip
 
-- [Install Git](https://git-scm.com/downloads)
+- 💾 Install [Git](https://git-scm.com/downloads)
 ```
 
 You also need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
@@ -273,8 +252,8 @@ You also need a free GitHub-account for our course. Please follow the instructio
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
-- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
-- [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
+- 💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
+- 💾 Install [GitHub Desktop](https://desktop.github.com/) to synchronize your machine with GitHub
 ```
 
 Next, we proceed in Moodle:
@@ -282,10 +261,10 @@ Next, we proceed in Moodle:
 ```{admonition} To do
 :class: tip
 
-1. go to our **Moodle course** 
+1. go to our Moodle course
 2. locate the section "Assignments" -> "Application Exercises"
 3. Open the page "Accept invitation to application exercises (AE)" 
-4. Accept the application exercise "Nr. 0 ..."
+4. Accept the application exercise "Nr. 1 ..."
 5. On the following page, you need to select your HdM id to get membership in our GitHub Classroom course
 
 ```
@@ -299,7 +278,7 @@ Before you install the next extension, make sure you have the following prerequi
 ```{admonition} To do
 :class: tip
 
-- Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
+- 💾 Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
 
 ```
 
