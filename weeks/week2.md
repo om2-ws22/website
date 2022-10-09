@@ -8,7 +8,7 @@
 
 ### Git
 
-We need Git for our course. To see if Git is already installed, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
+We need Git for our course. To see if Git is already installed on your machine, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
 
 ```bash
 git --version
@@ -24,12 +24,15 @@ If you don't see the version, you need to install Git
 Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account
 
 
-### VS Code GitHub extension
+### VS Code extensions
 
 💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github).
 
 Restart VS Code.
 
+💾 Install the [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+
+Restart VS Code.
 
 
 ### VS Code GitHub Classroom extension
@@ -85,9 +88,9 @@ Restart VS Code.
 
 💻 Application exercise 1:
 
-Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the application exercise titled:
+Use the [GitHub VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) to locate the application exercise titled:
 
-`ae-1-scraping-quotes-YOUR_GITHUB_USERNAME` 
+`ae-1-scraping-quotes` 
 
 to get started.
 
