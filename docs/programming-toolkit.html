@@ -444,12 +444,12 @@ title="Print to PDF"
      Optional tutorials
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+   </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#troubleshooting">
-   Troubleshooting
-  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#git-and-github">
@@ -544,12 +544,12 @@ title="Print to PDF"
      Optional tutorials
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+   </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#troubleshooting">
-   Troubleshooting
-  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#git-and-github">
@@ -569,11 +569,11 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="programming-toolkit">
 <h1>Programming toolkit<a class="headerlink" href="#programming-toolkit" title="Permalink to this headline">#</a></h1>
 <p>This section contains an overview about the programming toolkit you will need for our course.</p>
-<p>You will need to:</p>
+<p>You will need to install:</p>
 <ol class="simple">
-<li><p>Install the latest version of <a class="reference internal" href="#anaconda"><span class="std std-ref">Anaconda</span></a> (includes Python and some toolkits)</p></li>
-<li><p>Install <a class="reference internal" href="#vscode"><span class="std std-ref">Visual Studio Code</span></a> (a code editor)</p></li>
-<li><p>Install <a class="reference internal" href="#github"><span class="std std-ref">Git and create an acount at GitHub</span></a> (for software development and version control)</p></li>
+<li><p>the latest version of <a class="reference internal" href="#anaconda"><span class="std std-ref">Anaconda</span></a> (includes Python and some toolkits)</p></li>
+<li><p><a class="reference internal" href="#vscode"><span class="std std-ref">Visual Studio Code</span></a> (a code editor)</p></li>
+<li><p><a class="reference internal" href="#github"><span class="std std-ref">Git and create an acount at GitHub</span></a> (for software development and version control)</p></li>
 </ol>
 <p>Please read the following instructions.</p>
 <hr class="docutils" />
@@ -622,33 +622,9 @@ title="Print to PDF"
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda installation</a></p></li>
+<li><p>💾 <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda installation</a></p></li>
 </ul>
 </div>
-<!--
-
-### Update Anaconda 
-
-- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
-
-- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-
-
-Let's first update to the latest version of Anaconda (note that this may take a while):
-
-Update the conda package manager to the latest version:
-
-```bash
-conda update conda
-```
-
-Update Anaconda to the latest version
-
-```bash
-conda update anaconda
-```
-
--->
 </section>
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
@@ -674,7 +650,7 @@ conda update anaconda
 </ul>
 <p>Now you can install some modules in a new Anaconda environment. The first environment will mainly be used for webscraping, therefore we call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
 <p>Copy this code and run it in your terminal (command prompt):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter   beautifulsoup4 altair matplotlib seaborn 
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn 
 </pre></div>
 </div>
 <p>When conda asks you:</p>
@@ -708,7 +684,7 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/">Install Code</a></p></li>
+<li><p>💾 Install <a class="reference external" href="https://code.visualstudio.com/">VS Code</a></p></li>
 </ul>
 </div>
 </section>
@@ -719,11 +695,11 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension</a></p></li>
-<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack">Live Share Extension Pack</a></p></li>
+<li><p>💾 Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension</a></p></li>
+<li><p>💾 Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack">Live Share Extension Pack</a></p></li>
 </ul>
 </div>
-<p>Now <strong>close and restart</strong> VS Code.</p>
+<p>Now close and restart VS Code.</p>
 </section>
 <section id="jupyter-notebook-extension">
 <h3>Jupyter Notebook extension<a class="headerlink" href="#jupyter-notebook-extension" title="Permalink to this headline">#</a></h3>
@@ -731,7 +707,7 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter extension</a></p></li>
+<li><p>💾 Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter extension</a></p></li>
 </ul>
 </div>
 <p>Now close and restart VS Code.</p>
@@ -739,28 +715,28 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">How to use Jupyter Notebooks in VS Code</a></p></li>
+<li><p>Learn how to use <a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Jupyter Notebooks in VS Code</a></p></li>
 </ul>
 </div>
 <p>If you can’t select a kernel (like the so called <code class="docutils literal notranslate"><span class="pre">base</span></code> kernel), try to close and restart VS Code once again.</p>
 </section>
 <section id="optional-tutorials">
 <h3>Optional tutorials<a class="headerlink" href="#optional-tutorials" title="Permalink to this headline">#</a></h3>
-<p>Here some resources to get familiar with VS Code:</p>
+<p>Here some optional resources to get familiar with VS Code:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/introvideos">Take a look at the intro videos</a></p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/data-science-tutorial">Data Science in VS Code tutorial</a></p></li>
 <li><p>Pro tips: <a class="reference external" href="https://www.youtube.com/watch?v=ifTF3ags0XI">25 VS Code Productivity Tips and Speed Hacks</a></p></li>
 </ul>
 </section>
-</section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h2>
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h3>
 <p>If you have troubles to use Anaconda in Visual Studio Code, follow these instructions:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://stackoverflow.com/a/61937090/14796848">Windows</a></p></li>
 <li><p><a class="reference external" href="https://stackoverflow.com/a/55203534/14796848">Mac</a></p></li>
 </ul>
+</section>
 </section>
 <section id="git-and-github">
 <span id="github"></span><h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h2>
@@ -786,7 +762,7 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://git-scm.com/downloads">Install Git</a></p></li>
+<li><p>💾 Install <a class="reference external" href="https://git-scm.com/downloads">Git</a></p></li>
 </ul>
 </div>
 <p>You also need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
@@ -795,18 +771,18 @@ conda update anaconda
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/join">Create a free GitHub account with your HdM-email</a></p></li>
 <li><p>Verify your GitHub email</p></li>
-<li><p>Install the <a class="reference external" href="https://code.visualstudio.com/docs/editor/github">VS Code GitHub extension</a></p></li>
-<li><p><a class="reference external" href="https://desktop.github.com/">Install GitHub Desktop to synchronize your machine with GitHub</a></p></li>
+<li><p>💾 Install the <a class="reference external" href="https://code.visualstudio.com/docs/editor/github">VS Code GitHub extension</a></p></li>
+<li><p>💾 Install <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a> to synchronize your machine with GitHub</p></li>
 </ul>
 </div>
 <p>Next, we proceed in Moodle:</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ol class="simple">
-<li><p>go to our <strong>Moodle course</strong></p></li>
+<li><p>go to our Moodle course</p></li>
 <li><p>locate the section “Assignments” -&gt; “Application Exercises”</p></li>
 <li><p>Open the page “Accept invitation to application exercises (AE)”</p></li>
-<li><p>Accept the application exercise “Nr. 0 …”</p></li>
+<li><p>Accept the application exercise “Nr. 1 …”</p></li>
 <li><p>On the following page, you need to select your HdM id to get membership in our GitHub Classroom course</p></li>
 </ol>
 </div>
@@ -819,7 +795,7 @@ conda update anaconda
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p>Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&amp;ssr=false#overview">VS Code GitHub Classroom extension</a></p></li>
+<li><p>💾 Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&amp;ssr=false#overview">VS Code GitHub Classroom extension</a></p></li>
 </ul>
 </div>
 </section>
