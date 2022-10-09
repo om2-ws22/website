@@ -141,13 +141,13 @@ simply type `y` and press enter.
 
 We also want to create a new folder called `big_data` for our course. 
 
-In your terminal, type:
+In your terminal or command prompt, type:
 
 ```bash
 mkdir big_data
 ```
 
-You can now close the terminal.
+You can now close it.
 
 ---
 
@@ -267,7 +267,7 @@ You also need a free GitHub-account for our course. Please follow the instructio
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
-- Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account. 
+- Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account 
 - [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
 
