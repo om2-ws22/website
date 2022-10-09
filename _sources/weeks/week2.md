@@ -18,11 +18,13 @@ If you don't see the version, you need to install Git
 
 💾 [Install Git](https://git-scm.com/downloads)
 
+---
 
 ### Got to GitHub Classroom
 
 Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account
 
+---
 
 ### VS Code extensions
 
@@ -34,6 +36,7 @@ Restart VS Code.
 
 Restart VS Code.
 
+---
 
 ### VS Code GitHub Classroom extension
 
@@ -47,6 +50,7 @@ Before you install the next extension, make sure you have the following prerequi
 
 Restart VS Code.
 
+---
 
 ### Webscraping software
 
@@ -59,6 +63,9 @@ Restart VS Code.
 
 ---
 
+---
+
+
 (participate)=
 ## Participate
 
@@ -69,12 +76,19 @@ Restart VS Code.
 
 <br>
 
+---
+
+<br>
+
 📺  Video tutorial about the Cascading Style Sheets (CSS) Syntax:  
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QqmCs2UTS8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br>
+
+---
+
 <br>
 
 
@@ -82,6 +96,9 @@ Restart VS Code.
 
 
 ---
+
+---
+
 
 (practice)=
 ## Practice
@@ -93,6 +110,8 @@ Use the [GitHub VS Code extension](https://marketplace.visualstudio.com/items?it
 `ae-1-scraping-quotes` 
 
 to get started.
+
+---
 
 ---
 
