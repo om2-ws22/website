@@ -32,6 +32,17 @@ Restart VS Code.
 
 ---
 
+### Get membership in our GitHub classroom
+
+
+1. go to our Moodle course
+2. locate the section "Assignments" -> "Application Exercises"
+3. Open the page "Accept invitation to application exercises (AE)" 
+4. Accept the application exercise "Nr. 1 ..."
+5. On the following page, you need to select your HdM id to get membership in our GitHub classroom course
+
+---
+
 ### VS Code GitHub Classroom extension
 
 Before you install the next extension, make sure you have the following prerequisites:
@@ -40,13 +51,15 @@ Before you install the next extension, make sure you have the following prerequi
 2. Membership in our GitHub Classroom course
 3. Git installed on your computer
 
+
 💾  Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
+
 
 Restart VS Code.
 
 ---
 
-### Webscraping software
+### Webscraping tools
 
 
 💾 Download the [Google Chrome Web-Browser](https://www.google.com/intl/de_de/chrome/)
