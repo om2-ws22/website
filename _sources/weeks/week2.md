@@ -20,12 +20,6 @@ If you don't see the version, you need to install Git
 
 ---
 
-### Got to GitHub Classroom
-
-Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account
-
----
-
 ### VS Code extensions
 
 💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github).
@@ -103,13 +97,7 @@ Restart VS Code.
 (practice)=
 ## Practice
 
-💻 Application exercise 1:
-
-Use the [GitHub VS Code extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom) to locate the application exercise titled:
-
-`ae-1-scraping-quotes` 
-
-to get started.
+Accept the invitation to application exercise Nr. 1 in Moodle: [💻 scraping-quotes](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=262127)
 
 ---
 

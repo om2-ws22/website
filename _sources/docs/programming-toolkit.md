@@ -199,7 +199,7 @@ We usually work with Jupyter Notebook files in VS Code.
 :class: tip
 - [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) 
 ```
-Now **close and restart** VS Code.
+Now close and restart VS Code.
 
 Open a Juptyer Notebook in VS Code:
 
@@ -274,10 +274,21 @@ You also need a free GitHub-account for our course. Please follow the instructio
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
 - Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
-- Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account 
 - [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
 
+Next, we proceed in Moodle:
+
+```{admonition} To do
+:class: tip
+
+1. go to our **Moodle course** 
+2. locate the section "Assignments" -> "Application Exercises"
+3. Open the page "Accept invitation to application exercises (AE)" 
+4. Accept the application exercise "Nr. 0 ..."
+5. On the following page, you need to select your HdM id to get membership in our GitHub Classroom course
+
+```
 
 Before you install the next extension, make sure you have the following prerequisites:
 
@@ -292,18 +303,6 @@ Before you install the next extension, make sure you have the following prerequi
 
 ```
 
-
-<!--
-If you do not have any repositories associated with **GitHub Desktop**, you will see a "Let's get started!" view, where you can choose to create and clone a tutorial repository, clone an existing repository from the Internet, create a new repository, or add an existing repository from your hard drive.
-
-![](https://docs.github.com/assets/cb-67627/images/help/desktop/lets-get-started.png)
-
-If you already accepted the invitation to the first application exercise, you can:
-
-- select this repo (it will be shown in the right box)
-- choose the folder `big_data` to install it to (we created this folder in [this step](create-folder)) 
-
--->
 
 ---
 
