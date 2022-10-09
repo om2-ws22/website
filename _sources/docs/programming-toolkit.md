@@ -180,29 +180,35 @@ Install VS Code:
 
 The features that Visual Studio Code includes out-of-the-box are just the start. VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow.
 
-Let's install some important extensions:
+Let's install some extensions:
 
 ```{admonition} To do
 :class: tip
 
 - [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) 
+- [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 ```
 
 Now **close and restart** VS Code.
 
-### Jupyter Notebooks
+### Jupyter Notebook extension
 
-We usually work with Jupyter Notebook files in VS Code. Open a Juptyer Notebook in VS Code:
+We usually work with Jupyter Notebook files in VS Code. 
 
+```{admonition} To do
+:class: tip
+- [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) 
+```
+Now **close and restart** VS Code.
+
+Open a Juptyer Notebook in VS Code:
 
 ```{admonition} To do
 :class: tip
 - [How to use Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
-
 ```
 
-If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code.
+If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code once again.
 
 ### Optional tutorials
 
@@ -267,6 +273,7 @@ You also need a free GitHub-account for our course. Please follow the instructio
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
+- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
 - Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account 
 - [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
