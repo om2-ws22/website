@@ -267,6 +267,7 @@ You also need a free GitHub-account for our course. Please follow the instructio
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
+- Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
 - Go to our [GitHub course classroom](https://classroom.github.com/classrooms/114360953-om2-ws22/roster), find your HdM id and link it with your GitHub account 
 - [Install GitHub Desktop to synchronize your machine with GitHub](https://desktop.github.com/)
 ```
