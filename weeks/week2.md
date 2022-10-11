@@ -6,19 +6,60 @@
 (prepare)=
 ## Prepare
 
-📺  Watch this video from w3schools which covers relevant basics of "Hyper Text Markup Language" (HTML): 
+### Git
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ewZ_YWbIWXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+We need Git for our course. To see if Git is already installed on your machine, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
 
-<br>
+```bash
+git --version
+```
 
-📺  Watch this short video tutorial about the Cascading Style Sheets (CSS) Syntax:  
+If you don't see the version, you need to install Git
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QqmCs2UTS8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+💾 [Install Git](https://git-scm.com/downloads)
+
+---
+
+### VS Code extensions
+
+💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github).
+
+Restart VS Code.
+
+💾 Install the [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+
+Restart VS Code.
+
+---
+
+### Get membership in our GitHub classroom
 
 
-<br>
-<br>
+1. go to our Moodle course
+2. locate the section "Assignments" -> "Application Exercises"
+3. Open the page "Accept invitation to application exercises (AE)" 
+4. Accept the application exercise "Nr. 1 ..."
+5. On the following page, you need to select your HdM id to get membership in our GitHub classroom course
+
+---
+
+### VS Code GitHub Classroom extension
+
+Before you install the next extension, make sure you have the following prerequisites:
+
+1. An active GitHub account
+2. Membership in our GitHub Classroom course
+3. Git installed on your computer
+
+
+💾  Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
+
+
+Restart VS Code.
+
+---
+
+### Webscraping tools
 
 
 💾 Download the [Google Chrome Web-Browser](https://www.google.com/intl/de_de/chrome/)
@@ -29,24 +70,49 @@
 
 ---
 
+---
+
+
 (participate)=
 ## Participate
+
+
+📺  Video from w3schools which covers relevant basics of "Hyper Text Markup Language" (HTML): 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ewZ_YWbIWXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+---
+
+<br>
+
+📺  Video tutorial about the Cascading Style Sheets (CSS) Syntax:  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QqmCs2UTS8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br>
+
+---
+
+<br>
+
 
 [⏯ HTML & CSS Codelab](https://kirenz.github.io/codelabs/codelabs/webscraping/#0)
 
 
 ---
 
+---
+
+
 (practice)=
 ## Practice
 
-💻 Application exercise 1:
+Accept the invitation to application exercise Nr. 1 in Moodle: [💻 scraping-quotes](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=262127)
 
-Go to the [course GitHub organization](https://github.com/orgs/om2-ws22/repositories) and locate the application exercise titled:
-
-`ae-1-scraping-quotes-YOUR_GITHUB_USERNAME` 
-
-to get started.
+---
 
 ---
 
