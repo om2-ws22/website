@@ -16,7 +16,9 @@ git --version
 
 If you don't see the version, you need to install Git
 
-💾 [Install Git](https://git-scm.com/downloads)
+- 💾 Mac: you can install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git 
+
+- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html)
 
 ---
 
