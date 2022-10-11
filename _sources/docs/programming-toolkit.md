@@ -12,7 +12,6 @@ Please read the following instructions.
 
 ---
 
-
 (anaconda)=
 ## Anaconda
 
@@ -36,7 +35,7 @@ To avoid compatibility problems with old versions of Anaconda, I recommend to un
 #### macOS
 
 1. [Open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-2. Remove your entire Anaconda directory with `rm -rf`. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just silently uninstall Anaconda. 
+1. Remove your entire Anaconda directory with `rm -rf`. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just remove Anaconda. 
 
 First try the opt folder:
 
@@ -64,17 +63,23 @@ Install the latest version of the Anaconda Individual Edition:
 ```{admonition} To do
 :class: tip
 
-- 💾 [Anaconda installation](https://www.anaconda.com/products/individual)
+- [💾 Anaconda installation](https://www.anaconda.com/products/individual)
 
 ```
+
+After you have installed Anaconda, open the "Anaconda Navigator" programm (if you see a pop-up with information about a new version of the Navigator, don't update it now):
+
+1. Click on the tab `Environments` at the left of the menu
+2. Select the green button next to the `base (root)` environment
+3. Choose `Open Terminal`
+
+
+![](../_static/img/navigator.png)
+
 
 ### Use conda-forge
 
 Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules. 
-
-- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
-
-- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
 
 Type this in your terminal to add `conda-forge`:
 
@@ -88,40 +93,28 @@ Then make `conda-forge` the priority channel:
 conda config --set channel_priority strict
 ```
 
-
 ### Create a new environment
 
-- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+Now you can install some modules in a new Anaconda environment. We call this new environment `webscraping`. 
 
-- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-
-Now you can install some modules in a new Anaconda environment. The first environment will mainly be used for webscraping, therefore we call this new environment `webscraping`. 
-
-Copy this code and run it in your terminal (command prompt): 
+Copy this code and run it in your terminal: 
 
 ```bash
-conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn 
+conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
 ```
 
-When conda asks you: 
-
-`Proceed ([y]/n)?` 
-
-simply type `y` and press enter.
+Depending on your machine, the installation process may take a few minutes.
 
 
 (create-folder)=
 ### Create a new folder for this course
 
-We also want to create a new folder called `big_data` for our course. 
+We also want to create a new folder called `big_data` for our course. In your terminal, type:
 
-In your terminal or command prompt, type:
 
 ```bash
 mkdir big_data
 ```
-
-You can now close it.
 
 ---
 
@@ -199,13 +192,6 @@ Here some optional resources to get familiar with VS Code:
 
 - Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
-
-### Troubleshooting
-
-If you have troubles to use Anaconda in Visual Studio Code, follow these instructions: 
-
-- [Windows](https://stackoverflow.com/a/61937090/14796848)
-- [Mac](https://stackoverflow.com/a/55203534/14796848)
 
 
 

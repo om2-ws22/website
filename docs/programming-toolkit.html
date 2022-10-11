@@ -444,11 +444,6 @@ title="Print to PDF"
      Optional tutorials
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#troubleshooting">
-     Troubleshooting
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -544,11 +539,6 @@ title="Print to PDF"
      Optional tutorials
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#troubleshooting">
-     Troubleshooting
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -599,7 +589,7 @@ title="Print to PDF"
 <h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h4>
 <ol class="simple">
 <li><p><a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open your terminal</a></p></li>
-<li><p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just silently uninstall Anaconda.</p></li>
+<li><p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>. Depending on your installation, your anaconda3 directory will be in your root folder or in your opt folder. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just remove Anaconda.</p></li>
 </ol>
 <p>First try the opt folder:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/opt/anaconda3
@@ -622,17 +612,20 @@ title="Print to PDF"
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p>💾 <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda installation</a></p></li>
+<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">💾 Anaconda installation</a></p></li>
 </ul>
 </div>
+<p>After you have installed Anaconda, open the “Anaconda Navigator” programm (if you see a pop-up with information about a new version of the Navigator, don’t update it now):</p>
+<ol class="simple">
+<li><p>Click on the tab <code class="docutils literal notranslate"><span class="pre">Environments</span></code> at the left of the menu</p></li>
+<li><p>Select the green button next to the <code class="docutils literal notranslate"><span class="pre">base</span> <span class="pre">(root)</span></code> environment</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Terminal</span></code></p></li>
+</ol>
+<p><img alt="" src="../_images/navigator.png" /></p>
 </section>
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
 <p>Instead of the conda default package manager, we want to use the community-led alternative <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> to install Python modules.</p>
-<ul class="simple">
-<li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
-<li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p></li>
-</ul>
 <p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
 </pre></div>
@@ -644,27 +637,19 @@ title="Print to PDF"
 </section>
 <section id="create-a-new-environment">
 <h3>Create a new environment<a class="headerlink" href="#create-a-new-environment" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
-<li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p></li>
-</ul>
-<p>Now you can install some modules in a new Anaconda environment. The first environment will mainly be used for webscraping, therefore we call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
-<p>Copy this code and run it in your terminal (command prompt):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn 
+<p>Now you can install some modules in a new Anaconda environment. We call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
+<p>Copy this code and run it in your terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
 </pre></div>
 </div>
-<p>When conda asks you:</p>
-<p><code class="docutils literal notranslate"><span class="pre">Proceed</span> <span class="pre">([y]/n)?</span></code></p>
-<p>simply type <code class="docutils literal notranslate"><span class="pre">y</span></code> and press enter.</p>
+<p>Depending on your machine, the installation process may take a few minutes.</p>
 </section>
 <section id="create-a-new-folder-for-this-course">
 <span id="create-folder"></span><h3>Create a new folder for this course<a class="headerlink" href="#create-a-new-folder-for-this-course" title="Permalink to this headline">#</a></h3>
-<p>We also want to create a new folder called <code class="docutils literal notranslate"><span class="pre">big_data</span></code> for our course.</p>
-<p>In your terminal or command prompt, type:</p>
+<p>We also want to create a new folder called <code class="docutils literal notranslate"><span class="pre">big_data</span></code> for our course. In your terminal, type:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir big_data
 </pre></div>
 </div>
-<p>You can now close it.</p>
 <hr class="docutils" />
 </section>
 </section>
@@ -727,14 +712,6 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/introvideos">Take a look at the intro videos</a></p></li>
 <li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/data-science-tutorial">Data Science in VS Code tutorial</a></p></li>
 <li><p>Pro tips: <a class="reference external" href="https://www.youtube.com/watch?v=ifTF3ags0XI">25 VS Code Productivity Tips and Speed Hacks</a></p></li>
-</ul>
-</section>
-<section id="troubleshooting">
-<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h3>
-<p>If you have troubles to use Anaconda in Visual Studio Code, follow these instructions:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://stackoverflow.com/a/61937090/14796848">Windows</a></p></li>
-<li><p><a class="reference external" href="https://stackoverflow.com/a/55203534/14796848">Mac</a></p></li>
 </ul>
 </section>
 </section>
