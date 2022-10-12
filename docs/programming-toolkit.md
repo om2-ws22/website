@@ -229,7 +229,7 @@ If you don't see the version, you need to install Git
 :class: tip
 
 
-- 💾 Mac: you can install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git 
+- 💾 Mac: Option 1: you can install Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git. Option 2: Only install [Git](https://git-scm.com/download/mac) (in that case I recommend to use homebrew)
 
 - 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html)
 
