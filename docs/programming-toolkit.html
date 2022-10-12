@@ -615,17 +615,25 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://www.anaconda.com/products/individual">💾 Anaconda installation</a></p></li>
 </ul>
 </div>
-<p>After you have installed Anaconda, open the “Anaconda Navigator” programm (if you see a pop-up with information about a new version of the Navigator, don’t update it now):</p>
-<ol class="simple">
-<li><p>Click on the tab <code class="docutils literal notranslate"><span class="pre">Environments</span></code> at the left of the menu</p></li>
-<li><p>Select the green button next to the <code class="docutils literal notranslate"><span class="pre">base</span> <span class="pre">(root)</span></code> environment</p></li>
-<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Terminal</span></code></p></li>
-</ol>
-<p><img alt="" src="../_images/navigator.png" /></p>
+<!--
+After you have installed Anaconda, open the "Anaconda Navigator" programm (if you see a pop-up with information about a new version of the Navigator, don't update it now):
+
+1. Click on the tab `Environments` at the left of the menu
+2. Select the green button next to the `base (root)` environment
+3. Choose `Open Terminal`
+
+
+![](../_static/img/navigator.png)
+
+-->
 </section>
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
 <p>Instead of the conda default package manager, we want to use the community-led alternative <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> to install Python modules.</p>
+<ul class="simple">
+<li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
+<li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p></li>
+</ul>
 <p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
 </pre></div>

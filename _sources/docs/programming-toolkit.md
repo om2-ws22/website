@@ -67,6 +67,8 @@ Install the latest version of the Anaconda Individual Edition:
 
 ```
 
+
+<!--
 After you have installed Anaconda, open the "Anaconda Navigator" programm (if you see a pop-up with information about a new version of the Navigator, don't update it now):
 
 1. Click on the tab `Environments` at the left of the menu
@@ -76,10 +78,18 @@ After you have installed Anaconda, open the "Anaconda Navigator" programm (if yo
 
 ![](../_static/img/navigator.png)
 
+-->
+
 
 ### Use conda-forge
 
-Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules. 
+Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules.
+
+
+- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+
+- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
+
 
 Type this in your terminal to add `conda-forge`:
 
