@@ -407,16 +407,6 @@ title="Print to PDF"
      Use conda-forge
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-new-environment">
-     Create a new environment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-new-folder-for-this-course">
-     Create a new folder for this course
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -502,16 +492,6 @@ title="Print to PDF"
      Use conda-forge
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-new-environment">
-     Create a new environment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-new-folder-for-this-course">
-     Create a new folder for this course
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -584,6 +564,7 @@ title="Print to PDF"
 <li><p>Delete your environment (anaconda3\envs) and package (anaconda3\pkgs) folders in your user folder.</p></li>
 <li><p>Open Add or remove programs and uninstall your Anaconda installation.</p></li>
 </ol>
+<p>To learn more about how to uninstall Anaconda, take a look at <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">this page</a>.</p>
 </section>
 <section id="macos">
 <h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h4>
@@ -603,7 +584,7 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/anaconda3
 </pre></div>
 </div>
-<p>Close the terminal and proceed with the next step.</p>
+<p>To learn more about how to uninstall Anaconda, take a look at <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">this page</a>.</p>
 </section>
 </section>
 <section id="installation">
@@ -616,7 +597,7 @@ title="Print to PDF"
 </ul>
 </div>
 <!--
-After you have installed Anaconda, open the "Anaconda Navigator" programm (if you see a pop-up with information about a new version of the Navigator, don't update it now):
+After you have installed Anaconda, open the "Anaconda Navigator" program (if you see a pop-up with information about a new version of the Navigator, don't update it now):
 
 1. Click on the tab `Environments` at the left of the menu
 2. Select the green button next to the `base (root)` environment
@@ -640,22 +621,6 @@ After you have installed Anaconda, open the "Anaconda Navigator" programm (if yo
 </div>
 <p>Then make <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> the priority channel:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --set channel_priority strict
-</pre></div>
-</div>
-</section>
-<section id="create-a-new-environment">
-<h3>Create a new environment<a class="headerlink" href="#create-a-new-environment" title="Permalink to this headline">#</a></h3>
-<p>Now you can install some modules in a new Anaconda environment. We call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
-<p>Copy this code and run it in your terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
-</pre></div>
-</div>
-<p>Depending on your machine, the installation process may take a few minutes.</p>
-</section>
-<section id="create-a-new-folder-for-this-course">
-<span id="create-folder"></span><h3>Create a new folder for this course<a class="headerlink" href="#create-a-new-folder-for-this-course" title="Permalink to this headline">#</a></h3>
-<p>We also want to create a new folder called <code class="docutils literal notranslate"><span class="pre">big_data</span></code> for our course. In your terminal, type:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir big_data
 </pre></div>
 </div>
 <hr class="docutils" />
@@ -743,12 +708,18 @@ After you have installed Anaconda, open the "Anaconda Navigator" programm (if yo
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git --version
 </pre></div>
 </div>
-<p>If you don’t see the version, you need to install Git</p>
+<p>If you don’t see the version, you need to install Git (if you have macOS, the terminal may ask you if you want to install git - use this option to install it right away).</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
-<li><p>💾 Mac: Option 1: you can install Apple’s <a class="reference external" href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a>, which includes Git. Option 2: Only install <a class="reference external" href="https://git-scm.com/download/mac">Git</a> (in that case I recommend to use homebrew)</p></li>
-<li><p>💾 Windows: <a class="reference external" href="https://git-scm.com/download/win">Install Git</a>. Follow <a class="reference external" href="https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html">these instructions</a></p></li>
+<li><p>💾 Mac:</p>
+<ul>
+<li><p>Option 1: Install Git in your terminal after you have typed git –version in your terminal</p></li>
+<li><p>Option 2: Install Apple’s <a class="reference external" href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a>, which includes Git.</p></li>
+<li><p>Option 3: Install <a class="reference external" href="https://git-scm.com/download/mac">Git</a> with the help of homebrew.</p></li>
+</ul>
+</li>
+<li><p>💾 Windows: <a class="reference external" href="https://git-scm.com/download/win">Install Git</a>. Follow <a class="reference external" href="https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html">these instructions</a> (during the installation process you are asked which editor you want to use - choose Visual Stuido Code)</p></li>
 </ul>
 </div>
 <p>You also need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
