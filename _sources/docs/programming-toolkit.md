@@ -90,7 +90,6 @@ Instead of the conda default package manager, we want to use the community-led a
 > On *macOS*: Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
 
 
-<br>
 
 ````{admonition} To do
 :class: tip
@@ -176,14 +175,12 @@ GitHub is a provider of internet hosting for software development and version co
 
 ### Install Git
 
-<br>
 
 > On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
 
 
 > On *macOS*: Open your terminal.
 
-<br>
 
 ````{admonition} To do
 :class: tip
