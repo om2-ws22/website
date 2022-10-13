@@ -40,7 +40,7 @@ To avoid compatibility problems with older versions of Anaconda, I recommend to 
 > Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
 
 
-```{admonition} To do
+````{admonition} To do
 :class: tip
 
 Remove your entire Anaconda directory with `rm -rf`. 
@@ -52,6 +52,7 @@ First try the opt folder:
 ```bash
 rm -rf ~/opt/anaconda3
 ```
+
 Then this location:
 
 ```bash
@@ -64,7 +65,7 @@ Finally, enter:
 rm -rf ~/anaconda3
 ```
 
-```
+````
 
 ### Install Anaconda
 
