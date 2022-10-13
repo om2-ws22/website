@@ -398,25 +398,8 @@ title="Print to PDF"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installation">
-     Installation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#use-conda-forge">
      Use conda-forge
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visual-studio-code">
-   Visual Studio Code
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Installation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -495,25 +478,8 @@ title="Print to PDF"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#installation">
-     Installation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#use-conda-forge">
      Use conda-forge
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visual-studio-code">
-   Visual Studio Code
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Installation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -573,31 +539,34 @@ title="Print to PDF"
 <hr class="docutils" />
 <section id="anaconda">
 <span id="id1"></span><h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">#</a></h2>
-<p>The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Anaconda is a data science toolkit which already includes most of the data science modules we need.</p>
-</div>
+<p>The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. It is a data science toolkit which already includes most of the data science modules we need.</p>
 <section id="uninstall-your-old-version">
 <h3>Uninstall your old version<a class="headerlink" href="#uninstall-your-old-version" title="Permalink to this headline">#</a></h3>
 <p>To avoid compatibility problems with older versions of Anaconda, I recommend to uninstall Anaconda and install the latest version.</p>
 <section id="windows">
 <h4>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">#</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
 <ol class="simple">
 <li><p>Open the file explorer.</p></li>
 <li><p>Delete your environment (anaconda3\envs) and package (anaconda3\pkgs) folders in your user folder.</p></li>
 <li><p>Open Add or remove programs and uninstall your Anaconda installation.</p></li>
 </ol>
+</div>
 </section>
 <section id="macos">
 <h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h4>
-<ol class="simple">
-<li><p>Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open your terminal</a>)</p></li>
-<li><p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>. If you are not sure where anaconda is installed, simply enter all commands:</p></li>
-</ol>
+<blockquote>
+<div><p>Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open your terminal</a>)</p>
+</div></blockquote>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
+<p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>.</p>
+<p>If you are not sure where anaconda is installed, simply enter all commands:</p>
 <p>First try the opt folder:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/opt/anaconda3
 </pre></div>
+</div>
 </div>
 <p>Then this location:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf anaconda3
@@ -607,17 +576,19 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/anaconda3
 </pre></div>
 </div>
-</section>
-</section>
-<section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h3>
-<p>Install the latest version of the Anaconda Individual Edition:</p>
-<div class="tip admonition">
-<p class="admonition-title">To do</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">💾 Anaconda installation</a></p></li>
-</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+### Install Anaconda
+
+Install the latest version of the Anaconda Individual Edition:
+
+```{admonition} To do
+:class: tip
+
+- [💾 Anaconda installation](https://www.anaconda.com/products/individual)
+
+</pre></div>
 </div>
+</section>
 </section>
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
@@ -628,38 +599,40 @@ title="Print to PDF"
 <blockquote>
 <div><p>On <em>macOS</em>: Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open your terminal</a>)</p>
 </div></blockquote>
+<br>
+<div class="tip admonition">
+<p class="admonition-title">To do</p>
 <p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
 </pre></div>
+</div>
 </div>
 <p>Then make <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> the priority channel:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --set channel_priority strict
 </pre></div>
 </div>
-<hr class="docutils" />
-</section>
-</section>
-<section id="visual-studio-code">
-<span id="vscode"></span><h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">#</a></h2>
-<p>Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.</p>
-</div>
-<section id="id2">
-<h3>Installation<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
-<p>Install VS Code:</p>
-<div class="tip admonition">
-<p class="admonition-title">To do</p>
-<ul class="simple">
-<li><p>💾 Install <a class="reference external" href="https://code.visualstudio.com/">VS Code</a></p></li>
-</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+---
+
+(vscode)=
+## Visual Studio Code 
+ 
+Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.
+
+
+### VS Code installation
+
+Install VS Code:
+
+```{admonition} To do
+:class: tip
+- 💾 Install [VS Code](https://code.visualstudio.com/)
+</pre></div>
 </div>
 </section>
 <section id="install-extensions">
 <h3>Install extensions<a class="headerlink" href="#install-extensions" title="Permalink to this headline">#</a></h3>
 <p>VS Code extensions let you add tools to your installation to support your development workflow.</p>
-<p>Let’s install some extensions:</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
