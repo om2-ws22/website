@@ -429,11 +429,6 @@ title="Print to PDF"
      Jupyter Notebook extension
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#optional-tutorials">
-     Optional tutorials
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -512,11 +507,6 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#jupyter-notebook-extension">
      Jupyter Notebook extension
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#optional-tutorials">
-     Optional tutorials
     </a>
    </li>
   </ul>
@@ -611,10 +601,12 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
 <p>Instead of the conda default package manager, we want to use the community-led alternative <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> to install Python modules.</p>
-<ul class="simple">
-<li><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p></li>
-<li><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p></li>
-</ul>
+<blockquote>
+<div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
+</div></blockquote>
+<blockquote>
+<div><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p>
+</div></blockquote>
 <p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
 </pre></div>
@@ -678,15 +670,6 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 </div>
 <p>If you can’t select a kernel (like the so called <code class="docutils literal notranslate"><span class="pre">base</span></code> kernel), try to close and restart VS Code once again.</p>
 </section>
-<section id="optional-tutorials">
-<h3>Optional tutorials<a class="headerlink" href="#optional-tutorials" title="Permalink to this headline">#</a></h3>
-<p>Here some optional resources to get familiar with VS Code:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/docs/getstarted/introvideos">Take a look at the intro videos</a></p></li>
-<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/data-science-tutorial">Data Science in VS Code tutorial</a></p></li>
-<li><p>Pro tips: <a class="reference external" href="https://www.youtube.com/watch?v=ifTF3ags0XI">25 VS Code Productivity Tips and Speed Hacks</a></p></li>
-</ul>
-</section>
 </section>
 <section id="git-and-github">
 <span id="github"></span><h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h2>
@@ -704,22 +687,29 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 <br>
-<p>To see if Git is already installed, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:</p>
+<br>
+<blockquote>
+<div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
+</div></blockquote>
+<blockquote>
+<div><p>On <em>macOS</em>: <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">Open a terminal</a></p>
+</div></blockquote>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git --version
 </pre></div>
 </div>
-<p>If you don’t see the version, you need to install Git (if you have macOS, the terminal may ask you if you want to install git - use this option to install it right away).</p>
+<p>If you don’t see the version, you need to install Git.</p>
+<p><em>If you have <strong>macOS</strong>, the terminal may ask you if you want to install Git. Use this option to install Git right away</em>.</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
 <li><p>💾 Mac:</p>
 <ul>
-<li><p>Option 1: Install Git in your terminal after you have typed git –version in your terminal</p></li>
+<li><p>Option 1: Install Git from your terminal after you have typed <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code> in your terminal</p></li>
 <li><p>Option 2: Install Apple’s <a class="reference external" href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">XCode</a>, which includes Git.</p></li>
-<li><p>Option 3: Install <a class="reference external" href="https://git-scm.com/download/mac">Git</a> with the help of homebrew.</p></li>
+<li><p>Option 3: Install <a class="reference external" href="https://git-scm.com/download/mac">Git with the help of homebrew</a>.</p></li>
 </ul>
 </li>
-<li><p>💾 Windows: <a class="reference external" href="https://git-scm.com/download/win">Install Git</a>. Follow <a class="reference external" href="https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html">these instructions</a> (during the installation process you are asked which editor you want to use - choose Visual Stuido Code)</p></li>
+<li><p>💾 Windows: <a class="reference external" href="https://git-scm.com/download/win">Download Git</a>. You can follow <a class="reference external" href="https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html">these instructions</a> to learn which options to choose during the installation process. When you are asked which editor you want to use, choose Visual Stuido Code)</p></li>
 </ul>
 </div>
 <p>You also need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
@@ -739,7 +729,7 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <li><p>go to our Moodle course</p></li>
 <li><p>locate the section “Assignments” -&gt; “Application Exercises”</p></li>
 <li><p>Open the page “Accept invitation to application exercises (AE)”</p></li>
-<li><p>Accept the application exercise “Nr. 1 …”</p></li>
+<li><p>Accept the first application exercise.</p></li>
 <li><p>On the following page, you need to select your HdM id to get membership in our GitHub Classroom course</p></li>
 </ol>
 </div>

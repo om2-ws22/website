@@ -89,9 +89,10 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules.
 
 
-- On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+> On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
 
-- On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
+
+> On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
 
 
 Type this in your terminal to add `conda-forge`:
@@ -173,18 +174,6 @@ Open a Juptyer Notebook in VS Code:
 If you can't select a kernel (like the so called `base` kernel), try to close and restart VS Code once again.
 
 
-### Optional tutorials
-
-Here some optional resources to get familiar with VS Code:
-
-- [Take a look at the intro videos](https://code.visualstudio.com/docs/getstarted/introvideos)
-
-- [Data Science in VS Code tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial)
-
-- Pro tips: [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
-
-
-
 
 (github)=
 ## Git and GitHub
@@ -207,26 +196,33 @@ We will use GitHub as a platform for web hosting and collaboration.
 
 <br>
 
+<br>
 
-To see if Git is already installed, you can go in the command line (on Windows), or in the terminal (on Mac) and type this command:
+> On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+
+
+> On *macOS*: [Open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
+
 
 ```bash
 git --version
 ```
 
-If you don't see the version, you need to install Git (if you have macOS, the terminal may ask you if you want to install git - use this option to install it right away).  
+If you don't see the version, you need to install Git. 
+
+*If you have **macOS**, the terminal may ask you if you want to install Git. Use this option to install Git right away*.  
 
 ```{admonition} To do
 :class: tip
 
 
 - 💾 Mac: 
-  - Option 1: Install Git in your terminal after you have typed git --version in your terminal
+  - Option 1: Install Git from your terminal after you have typed `git --version` in your terminal
   - Option 2: Install Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git. 
-  - Option 3: Install [Git](https://git-scm.com/download/mac) with the help of homebrew.
+  - Option 3: Install [Git with the help of homebrew](https://git-scm.com/download/mac).
 
 
-- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html) (during the installation process you are asked which editor you want to use - choose Visual Stuido Code)
+- 💾 Windows: [Download Git](https://git-scm.com/download/win). You can follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html) to learn which options to choose during the installation process. When you are asked which editor you want to use, choose Visual Stuido Code)
 
 
 ```
@@ -251,7 +247,7 @@ Next, we proceed in Moodle:
 1. go to our Moodle course
 2. locate the section "Assignments" -> "Application Exercises"
 3. Open the page "Accept invitation to application exercises (AE)" 
-4. Accept the application exercise "Nr. 1 ..."
+4. Accept the first application exercise.
 5. On the following page, you need to select your HdM id to get membership in our GitHub Classroom course
 
 ```
