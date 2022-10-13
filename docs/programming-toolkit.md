@@ -32,6 +32,8 @@ To avoid compatibility problems with older versions of Anaconda, I recommend to 
 1. Delete your environment (anaconda3\envs) and package (anaconda3\pkgs) folders in your user folder.
 1. Open Add or remove programs and uninstall your Anaconda installation.
 
+To learn more about how to uninstall Anaconda, take a look at [this page](https://docs.anaconda.com/anaconda/install/uninstall/).
+
 #### macOS
 
 1. [Open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
@@ -54,7 +56,8 @@ Finally, enter:
 rm -rf ~/anaconda3
 ```
 
-Close the terminal and proceed with the next step.
+To learn more about how to uninstall Anaconda, take a look at [this page](https://docs.anaconda.com/anaconda/install/uninstall/).
+
 
 ### Installation
 
@@ -69,7 +72,7 @@ Install the latest version of the Anaconda Individual Edition:
 
 
 <!--
-After you have installed Anaconda, open the "Anaconda Navigator" programm (if you see a pop-up with information about a new version of the Navigator, don't update it now):
+After you have installed Anaconda, open the "Anaconda Navigator" program (if you see a pop-up with information about a new version of the Navigator, don't update it now):
 
 1. Click on the tab `Environments` at the left of the menu
 2. Select the green button next to the `base (root)` environment
@@ -103,28 +106,6 @@ Then make `conda-forge` the priority channel:
 conda config --set channel_priority strict
 ```
 
-### Create a new environment
-
-Now you can install some modules in a new Anaconda environment. We call this new environment `webscraping`. 
-
-Copy this code and run it in your terminal: 
-
-```bash
-conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
-```
-
-Depending on your machine, the installation process may take a few minutes.
-
-
-(create-folder)=
-### Create a new folder for this course
-
-We also want to create a new folder called `big_data` for our course. In your terminal, type:
-
-
-```bash
-mkdir big_data
-```
 
 ---
 
@@ -233,19 +214,22 @@ To see if Git is already installed, you can go in the command line (on Windows),
 git --version
 ```
 
-If you don't see the version, you need to install Git
+If you don't see the version, you need to install Git (if you have macOS, the terminal may ask you if you want to install git - use this option to install it right away).  
 
 ```{admonition} To do
 :class: tip
 
 
-- 💾 Mac: Option 1: you can install Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git. Option 2: Only install [Git](https://git-scm.com/download/mac) (in that case I recommend to use homebrew)
+- 💾 Mac: 
+  - Option 1: Install Git in your terminal after you have typed git --version in your terminal
+  - Option 2: Install Apple's [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12), which includes Git. 
+  - Option 3: Install [Git](https://git-scm.com/download/mac) with the help of homebrew.
 
-- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html)
+
+- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html) (during the installation process you are asked which editor you want to use - choose Visual Stuido Code)
+
 
 ```
-
-
 
 
 You also need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
