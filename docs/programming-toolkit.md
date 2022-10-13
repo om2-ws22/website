@@ -222,7 +222,7 @@ If you don't see the version, you need to install Git.
   - Option 3: Install [Git with the help of homebrew](https://git-scm.com/download/mac).
 
 
-- 💾 Windows: [Install Git](https://git-scm.com/download/win). Follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html) (during the installation process you are asked which editor you want to use - choose Visual Stuido Code)
+- 💾 Windows: [Download Git](https://git-scm.com/download/win). You can follow [these instructions](https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html) to learn which options to choose during the installation process. When you are asked which editor you want to use, choose Visual Stuido Code)
 
 
 ```
