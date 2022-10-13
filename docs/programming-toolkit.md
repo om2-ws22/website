@@ -15,11 +15,7 @@ Please read the following instructions.
 (anaconda)=
 ## Anaconda
 
-The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. 
-
-:::{note}
-Anaconda is a data science toolkit which already includes most of the data science modules we need.
-:::
+The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. It is a data science toolkit which already includes most of the data science modules we need.
 
 
 ### Uninstall your old version
@@ -28,15 +24,28 @@ To avoid compatibility problems with older versions of Anaconda, I recommend to 
 
 #### Windows
 
+
+```{admonition} To do
+:class: tip
+
 1. Open the file explorer.
 1. Delete your environment (anaconda3\envs) and package (anaconda3\pkgs) folders in your user folder.
 1. Open Add or remove programs and uninstall your Anaconda installation.
 
+```
 
 #### macOS
 
-1. Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)) 
-1. Remove your entire Anaconda directory with `rm -rf`. If you are not sure where anaconda is installed, simply enter all commands:
+
+> Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
+
+
+```{admonition} To do
+:class: tip
+
+Remove your entire Anaconda directory with `rm -rf`. 
+
+If you are not sure where anaconda is installed, simply enter all commands:
 
 First try the opt folder:
 
@@ -55,8 +64,9 @@ Finally, enter:
 rm -rf ~/anaconda3
 ```
 
+```
 
-### Installation
+### Install Anaconda
 
 Install the latest version of the Anaconda Individual Edition:
 
@@ -79,6 +89,11 @@ Instead of the conda default package manager, we want to use the community-led a
 > On *macOS*: Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
 
 
+<br>
+
+```{admonition} To do
+:class: tip
+
 Type this in your terminal to add `conda-forge`:
 
 ```bash
@@ -91,21 +106,17 @@ Then make `conda-forge` the priority channel:
 conda config --set channel_priority strict
 ```
 
+```
 
 ---
 
 (vscode)=
 ## Visual Studio Code 
-
-
-Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. 
-
-:::{note}
+ 
 Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.
-:::
 
 
-### Installation
+### VS Code installation
 
 Install VS Code:
 
@@ -118,7 +129,6 @@ Install VS Code:
 
 VS Code extensions let you add tools to your installation to support your development workflow.
 
-Let's install some extensions:
 
 ```{admonition} To do
 :class: tip
