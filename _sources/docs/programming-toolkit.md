@@ -15,7 +15,7 @@ Please read the following instructions.
 (anaconda)=
 ## Anaconda
 
-The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. It already includes Python and the most important data science modules. 
+The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. 
 
 :::{note}
 Anaconda is a data science toolkit which already includes most of the data science modules we need.
@@ -35,8 +35,8 @@ To avoid compatibility problems with older versions of Anaconda, I recommend to 
 
 #### macOS
 
-1. Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/))open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) 
-1. Remove your entire Anaconda directory with `rm -rf`. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just remove Anaconda. 
+1. Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)) 
+1. Remove your entire Anaconda directory with `rm -rf`. If you are not sure where anaconda is installed, simply enter all commands:
 
 First try the opt folder:
 
@@ -55,8 +55,6 @@ Finally, enter:
 rm -rf ~/anaconda3
 ```
 
-To learn more about how to uninstall Anaconda, take a look at [this page](https://docs.anaconda.com/anaconda/install/uninstall/).
-
 
 ### Installation
 
@@ -70,19 +68,6 @@ Install the latest version of the Anaconda Individual Edition:
 ```
 
 
-<!--
-After you have installed Anaconda, open the "Anaconda Navigator" program (if you see a pop-up with information about a new version of the Navigator, don't update it now):
-
-1. Click on the tab `Environments` at the left of the menu
-2. Select the green button next to the `base (root)` environment
-3. Choose `Open Terminal`
-
-
-![](../_static/img/navigator.png)
-
--->
-
-
 ### Use conda-forge
 
 Instead of the conda default package manager, we want to use the community-led alternative `conda-forge` to install Python modules.
@@ -91,7 +76,7 @@ Instead of the conda default package manager, we want to use the community-led a
 > On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
 
 
-> On *macOS*: Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/))
+> On *macOS*: Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac))
 
 
 Type this in your terminal to add `conda-forge`:
@@ -113,7 +98,7 @@ conda config --set channel_priority strict
 ## Visual Studio Code 
 
 
-Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with a rich ecosystem of extensions for Python.
+Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. 
 
 :::{note}
 Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.
@@ -131,7 +116,7 @@ Install VS Code:
 
 ### Install extensions
 
-The features that Visual Studio Code includes out-of-the-box are just the start. VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow.
+VS Code extensions let you add tools to your installation to support your development workflow.
 
 Let's install some extensions:
 
@@ -176,9 +161,7 @@ Git is a version control system -- like the “Track Changes” features from Mi
 
 GitHub is a provider of internet hosting for software development and version control using Git. 
 
-:::{note}
-We will use GitHub as a platform for web hosting and collaboration.
-:::
+
 
 ### Install Git
 
@@ -187,17 +170,16 @@ We will use GitHub as a platform for web hosting and collaboration.
 > On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
 
 
-> On *macOS*: Open your terminal ([learn how to open your terminal](https://support.apple.com/guide/terminal/))
+> On *macOS*: Open your terminal.
 
-
+<br>
 
 ```bash
 git --version
 ```
 
-If you don't see the version, you need to install Git. 
+If you don't see the version, you need to install Git. *If you have **macOS**, the terminal may ask you if you want to install Git. Use this option to install Git right away*.  
 
-*If you have **macOS**, the terminal may ask you if you want to install Git. Use this option to install Git right away*.  
 
 ```{admonition} To do
 :class: tip
@@ -215,7 +197,7 @@ If you don't see the version, you need to install Git.
 ```
 
 
-### GitHub
+### GitHub account
 
 You also need a free GitHub-account for our course. Please follow the instructions below (*in case you already have a GitHub account: please add your HdM-email address to your account*):
 
@@ -224,31 +206,21 @@ You also need a free GitHub-account for our course. Please follow the instructio
 
 - [Create a free GitHub account with your HdM-email](https://github.com/join)
 - Verify your GitHub email
-- 💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
 - 💾 Install [GitHub Desktop](https://desktop.github.com/) to synchronize your machine with GitHub
 ```
 
-Next, we proceed in Moodle:
 
-```{admonition} To do
-:class: tip
-
-1. go to our Moodle course
-2. locate the section "Assignments" -> "Application Exercises"
-3. Open the page "Accept invitation to application exercises (AE)" 
-4. Accept the first application exercise.
-5. On the following page, you need to select your HdM id to get membership in our GitHub Classroom course
-
-```
+### VS Code GitHub extensions
 
 Before you install the next extension, make sure you have the following prerequisites:
 
 - An active GitHub account
-- Membership in our GitHub Classroom course
 - Git installed on your computer
 
 ```{admonition} To do
 :class: tip
+
+- 💾 Install the [VS Code GitHub extension](https://code.visualstudio.com/docs/editor/github)
 
 - 💾 Install the [VS Code GitHub Classroom extension](https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&ssr=false#overview)
 

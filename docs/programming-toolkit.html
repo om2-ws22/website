@@ -442,8 +442,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     GitHub
+    <a class="reference internal nav-link" href="#github-account">
+     GitHub account
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vs-code-github-extensions">
+     VS Code GitHub extensions
     </a>
    </li>
   </ul>
@@ -534,8 +539,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     GitHub
+    <a class="reference internal nav-link" href="#github-account">
+     GitHub account
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vs-code-github-extensions">
+     VS Code GitHub extensions
     </a>
    </li>
   </ul>
@@ -563,7 +573,7 @@ title="Print to PDF"
 <hr class="docutils" />
 <section id="anaconda">
 <span id="id1"></span><h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">#</a></h2>
-<p>The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects. It already includes Python and the most important data science modules.</p>
+<p>The open-source Anaconda Individual Edition is one of the easiest ways to get started with data science projects.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Anaconda is a data science toolkit which already includes most of the data science modules we need.</p>
@@ -582,8 +592,8 @@ title="Print to PDF"
 <section id="macos">
 <h4>macOS<a class="headerlink" href="#macos" title="Permalink to this headline">#</a></h4>
 <ol class="simple">
-<li><p>Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/">learn how to open your terminal</a>)open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)</p></li>
-<li><p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>. If you are not sure where anaconda is installed, simply enter all commands. Note that there will be no information printed in the terminal - it will just remove Anaconda.</p></li>
+<li><p>Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open your terminal</a>)</p></li>
+<li><p>Remove your entire Anaconda directory with <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code>. If you are not sure where anaconda is installed, simply enter all commands:</p></li>
 </ol>
 <p>First try the opt folder:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/opt/anaconda3
@@ -597,7 +607,6 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/anaconda3
 </pre></div>
 </div>
-<p>To learn more about how to uninstall Anaconda, take a look at <a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">this page</a>.</p>
 </section>
 </section>
 <section id="installation">
@@ -609,17 +618,6 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://www.anaconda.com/products/individual">💾 Anaconda installation</a></p></li>
 </ul>
 </div>
-<!--
-After you have installed Anaconda, open the "Anaconda Navigator" program (if you see a pop-up with information about a new version of the Navigator, don't update it now):
-
-1. Click on the tab `Environments` at the left of the menu
-2. Select the green button next to the `base (root)` environment
-3. Choose `Open Terminal`
-
-
-![](../_static/img/navigator.png)
-
--->
 </section>
 <section id="use-conda-forge">
 <h3>Use conda-forge<a class="headerlink" href="#use-conda-forge" title="Permalink to this headline">#</a></h3>
@@ -628,7 +626,7 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
 </div></blockquote>
 <blockquote>
-<div><p>On <em>macOS</em>: Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/">learn how to open your terminal</a>)</p>
+<div><p>On <em>macOS</em>: Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open your terminal</a>)</p>
 </div></blockquote>
 <p>Type this in your terminal to add <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda config --add channels conda-forge
@@ -643,7 +641,7 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 </section>
 <section id="visual-studio-code">
 <span id="vscode"></span><h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">#</a></h2>
-<p>Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with a rich ecosystem of extensions for Python.</p>
+<p>Visual Studio Code (also called Code) is a powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Visual Studio Code is a code editor that can be used with a variety of programming languages including Python.</p>
@@ -660,7 +658,7 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 </section>
 <section id="install-extensions">
 <h3>Install extensions<a class="headerlink" href="#install-extensions" title="Permalink to this headline">#</a></h3>
-<p>The features that Visual Studio Code includes out-of-the-box are just the start. VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow.</p>
+<p>VS Code extensions let you add tools to your installation to support your development workflow.</p>
 <p>Let’s install some extensions:</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
@@ -696,10 +694,6 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <span id="github"></span><h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">#</a></h2>
 <p>Git is a version control system – like the “Track Changes” features from Microsoft Word with many more additional features.</p>
 <p>GitHub is a provider of internet hosting for software development and version control using Git.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We will use GitHub as a platform for web hosting and collaboration.</p>
-</div>
 <section id="install-git">
 <h3>Install Git<a class="headerlink" href="#install-git" title="Permalink to this headline">#</a></h3>
 <br>
@@ -707,13 +701,13 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 <div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
 </div></blockquote>
 <blockquote>
-<div><p>On <em>macOS</em>: Open your terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/">learn how to open your terminal</a>)</p>
+<div><p>On <em>macOS</em>: Open your terminal.</p>
 </div></blockquote>
+<br>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git --version
 </pre></div>
 </div>
-<p>If you don’t see the version, you need to install Git.</p>
-<p><em>If you have <strong>macOS</strong>, the terminal may ask you if you want to install Git. Use this option to install Git right away</em>.</p>
+<p>If you don’t see the version, you need to install Git. <em>If you have <strong>macOS</strong>, the terminal may ask you if you want to install Git. Use this option to install Git right away</em>.</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
@@ -728,38 +722,29 @@ After you have installed Anaconda, open the "Anaconda Navigator" program (if you
 </ul>
 </div>
 </section>
-<section id="id3">
-<h3>GitHub<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<section id="github-account">
+<h3>GitHub account<a class="headerlink" href="#github-account" title="Permalink to this headline">#</a></h3>
 <p>You also need a free GitHub-account for our course. Please follow the instructions below (<em>in case you already have a GitHub account: please add your HdM-email address to your account</em>):</p>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/join">Create a free GitHub account with your HdM-email</a></p></li>
 <li><p>Verify your GitHub email</p></li>
-<li><p>💾 Install the <a class="reference external" href="https://code.visualstudio.com/docs/editor/github">VS Code GitHub extension</a></p></li>
 <li><p>💾 Install <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a> to synchronize your machine with GitHub</p></li>
 </ul>
 </div>
-<p>Next, we proceed in Moodle:</p>
-<div class="tip admonition">
-<p class="admonition-title">To do</p>
-<ol class="simple">
-<li><p>go to our Moodle course</p></li>
-<li><p>locate the section “Assignments” -&gt; “Application Exercises”</p></li>
-<li><p>Open the page “Accept invitation to application exercises (AE)”</p></li>
-<li><p>Accept the first application exercise.</p></li>
-<li><p>On the following page, you need to select your HdM id to get membership in our GitHub Classroom course</p></li>
-</ol>
-</div>
+</section>
+<section id="vs-code-github-extensions">
+<h3>VS Code GitHub extensions<a class="headerlink" href="#vs-code-github-extensions" title="Permalink to this headline">#</a></h3>
 <p>Before you install the next extension, make sure you have the following prerequisites:</p>
 <ul class="simple">
 <li><p>An active GitHub account</p></li>
-<li><p>Membership in our GitHub Classroom course</p></li>
 <li><p>Git installed on your computer</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">To do</p>
 <ul class="simple">
+<li><p>💾 Install the <a class="reference external" href="https://code.visualstudio.com/docs/editor/github">VS Code GitHub extension</a></p></li>
 <li><p>💾 Install the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.classroom&amp;ssr=false#overview">VS Code GitHub Classroom extension</a></p></li>
 </ul>
 </div>
