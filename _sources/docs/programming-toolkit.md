@@ -92,7 +92,7 @@ Instead of the conda default package manager, we want to use the community-led a
 
 <br>
 
-```{admonition} To do
+````{admonition} To do
 :class: tip
 
 Type this in your terminal to add `conda-forge`:
@@ -107,7 +107,7 @@ Then make `conda-forge` the priority channel:
 conda config --set channel_priority strict
 ```
 
-```
+````
 
 ---
 
@@ -185,9 +185,16 @@ GitHub is a provider of internet hosting for software development and version co
 
 <br>
 
+````{admonition} To do
+:class: tip
+
+Type this in your terminal:
+
 ```bash
 git --version
 ```
+
+````
 
 If you don't see the version, you need to install Git. *If you have **macOS**, the terminal may ask you if you want to install Git. Use this option to install Git right away*.  
 
