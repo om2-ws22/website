@@ -24,7 +24,7 @@ Anaconda is a data science toolkit which already includes most of the data scien
 
 ### Uninstall your old version
 
-To avoid compatibility problems with old versions of Anaconda, I recommend to uninstall Anaconda and install the latest version.
+To avoid compatibility problems with older versions of Anaconda, I recommend to uninstall Anaconda and install the latest version.
 
 #### Windows
 
