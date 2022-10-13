@@ -38,7 +38,7 @@ A notebook is basically a list of cells and the cells contain either
 Note that we will use Jupyter Notebook inside the coding editor Visual Studio Code or Google Colab.
 
 (colab)=
-### Colab
+## Colab
 
 Colaboratory, or “Colab” for short, is a free to use product from Google Research. Colab allows anybody to write and execute python code through the browser, and is especially well suited to perform data analysis and machine learning.
 
