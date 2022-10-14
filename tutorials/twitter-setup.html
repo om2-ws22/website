@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Week 3 &#8212; Big Data &amp; Web Analytics</title>
+    <title>Twitter setup &#8212; Big Data &amp; Web Analytics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -175,7 +175,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="weeks-overview.html">
+  <a class="reference internal" href="../weeks/weeks-overview.html">
    Overview
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -185,12 +185,12 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="week1.html">
+    <a class="reference internal" href="../weeks/week1.html">
      Week 1
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="week2.html">
+    <a class="reference internal" href="../weeks/week2.html">
      Week 2
     </a>
    </li>
@@ -286,7 +286,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fweeks/week3.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Ftutorials/twitter-setup.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -314,7 +314,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/weeks/week3.md"
+        <a href="../_sources/tutorials/twitter-setup.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -374,24 +374,41 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare">
-   Prepare
+  <a class="reference internal nav-link" href="#signing-up-with-twitter">
+   Signing up with Twitter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#participate">
-   Participate
+  <a class="reference internal nav-link" href="#developer-account">
+   Developer account
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#practice">
-   Practice
+  <a class="reference internal nav-link" href="#create-a-project-and-connect-an-app">
+   Create a Project and connect an App
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#perform">
-   Perform
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-new-project">
+     Create a new project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-an-app">
+     Create an App
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#api-keys-and-bearer-token">
+     API Keys and Bearer Token
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#access-token-and-access-token-secret">
+     Access token and access token secret
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -402,7 +419,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Week 3</h1>
+                <h1>Twitter setup</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -413,24 +430,41 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#prepare">
-   Prepare
+  <a class="reference internal nav-link" href="#signing-up-with-twitter">
+   Signing up with Twitter
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#participate">
-   Participate
+  <a class="reference internal nav-link" href="#developer-account">
+   Developer account
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#practice">
-   Practice
+  <a class="reference internal nav-link" href="#create-a-project-and-connect-an-app">
+   Create a Project and connect an App
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#perform">
-   Perform
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-a-new-project">
+     Create a new project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-an-app">
+     Create an App
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#api-keys-and-bearer-token">
+     API Keys and Bearer Token
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#access-token-and-access-token-secret">
+     Access token and access token secret
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -442,36 +476,59 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="week-3">
-<h1>Week 3<a class="headerlink" href="#week-3" title="Permalink to this headline">#</a></h1>
-<hr class="docutils" />
-<section id="prepare">
-<span id="id1"></span><h2>Prepare<a class="headerlink" href="#prepare" title="Permalink to this headline">#</a></h2>
-<p>None</p>
-<hr class="docutils" />
-<hr class="docutils" />
+  <section class="tex2jax_ignore mathjax_ignore" id="twitter-setup">
+<h1>Twitter setup<a class="headerlink" href="#twitter-setup" title="Permalink to this headline">#</a></h1>
+<p>In this tutorial, we’ll cover the setup to get started with the Twitter API v2.</p>
+<section id="signing-up-with-twitter">
+<h2>Signing up with Twitter<a class="headerlink" href="#signing-up-with-twitter" title="Permalink to this headline">#</a></h2>
+<p>In order to get started with the Twitter API, you need a Twitter account.</p>
+<p>If you do not have one yet, you can sign up for one: <a class="reference external" href="https://help.twitter.com/en/using-twitter/create-twitter-account">Twitter account</a></p>
 </section>
-<section id="participate">
-<span id="id2"></span><h2>Participate<a class="headerlink" href="#participate" title="Permalink to this headline">#</a></h2>
-<p><a class="reference internal" href="../tutorials/twitter-setup.html"><span class="doc std std-doc">Twitter setup tutorial</span></a></p>
 <hr class="docutils" />
-<p>Create a new Anaconda environment (we call it <code class="docutils literal notranslate"><span class="pre">twitter</span></code>):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 twitter pip tweepy pandas altair jupyter
-</pre></div>
+<section id="developer-account">
+<h2>Developer account<a class="headerlink" href="#developer-account" title="Permalink to this headline">#</a></h2>
+<p>Sign up for a developer account: <a class="reference external" href="https://developer.twitter.com/en/portal/petition/essential/basic-info">Twitter developer account</a>.</p>
+</section>
+<hr class="docutils" />
+<section id="create-a-project-and-connect-an-app">
+<h2>Create a Project and connect an App<a class="headerlink" href="#create-a-project-and-connect-an-app" title="Permalink to this headline">#</a></h2>
+<section id="create-a-new-project">
+<h3>Create a new project<a class="headerlink" href="#create-a-new-project" title="Permalink to this headline">#</a></h3>
+<p>Next, in the <a class="reference external" href="https://developer.twitter.com/en/portal/dashboard">developer portal</a>, create a new Project.</p>
+<p><img alt="" src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/new-project.png.twimg.1920.png" /></p>
+<p>Give it a name, select the appropriate use-case, provide a project description.</p>
+</section>
+<section id="create-an-app">
+<h3>Create an App<a class="headerlink" href="#create-an-app" title="Permalink to this headline">#</a></h3>
+<p>Click <code class="docutils literal notranslate"><span class="pre">‘create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">App</span> <span class="pre">instead’</span></code>.</p>
+<p><img alt="" src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/add-your-app-project.png.twimg.1920.png" /></p>
+<p>Give your App a name in order to create a new App.</p>
+<p><img alt="" src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/last-step-name-your-app.png.twimg.1920.png" /></p>
+<p>click on complete.</p>
+</section>
+<section id="api-keys-and-bearer-token">
+<h3>API Keys and Bearer Token<a class="headerlink" href="#api-keys-and-bearer-token" title="Permalink to this headline">#</a></h3>
+<p>Once you click complete, you will get your API Keys and the Bearer Token that you can then use to connect to the new endpoints in the Twitter API v2.</p>
+<p><img alt="" src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/here-are-your-keys.png.twimg.1920.png" /></p>
+<p>Click the (+) next to <em>API Key</em>, <em>API Secret Key</em> and <em>Bearer Token</em> and copy it in a safe place on your local machine.</p>
+<p>You will need these to make the API calls in the next tutorial.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note: The keys in the screenshot above are hidden, but in your own developer portal, you will be able to see the actual values for the API Key, API Secret Key and Bearer Token.</p>
 </div>
-<hr class="docutils" />
-<hr class="docutils" />
+<ul class="simple">
+<li><p><em>API Key and API secret key: Essentially the username and password for your App.</em></p></li>
+<li><p><em>Bearer token</em>: allows developers to have a more secure point of entry for using the Twitter APIs*</p></li>
+</ul>
 </section>
-<section id="practice">
-<span id="id3"></span><h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">#</a></h2>
-<hr class="docutils" />
-<hr class="docutils" />
+<section id="access-token-and-access-token-secret">
+<h3>Access token and access token secret<a class="headerlink" href="#access-token-and-access-token-secret" title="Permalink to this headline">#</a></h3>
+<p>Obtain the <em>access token</em> and <em>access token secret</em>: These can be generated in your <a class="reference external" href="https://developer.twitter.com/en/portal/projects-and-apps">developer portal</a>, under the <code class="docutils literal notranslate"><span class="pre">“Keys</span> <span class="pre">and</span> <span class="pre">tokens”</span></code> tab for your developer App.</p>
+<p>Add them to the file with your <em>API Key</em>, <em>API Secret Key</em> and <em>Bearer Token</em>.</p>
+<ul class="simple">
+<li><p><em>Access Token and access token secret: In general, Access Tokens represent the user that you are making the request on behalf of. The ones that you can generate via the developer portal represent the user that owns the App.</em></p></li>
+</ul>
 </section>
-<section id="perform">
-<span id="id4"></span><h2>Perform<a class="headerlink" href="#perform" title="Permalink to this headline">#</a></h2>
-<p>None</p>
-<hr class="docutils" />
-<p>Back to <a class="reference internal" href="../docs/course-schedule.html"><span class="doc std std-doc">course schedule</span></a> ⏎</p>
 </section>
 </section>
 
@@ -488,7 +545,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./weeks"
+            path: "./tutorials"
         },
         predefinedOutput: true
     }
