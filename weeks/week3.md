@@ -17,24 +17,8 @@ None
 ## Participate
 
 
-[Twitter setup tutorial](../tutorials/twitter-setup.md)
+Open this [Twitter setup tutorial](https://github.com/kirenz/twitter-tutorial) on GitHub.
 
----
-
-Create a new Anaconda environment (we call it `twitter`):
-
-```bash
-conda create -n twitter python=3.9 pip tweepy pandas altair jupyter
-```
-
-Activate the environment 
-
-```
-conda activate twitter
-```
-
-
----
 
 ---
 
