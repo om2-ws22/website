@@ -24,7 +24,13 @@ None
 Create a new Anaconda environment (we call it `twitter`):
 
 ```bash
-conda create -n python=3.9 twitter pip tweepy pandas altair jupyter
+conda create -n twitter python=3.9 pip tweepy pandas altair jupyter
+```
+
+Activate the environment 
+
+```
+conda activate twitter
 ```
 
 
