@@ -19,5 +19,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lecture	|	2	|	3	|	12.10.	|	HTML & CSS basics	|	[💾](../weeks/week2.md)	|	[📺 ⏯](https://kirenz.github.io/codelabs/codelabs/webscraping/#0)	|		|		|		|	
 |	Lecture	|	2	|	4	|	12.10.	|	Scraping quotes	|		|		|	[💻](../weeks/week2.md)	|		|		|	
 |	Lab	|	2	|	5	|	12.10.	|	Scraping quotes	|		|		|		|		|		|	
-|	Lecture	|	3	|	6	|	19.10.	|	Twitter API & Tweepy	|		|	[📁](../weeks/week3.md)	|		|		|		|	
+|	Lecture	|	3	|	6	|	19.10.	|	Twitter API & Tweepy	|		|	[📁](../weeks/week3.md)	|	[💻](../weeks/week3.md)	|		|		|	
 |	Lab	|	3	|	7	|	19.10.	|	Twitter API & Tweepy	|		|		|		|		|		|	
