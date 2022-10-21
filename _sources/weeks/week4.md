@@ -6,7 +6,7 @@
 (prepare)=
 ## Prepare
 
-None
+
 
 ---
 
@@ -17,7 +17,12 @@ None
 ## Participate
 
 
-Open this [Twitter setup tutorial](https://github.com/kirenz/twitter-tutorial) on GitHub.
+You will need to install three modules (nltk, worcloud and altair) in a Anaconda environment of your choice:
+
+
+```bash
+conda install nltk wordcloud altair
+```
 
 
 ---
@@ -28,7 +33,8 @@ Open this [Twitter setup tutorial](https://github.com/kirenz/twitter-tutorial) o
 (practice)=
 ## Practice
 
-💻 Application exercise: [Twitter API](../ae/ae-2-twitter-api.md)
+
+💻 Accept the invitation to application exercise Nr. 3 in Moodle: [💻 textmining](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=262127)
 
 
 ---
@@ -38,6 +44,7 @@ Open this [Twitter setup tutorial](https://github.com/kirenz/twitter-tutorial) o
 (perform)=
 ## Perform
 
+None
 
 ---
 
