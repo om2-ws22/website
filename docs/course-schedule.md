@@ -21,3 +21,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lab	|	2	|	5	|	12.10.	|	Scraping quotes	|		|		|		|		|		|	
 |	Lecture	|	3	|	6	|	19.10.	|	Twitter API & Tweepy	|		|	[📁](../weeks/week3.md)	|	[💻](../weeks/week3.md)	|		|		|	
 |	Lab	|	3	|	7	|	19.10.	|	Twitter API & Tweepy	|		|		|		|		|		|	
+|	Lecture	|	4	|	8	|	26.10.	|	Text Mining	|		|		|	[💻](../weeks/week4.md)	|		|		|	
+|	Lab	|	4	|	9	|	26.10.	|	Text Mining	|		|		|		|		|		|	
