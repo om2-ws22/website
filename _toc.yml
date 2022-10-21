@@ -21,3 +21,5 @@ parts:
       - file: weeks/week1.md
       - file: weeks/week2.md
       - file: weeks/week3.md
+      - file: weeks/week4.md
+   #   - file: weeks/week5.md      
