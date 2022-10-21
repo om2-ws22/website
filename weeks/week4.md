@@ -17,7 +17,7 @@
 ## Participate
 
 
-You will need to install three modules (nltk, worcdloud and altair) in a Anaconda environment of your choice:
+You will need to install three modules (nltk, wordcloud and altair) in a Anaconda environment of your choice:
 
 
 ```bash
