@@ -19,7 +19,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	1	|	05.10.	|	Introduction	|	[📑](https://drive.google.com/file/d/1-3Es_A6LagrLePe7okTchhp7iMQUTFgA/view?usp=sharing)	|	[📁](../weeks/week1.md)	|	
 |	2	|	12.10.	|	Web scraping	|	 - 	|	[📁](../weeks/week2.md)	|	
 |	3	|	19.10.	|	Web APIs	|	 - 	|	[📁](../weeks/week3.md)	|	
-|	4	|	26.10.	|	Text mining I	|		|		|	
+|	4	|	26.10.	|	Text mining I	|	 - 	|	[📁](../weeks/week4.md)	|	
 |	5	|	02.11.	|	Text mining II	|		|		|	
 |	6	|	09.11.	|	Data visualization	|		|		|	
 |	7	|	16.11.	|	Dashboards	|		|		|	
@@ -31,6 +31,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	13	|	11.01.	|	Web tracking II	|		|		|	
 |	14	|	18.01.	|	Web analytics I	|		|		|	
 |	15	|	25.01.	|	Web analytics II	|		|		|	
+											
 
 <br>
 <br>
