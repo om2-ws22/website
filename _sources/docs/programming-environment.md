@@ -1,6 +1,6 @@
-# Anaconda environments 
+# Anaconda environments
 
-## Webscraping
+## Create environment: webscraping
 
 
 We install some modules in a new Anaconda environment. We call this new environment `webscraping`. 
@@ -15,3 +15,13 @@ We install some modules in a new Anaconda environment. We call this new environm
 ```bash
 conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
 ```
+
+## How to select your environment
+
+In Visual Studio Code:
+
+1. [Create or open a Jupyter Notebook](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-or-open-a-jupyter-notebook)
+
+1. Next, select a kernel using the kernel picker in the top right (select the Anaconda environment)
+
+![](https://code.visualstudio.com/assets/docs/datascience/jupyter/native-kernel-picker.png)

@@ -274,7 +274,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fdocs/programming-environments.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fdocs/programming-environment.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -302,7 +302,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/docs/programming-environments.md"
+        <a href="../_sources/docs/programming-environment.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -362,8 +362,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#webscraping">
-   Webscraping
+  <a class="reference internal nav-link" href="#create-environment-webscraping">
+   Create environment: webscraping
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-select-your-environment">
+   How to select your environment
   </a>
  </li>
 </ul>
@@ -386,8 +391,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#webscraping">
-   Webscraping
+  <a class="reference internal nav-link" href="#create-environment-webscraping">
+   Create environment: webscraping
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-select-your-environment">
+   How to select your environment
   </a>
  </li>
 </ul>
@@ -402,8 +412,8 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="anaconda-environments">
 <h1>Anaconda environments<a class="headerlink" href="#anaconda-environments" title="Permalink to this headline">#</a></h1>
-<section id="webscraping">
-<h2>Webscraping<a class="headerlink" href="#webscraping" title="Permalink to this headline">#</a></h2>
+<section id="create-environment-webscraping">
+<h2>Create environment: webscraping<a class="headerlink" href="#create-environment-webscraping" title="Permalink to this headline">#</a></h2>
 <p>We install some modules in a new Anaconda environment. We call this new environment <code class="docutils literal notranslate"><span class="pre">webscraping</span></code>.</p>
 <blockquote>
 <div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
@@ -417,6 +427,15 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n webscraping <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
 </pre></div>
 </div>
+</section>
+<section id="how-to-select-your-environment">
+<h2>How to select your environment<a class="headerlink" href="#how-to-select-your-environment" title="Permalink to this headline">#</a></h2>
+<p>In Visual Studio Code:</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_create-or-open-a-jupyter-notebook">Create or open a Jupyter Notebook</a></p></li>
+<li><p>Next, select a kernel using the kernel picker in the top right (select the Anaconda environment)</p></li>
+</ol>
+<p><img alt="" src="https://code.visualstudio.com/assets/docs/datascience/jupyter/native-kernel-picker.png" /></p>
 </section>
 </section>
 
