@@ -7,7 +7,7 @@ We install some modules in a new Anaconda environment. We call this new environm
 
 > On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
 
-> On *macOS*: Open a terminal ([leran how to open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)) 
+> On *macOS*: Open a terminal ([learn how to open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)) 
 
 
 - Copy this code and run it in your terminal: 
