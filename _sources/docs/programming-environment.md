@@ -16,6 +16,12 @@ We install some modules in a new Anaconda environment. We call this new environm
 conda create -n webscraping python=3.9 requests pandas jupyter beautifulsoup4 altair matplotlib seaborn --y
 ```
 
+Activate the new environment:
+
+```bash
+conda activate webscraping
+```
+
 ## How to select your environment
 
 In Visual Studio Code:
