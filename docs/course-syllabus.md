@@ -182,7 +182,8 @@ The due dates for assignments are there to help you keep up with the course mate
 -   *Homeworks* may be submitted up to 3 days late.
     There will be a 25% deduction for each 24-hour period the assignment is late.
 
--   There is no late work accepted for *application exercises*, since these are designed to help you prepare for homeworks.
+-   *Application exercises* may be submitted up to 2 days late.
+    There will be a 10% deduction for each 24-hour period the assignment is late.
 
 -   There is no late work policy for *exams* (they need to be completed in a specific timeframe)
 
