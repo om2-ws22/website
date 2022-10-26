@@ -10,7 +10,7 @@ parts:
   - caption: Programming
     chapters:
     - file: docs/programming-toolkit.md
-    - file: dics/programming-environment.md
+    - file: docs/programming-environment.md
       sections:
       - file: docs/programming-fundamentals.md 
       - file: docs/programming-syntax.ipynb
