@@ -23,3 +23,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lab	|	3	|	7	|	19.10.	|	Twitter API & Tweepy	|		|		|		|		|		|	
 |	Lecture	|	4	|	8	|	26.10.	|	Text Mining	|		|		|	[💻](../weeks/week4.md)	|		|		|	
 |	Lab	|	4	|	9	|	26.10.	|	Text Mining	|		|		|		|		|		|	
+|	Lecture	|	5	|	10	|	02.11.	|	Introduction to Altair	|		|	[📁](../weeks/week5.md)	|		|		|		|	
+|	Lab	|	5	|	11	|	02.11.	|	Introduction to Altair	|		|		|		|		|		|	
