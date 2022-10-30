@@ -132,7 +132,7 @@ Move VS Code to the Applications ("Programme") folder after you have downloaded 
 Download ➜ Move to Applications ("Programme") folder ➜ Double Click
 
 ```
-
+  
 ### Install extensions
 
 VS Code extensions let you add tools to your installation to support your development workflow.
