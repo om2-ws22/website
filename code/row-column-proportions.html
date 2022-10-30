@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Code overview &#8212; Big Data &amp; Web Analytics</title>
+    <title>Row and column proportions &#8212; Big Data &amp; Web Analytics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -267,6 +267,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://colab.research.google.com/github/orgs/om2-ws22/blob/main/code/row-column-proportions.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -306,7 +335,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fcode/code-overview.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fcode/row-column-proportions.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -334,7 +363,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/code/code-overview.md"
+        <a href="../_sources/code/row-column-proportions.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -345,7 +374,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.md</span>
+<span class="headerbtn__text-container">.ipynb</span>
 </a>
 
       </li>
@@ -394,9 +423,31 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-5">
-   Week 5
+  <a class="reference internal nav-link" href="#setup">
+   Setup
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contingency-table-with-proportions">
+   Contingency table with proportions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#row-proportions">
+     Row proportions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#column-proportions">
+     Column proportions
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -407,7 +458,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Code overview</h1>
+                <h1>Row and column proportions</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -418,9 +469,31 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-5">
-   Week 5
+  <a class="reference internal nav-link" href="#setup">
+   Setup
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contingency-table-with-proportions">
+   Contingency table with proportions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#row-proportions">
+     Row proportions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#column-proportions">
+     Column proportions
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -432,19 +505,164 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="code-overview">
-<h1>Code overview<a class="headerlink" href="#code-overview" title="Permalink to this headline">#</a></h1>
-<section id="week-5">
-<h2>Week 5<a class="headerlink" href="#week-5" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p><a class="reference internal" href="bar-chart-altair.html"><span class="doc std std-doc">Simple bar chart</span></a></p></li>
-<li><p><span class="xref myst">Stacked bar plot</span></p></li>
-<li><p><a class="reference internal" href="pie-charts-altair.html"><span class="doc std std-doc">Pie chart</span></a></p></li>
-<li><p><a class="reference internal" href="contingency-table-bar-plot.html"><span class="doc std std-doc">Contingency tables</span></a></p></li>
-<li><p><a class="reference internal" href="row-column-proportions.html"><span class="doc std std-doc">Contingency tables with proportions</span></a></p></li>
-<li><p><a class="reference internal" href="altair_introduction_p.html"><span class="doc std std-doc">Introduction to Altair</span></a></p></li>
-</ol>
-<hr class="docutils" />
+  <section class="tex2jax_ignore mathjax_ignore" id="row-and-column-proportions">
+<h1>Row and column proportions<a class="headerlink" href="#row-and-column-proportions" title="Permalink to this headline">#</a></h1>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
+<span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">homeownership</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">application_type</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="contingency-table-with-proportions">
+<h2>Contingency table with proportions<a class="headerlink" href="#contingency-table-with-proportions" title="Permalink to this headline">#</a></h2>
+<p>Normalize by dividing all values by the sum of values:</p>
+<ul class="simple">
+<li><p>If passed ‘all’ or True, will normalize over all values.</p></li>
+<li><p>If passed ‘index’ will normalize over each row.</p></li>
+<li><p>If passed ‘columns’ will normalize over each column.</p></li>
+<li><p>If margins is True, will also normalize margin values.</p></li>
+</ul>
+<section id="row-proportions">
+<h3>Row proportions<a class="headerlink" href="#row-proportions" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">application_type</span>	<span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>homeownership</th>
+      <th>mortgage</th>
+      <th>own</th>
+      <th>rent</th>
+    </tr>
+    <tr>
+      <th>application_type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>individual</th>
+      <td>45.14</td>
+      <td>13.76</td>
+      <td>41.11</td>
+    </tr>
+    <tr>
+      <th>joint</th>
+      <td>63.55</td>
+      <td>12.24</td>
+      <td>24.21</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<ul class="simple">
+<li><p>0.411 corresponds to the proportion of individual applicants who rent.</p></li>
+</ul>
+</section>
+<section id="column-proportions">
+<h3>Column proportions<a class="headerlink" href="#column-proportions" title="Permalink to this headline">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">application_type</span>	<span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>homeownership</th>
+      <th>mortgage</th>
+      <th>own</th>
+      <th>rent</th>
+    </tr>
+    <tr>
+      <th>application_type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>individual</th>
+      <td>80.16</td>
+      <td>86.47</td>
+      <td>90.62</td>
+    </tr>
+    <tr>
+      <th>joint</th>
+      <td>19.84</td>
+      <td>13.53</td>
+      <td>9.38</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<ul class="simple">
+<li><p>The value 0.906 indicates that 90.6% of renters applied as individuals for the loan.</p></li>
+<li><p>This rate is higher compared to loans from people with mortgages (80.2%) or who own their home (86.5%)</p></li>
+</ul>
+</section>
 </section>
 </section>
 
