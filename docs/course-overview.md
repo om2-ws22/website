@@ -19,18 +19,18 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	1	|	05.10.	|	Introduction	|	[📑](https://drive.google.com/file/d/1-3Es_A6LagrLePe7okTchhp7iMQUTFgA/view?usp=sharing)	|	[📁](../weeks/week1.md)	|	
 |	2	|	12.10.	|	Web scraping	|	 - 	|	[📁](../weeks/week2.md)	|	
 |	3	|	19.10.	|	Web APIs	|	 - 	|	[📁](../weeks/week3.md)	|	
-|	4	|	26.10.	|	Text mining I	|	 - 	|	[📁](../weeks/week4.md)	|	
-|	5	|	02.11.	|	Text mining II	|		|		|	
-|	6	|	09.11.	|	Data visualization	|		|		|	
-|	7	|	16.11.	|	Dashboards	|		|		|	
-|	8	|	23.11.	|	Clustering	|		|		|	
-|	9	|	30.11.	|	Network analysis	|		|		|	
-|	10	|	07.12.	|	Web metrics	|		|		|	
-|	11	|	14.12.	|	Social media metrics	|		|		|	
-|	12	|	21.12.	|	Web tracking I	|		|		|	
-|	13	|	11.01.	|	Web tracking II	|		|		|	
-|	14	|	18.01.	|	Web analytics I	|		|		|	
-|	15	|	25.01.	|	Web analytics II	|		|		|	
+|	4	|	26.10.	|	Text mining	|	 - 	|	[📁](../weeks/week4.md)	|	
+|	5	|	02.11.	|	Data visualization	|	 - 	|	[📁](../weeks/week5.md)	|	
+|	6	|	09.11.	|	Dashboards	|		|		|	
+|	7	|	16.11.	|	Web metrics I	|		|		|	
+|	8	|	23.11.	|	Web metrics II	|		|		|	
+|	9	|	30.11.	|	Social media metrics	|		|		|	
+|	10	|	07.12.	|	Web tracking I	|		|		|	
+|	11	|	14.12.	|	Web tracking II	|		|		|	
+|	12	|	21.12.	|	Web analytics I	|		|		|	
+|	13	|	11.01.	|	Web analytics II	|		|		|	
+|	14	|	18.01.	|	Clustering	|		|		|	
+|	15	|	25.01.	|	Network analysis	|		|		|	
 											
 
 <br>
