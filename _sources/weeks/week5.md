@@ -17,7 +17,15 @@
 ## Participate
 
 
-None
+Advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.csv"
+
+---
+
+Code overview: [🖥](../code/code-overview.md)
+
+---
+
+[Altair documentation](https://altair-viz.github.io/)
 
 ---
 
@@ -28,7 +36,7 @@ None
 ## Practice
 
 
-Accept the invitation to application exercise Nr. 4 in Moodle: [💻 sentiment](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=262127)
+None
 
 
 ---
