@@ -5,7 +5,7 @@
 1. [Simple bar chart](../code/bar-chart-altair.ipynb)
 
 
-1. [Stacked bar plot](../code/15-stacked-bar-chart-altair.ipynb)
+1. [Stacked bar plot](../code/stacked-bar-chart-altair.ipynb)
 
 
 1. [Pie chart](../code/pie-charts-altair.ipynb)
