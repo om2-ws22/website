@@ -21,17 +21,17 @@
 
 ---
 
+Take a look at the [Altair example gallery](https://altair-viz.github.io/)
+
+---
+
+
 Code overview: [🖥](../code/code-overview.md)
 
+
+
+
 ---
-
-Take a look at the [Altair documentation](https://altair-viz.github.io/)
-
----
-
-
-Advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.csv"
-
 
 ---
 
@@ -40,7 +40,7 @@ Advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.cs
 ## Practice
 
 
-None
+Use this advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.csv" to create some visualizations.
 
 
 ---
