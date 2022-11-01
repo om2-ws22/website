@@ -525,7 +525,7 @@ title="Print to PDF"
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">___</span>
 </pre></div>
 </div>
 </div>
@@ -540,7 +540,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
 <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -551,8 +551,8 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change data format from object to category</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;___&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;___&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -566,18 +566,9 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># contingency table for application type and homeownership.</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">],</span> <span class="c1"># rows</span>
-            <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">],</span>    <span class="c1"># columns</span>
-            <span class="n">margins</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>          <span class="c1"># no total count</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">],</span> 
-            <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">],</span>    
-            <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>          <span class="c1"># total count</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">___</span><span class="p">,</span>    <span class="c1"># rows: application_type</span>
+            <span class="n">___</span><span class="p">,</span>    <span class="c1"># columns: homeownership</span>
+            <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>          <span class="c1"># with total count</span>
 </pre></div>
 </div>
 </div>

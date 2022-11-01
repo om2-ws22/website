@@ -511,7 +511,7 @@ title="Print to PDF"
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">___</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -524,7 +524,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
 <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+<span class="n">___</span>
 
 <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">application_type</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
@@ -546,8 +546,10 @@ title="Print to PDF"
 <h3>Row proportions<a class="headerlink" href="#row-proportions" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">application_type</span>	<span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A crosstab with row proportions for the application type and homeownership variables.</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span><span class="p">,</span> 
+            <span class="n">___</span><span class="p">,</span> 
+            <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -599,7 +601,7 @@ title="Print to PDF"
 </div></div></div>
 </div>
 <ul class="simple">
-<li><p>0.411 corresponds to the proportion of individual applicants who rent.</p></li>
+<li><p>0.411 corresponds to the proportion of individual applicants who ___.</p></li>
 </ul>
 </section>
 <section id="column-proportions">
@@ -607,7 +609,9 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A contingency table with row proportions for the application type and homeownership variables.</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">application_type</span>	<span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">___</span><span class="p">,</span> 
+            <span class="n">___</span><span class="p">,</span> 
+            <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">___</span><span class="p">)</span> <span class="o">*</span> <span class="n">___</span>
 </pre></div>
 </div>
 </div>
@@ -659,7 +663,7 @@ title="Print to PDF"
 </div></div></div>
 </div>
 <ul class="simple">
-<li><p>The value 0.906 indicates that 90.6% of renters applied as individuals for the loan.</p></li>
+<li><p>The value 0.906 indicates that 90.6% of renters applied as ___ for the loan.</p></li>
 <li><p>This rate is higher compared to loans from people with mortgages (80.2%) or who own their home (86.5%)</p></li>
 </ul>
 </section>

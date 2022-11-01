@@ -615,7 +615,7 @@ title="Print to PDF"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
 <span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">___</span> <span class="o">+</span> <span class="n">___</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -626,7 +626,7 @@ title="Print to PDF"
 <p>Display the dataframe with <code class="docutils literal notranslate"><span class="pre">df</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">___</span>
 </pre></div>
 </div>
 </div>
@@ -634,7 +634,7 @@ title="Print to PDF"
 <p>Show info</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">___</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -646,8 +646,8 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change data format from object to category</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;___&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;application_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;___&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -660,10 +660,10 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a list of variables you want to use</span>
-<span class="n">var_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;homeownership&#39;</span><span class="p">]</span>
+<span class="n">var_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;___&#39;</span><span class="p">]</span>
 
 <span class="c1"># create a new dataframe called source with only var_list</span>
-<span class="n">source</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">var_list</span><span class="p">]</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">___</span>
 </pre></div>
 </div>
 </div>
@@ -694,9 +694,9 @@ title="Print to PDF"
 <h3>Standard bar chart<a class="headerlink" href="#standard-bar-chart" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">),</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">___</span><span class="p">(</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="p">,</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -707,11 +707,13 @@ title="Print to PDF"
 <h3>Sorted bar chart<a class="headerlink" href="#sorted-bar-chart" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">,</span> 
-           <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;-y&#39;</span><span class="p">),</span> <span class="c1"># sort</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart</span> <span class="o">=</span> <span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">___</span><span class="p">(</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="p">,</span>
+        <span class="n">sort</span><span class="o">=</span><span class="n">___</span><span class="p">,</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">)</span>
 <span class="p">)</span>
+
+<span class="n">chart</span>
 </pre></div>
 </div>
 </div>
@@ -721,14 +723,10 @@ title="Print to PDF"
 <h3>Bar chart with properties<a class="headerlink" href="#bar-chart-with-properties" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">,</span>
-           <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;-y&#39;</span><span class="p">),</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">)</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span> <span class="c1"># properties</span>
-    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;This is a simple bar chart&#39;</span><span class="p">,</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">150</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span> 
+    <span class="n">title</span><span class="o">=</span> <span class="n">___</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span> <span class="n">___</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span> <span class="n">___</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -739,20 +737,22 @@ title="Print to PDF"
 <h3>Bar chart with custom axes<a class="headerlink" href="#bar-chart-with-custom-axes" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">,</span> 
-            <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;-y&#39;</span><span class="p">,</span>
-            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Homeownership&quot;</span><span class="p">,</span> <span class="c1"># title of x axis</span>
-                          <span class="n">labelAngle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="c1"># angle of x axis text</span>
-                          <span class="n">titleAnchor</span><span class="o">=</span><span class="s2">&quot;start&quot;</span><span class="p">)),</span> <span class="c1"># adjustment of text</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">,</span>              
-            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Count&quot;</span><span class="p">,</span>
-                          <span class="n">titleAnchor</span><span class="o">=</span><span class="s2">&quot;end&quot;</span><span class="p">))</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;This is a bar chart with custom axes&#39;</span><span class="p">,</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">150</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart2</span> <span class="o">=</span> <span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span><span class="p">)</span><span class="o">.</span><span class="n">___</span><span class="p">()</span><span class="o">.</span><span class="n">___</span><span class="p">(</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">,</span> 
+            <span class="n">sort</span><span class="o">=</span><span class="n">___</span><span class="p">,</span>
+            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;___&quot;</span><span class="p">,</span> <span class="c1"># title of x axis: Homeownership</span>
+                          <span class="n">labelAngle</span><span class="o">=</span><span class="n">___</span><span class="p">,</span> <span class="c1"># angle of x axis text: 0</span>
+                          <span class="n">titleAnchor</span><span class="o">=</span><span class="s2">&quot;___&quot;</span><span class="p">)),</span> <span class="c1"># adjustment of text: start</span>
+    <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">,</span>              
+            <span class="n">___</span><span class="o">=</span><span class="n">___</span><span class="o">.</span><span class="n">___</span><span class="p">(</span><span class="n">___</span> <span class="o">=</span> <span class="s2">&quot;___&quot;</span><span class="p">,</span> <span class="c1"># title: Count</span>
+                          <span class="n">___</span><span class="o">=</span><span class="s2">&quot;___&quot;</span><span class="p">))</span> <span class="c1"># titleAnchor:end</span>
+<span class="p">)</span><span class="o">.</span><span class="n">___</span><span class="p">(</span>
+    <span class="n">___</span><span class="o">=</span><span class="s1">&#39;This is a bar chart with custom axes&#39;</span><span class="p">,</span>
+    <span class="n">___</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+    <span class="n">___</span><span class="o">=</span><span class="mi">150</span>
 <span class="p">)</span>
+
+<span class="n">chart2</span>
 </pre></div>
 </div>
 </div>
@@ -762,20 +762,7 @@ title="Print to PDF"
 <h3>Bar chart with custom axes and title<a class="headerlink" href="#bar-chart-with-custom-axes-and-title" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;homeownership&#39;</span><span class="p">,</span>
-            <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;-y&#39;</span><span class="p">,</span>
-            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Homeownership&quot;</span><span class="p">,</span> 
-                          <span class="n">labelAngle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                          <span class="n">titleAnchor</span><span class="o">=</span><span class="s2">&quot;start&quot;</span><span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count(homeownership)&#39;</span><span class="p">,</span> 
-            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Count&quot;</span><span class="p">,</span>
-                          <span class="n">titleAnchor</span><span class="o">=</span><span class="s2">&quot;end&quot;</span><span class="p">))</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;This is a bar chart with custom axes and title&#39;</span><span class="p">,</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">150</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span> <span class="c1"># custom title</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart2</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span> <span class="c1"># custom title</span>
     <span class="n">fontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
     <span class="n">font</span><span class="o">=</span><span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
     <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
