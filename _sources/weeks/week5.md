@@ -17,7 +17,7 @@
 ## Participate
 
 
-Advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.csv"
+[From data to Viz](https://www.data-to-viz.com/) leads you to the most appropriate graph for your data.
 
 ---
 
@@ -25,9 +25,13 @@ Code overview: [🖥](../code/code-overview.md)
 
 ---
 
-[Altair documentation](https://altair-viz.github.io/)
+Take a look at the [Altair documentation](https://altair-viz.github.io/)
 
 ---
+
+
+Advertising data: "https://github.com/kirenz/datasets/blob/master/album_sales.csv"
+
 
 ---
 

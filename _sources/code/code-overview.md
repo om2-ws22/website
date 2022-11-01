@@ -2,6 +2,8 @@
 
 ## Week 5
 
+Create visualizations with Altair: 
+
 1. [Simple bar chart](../code/bar-chart-altair.ipynb)
 
 
@@ -18,5 +20,6 @@
 
 
 1. [Introduction to Altair](../code/altair_introduction_p.ipynb)
+
 
 ---
