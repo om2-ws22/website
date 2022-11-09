@@ -25,3 +25,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lab	|	4	|	9	|	26.10.	|	Text Mining	|		|		|		|		|		|	
 |	Lecture	|	5	|	10	|	02.11.	|	Introduction to Altair	|		|	[📁](../weeks/week5.md)	|		|		|		|	
 |	Lab	|	5	|	11	|	02.11.	|	Introduction to Altair	|		|		|		|		|		|	
+|	Lecture	|	6	|	12	|	09.11.	|	Dashboards (Streamlit)	|		|	[📁](../weeks/week6.md)	|		|	[HW 1](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=266397)	|		|	
+|	Lab	|	6	|	13	|	09.11.	|	Dashboards (Streamlit)	|		|		|		|		|		|	
