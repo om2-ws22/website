@@ -22,7 +22,7 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	4	|	26.10.	|	Text mining	|	 - 	|	[📁](../weeks/week4.md)	|	
 |	5	|	02.11.	|	Data visualization	|	 - 	|	[📁](../weeks/week5.md)	|	
 |	6	|	09.11.	|	Dashboards	|	 - 	|	[📁](../weeks/week6.md)	|	
-|	7	|	16.11.	|	Web metrics I	|		|		|	
+|	7	|	16.11.	|	Web metrics I	|	[📑](https://drive.google.com/file/d/1-aOfm8TauMIU2zWv8GMo_c_tD6UIV2Zc/view?usp=sharing)	|	[📁](../weeks/week7.md)	|	
 |	8	|	23.11.	|	Web metrics II	|		|		|	
 |	9	|	30.11.	|	Social media metrics	|		|		|	
 |	10	|	07.12.	|	Web tracking I	|		|		|	
