@@ -27,3 +27,7 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lab	|	5	|	11	|	02.11.	|	Introduction to Altair	|		|		|		|		|		|	
 |	Lecture	|	6	|	12	|	09.11.	|	Dashboards (Streamlit)	|		|	[📁](../weeks/week6.md)	|		|	[HW 1](https://e-learning.hdm-stuttgart.de/moodle/mod/page/view.php?id=266397)	|		|	
 |	Lab	|	6	|	13	|	09.11.	|	Dashboards (Streamlit)	|		|		|		|		|		|	
+|	Lecture	|	7	|	14	|	16.11.	|	Grundlagen Online Marketing	|		|	[📁](../weeks/week7.md)	|		|		|		|	
+|	Lecture	|	7	|	15	|	16.11.	|	See-Think-Do-Framework	|		|		|		|		|		|	
+|	Lab	|	7	|	16	|	16.11.	|	Fallstudie Werbeinventar	|		|		|		|		|		|	
+|	Lab	|	7	|	17	|	16.11.	|	Fallstudie Werbeinventar Lösung	|		|		|		|		|		|	
