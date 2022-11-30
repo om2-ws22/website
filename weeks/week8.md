@@ -36,7 +36,9 @@ Slides: [📑](https://drive.google.com/file/d/102ETVyf_u6osdgRJ2Fv6guipMjcXrmWM
 (practice)=
 ## Practice
 
+[Google Analytics 4 Skillshop (en)](https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics-4)
 
+[[Google Analytics 4 Skillshop (de)]](https://skillshop.exceedlms.com/student/catalog/list?category_ids=6433-google-analytics-4)
 
 ---
 
