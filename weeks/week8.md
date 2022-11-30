@@ -47,7 +47,7 @@ Slides: [📑](https://drive.google.com/file/d/102ETVyf_u6osdgRJ2Fv6guipMjcXrmWM
 (perform)=
 ## Perform
 
-📄 [Homework 2: Google Skill Shop > Google Analytics Certficate](https://skillshop.withgoogle.com/)
+📄 [Homework 2: Google Skill Shop > Google Analytics Certficate](https://skillshop.exceedlms.com/student/path/2945-google-analytics-individuelle-qualifikation?sid=0846bad4-551a-4990-8851-05b8fe467bc1&sid_i=0)
 
 ---
 
