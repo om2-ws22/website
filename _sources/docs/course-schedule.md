@@ -31,3 +31,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lecture	|	7	|	15	|	16.11.	|	See-Think-Do-Framework	|		|		|		|		|		|	
 |	Lab	|	7	|	16	|	16.11.	|	Fallstudie Werbeinventar	|		|		|		|		|		|	
 |	Lab	|	7	|	17	|	16.11.	|	Fallstudie Werbeinventar Lösung	|		|		|		|		|		|	
+|	Lecture	|	8	|	18	|	30.11.	|	Kennzahlensystem	|		|	[📁](../weeks/week8.md)	|		|		|		|	
+|	Lab	|	8	|	19	|	30.11.	|	Google Analytics	|		|		|		|		|		|	
