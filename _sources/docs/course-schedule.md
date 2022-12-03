@@ -33,3 +33,5 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lab	|	7	|	17	|	16.11.	|	Fallstudie Werbeinventar Lösung	|		|		|		|		|		|	
 |	Lecture	|	8	|	18	|	30.11.	|	Kennzahlensystem	|		|	[📁](../weeks/week8.md)	|		|		|		|	
 |	Lab	|	8	|	19	|	30.11.	|	Google Analytics	|		|		|		|		|		|	
+|	Lecture	|	9	|	20	|	07.12.	|	Facebook Kennzahlen	|		|	[📁](../weeks/week9.md)	|		|		|		|	
+|	Lab	|	9	|	21	|	07.12.	|	Fallstudie Facebook	|		|		|		|		|		|	
