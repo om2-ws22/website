@@ -16,7 +16,7 @@
 (participate)=
 ## Participate
 
-Slides: [📑](https://drive.google.com/file/d/1071T8Mn8Es6CXVMSbI_AWtG-VLG5gwZZ/view?usp=sharing)
+Slides: [📑](https://drive.google.com/file/d/10HTPJ7FPymm9zEiIbIhYCsHfpInh_kpo/view?usp=sharing)
 
 
 
