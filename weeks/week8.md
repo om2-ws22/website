@@ -38,7 +38,8 @@ Slides: [📑](https://drive.google.com/file/d/102ETVyf_u6osdgRJ2Fv6guipMjcXrmWM
 
 [Google Analytics 4 Skillshop (en)](https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics-4)
 
-[[Google Analytics 4 Skillshop (de)]](https://skillshop.exceedlms.com/student/catalog/list?category_ids=6433-google-analytics-4)
+
+[Google Analytics 4 Skillshop (de)](https://skillshop.exceedlms.com/student/catalog/list?category_ids=6433-google-analytics-4)
 
 ---
 
@@ -47,7 +48,7 @@ Slides: [📑](https://drive.google.com/file/d/102ETVyf_u6osdgRJ2Fv6guipMjcXrmWM
 (perform)=
 ## Perform
 
-📄 [Homework 2: Google Skill Shop > Google Analytics Certficate](https://skillshop.exceedlms.com/student/path/2945-google-analytics-individuelle-qualifikation?sid=0846bad4-551a-4990-8851-05b8fe467bc1&sid_i=0)
+📄 [Homework 2: Google Skill Shop > Google Analytics Certificate (für Fortgeschrittene)](https://skillshop.exceedlms.com/student/path/2945-google-analytics-individuelle-qualifikation?sid=0846bad4-551a-4990-8851-05b8fe467bc1&sid_i=0)
 
 ---
 
