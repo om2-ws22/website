@@ -57,16 +57,10 @@ Stellen Sie die Ergebnisse jeweils in einer Pivot-Übersicht dar (nennen Sie die
 
 - b) Die durchschnittlichen Beträge pro Plattform und die Standardabweichung für: 
     - Seiteninteraktion (EUR)
-    - „Gefällt mir“ für Seite (EUR)
     - Beitragskommentar (EUR)
     - Beitragsinteraktion (EUR)
-    - Kosten pro Beitragsreaktion (EUR)	
-    - Kosten pro geteiltem Beitrag (EUR)
     - CPC (Kosten pro Link-Klick) (EUR)	
-    - CPC (alle) (EUR)
     - Kosten pro individuellem Link-Klick (EUR)
-    - Kosten pro 1.000 erreichten Personen (EUR)	
-    - CPM (Kosten pro 1.000 Impressionen) (EUR)
     - Ausgegebener Betrag (EUR)
 
 - c) Informationen zu den Kennzahlen: "Link-Klicks", "individuellen Link-Klicks", "CTR (Link-Klickrate)", "Individuelle CTR (Link-Klickrate)" pro Plattform: 
