@@ -48,7 +48,7 @@ Analysieren Sie den Kampagnendatensatz "Facebook" ([Excel Daten](https://github.
 
 Stellen Sie die Ergebnisse jeweils in einer Pivot-Übersicht dar (nennen Sie die Reiter wie die Aufgabe: 4a, 4b, ...).
 
-Bei Aufgabe a): **Interpretieren** Sie die statistischen Kennzahlen (Minimum, ..., Standardabweichung) beispielhaft anhand einer Facebook-Kennzahl (bspw. Seiteninteraktion) mit Hilfe von Kommentaren unterhalb der Tabellen:
+Bei Aufgabe a): **Interpretieren** Sie die statistischen Kennzahlen (Minimum, ..., Standardabweichung) beispielhaft anhand einer Facebook-Kennzahl für eine Plattform (bspw. Seiteninteraktion bei Facebook) mit Hilfe von Kommentaren unterhalb der Tabellen:
 
 - a) Angabe pro Plattform: "Impressionen", "Seiteninteraktionen", "Reichweite", "Frequenz", "Klicks (alle)", CTR (alle)
     - Minimum 
