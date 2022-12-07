@@ -65,7 +65,7 @@ Bei Aufgabe a): **Interpretieren** Sie die statistischen Kennzahlen (Minimum, ..
     - Kosten pro individuellem Link-Klick (EUR)
     - Ausgegebener Betrag (EUR)
 
-- c) Informationen zu den Kennzahlen: "Link-Klicks", "individuellen Link-Klicks", "CTR (Link-Klickrate)", "Individuelle CTR (Link-Klickrate)" pro Plattform: 
+- c) Berechnung zu den Kennzahlen: "Link-Klicks", "individuellen Link-Klicks", "CTR (Link-Klickrate)", "Individuelle CTR (Link-Klickrate)" pro Plattform: 
     - Minimum 
     - Maximum
     - Summe
