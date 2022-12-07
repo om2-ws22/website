@@ -57,10 +57,10 @@ Bei Aufgabe a): **Interpretieren** Sie die statistischen Kennzahlen (Minimum, ..
     - Durchschnitt
     - Standardabweichung
 
-- b) Die durchschnittlichen Beträge pro Plattform und die Standardabweichung für: 
-    - Seiteninteraktion (EUR)
-    - Beitragskommentar (EUR)
-    - Beitragsinteraktion (EUR)
+- b) Die durchschnittlichen Beträge (Mittelwert) pro Plattform und die Standardabweichung für: 
+    - Kosten pro Seiteninteraktion (EUR)
+    - Kosten pro Beitragskommentar (EUR)
+    - Kosten pro Beitragsinteraktion (EUR)
     - CPC (Kosten pro Link-Klick) (EUR)	
     - Kosten pro individuellem Link-Klick (EUR)
     - Ausgegebener Betrag (EUR)
