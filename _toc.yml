@@ -28,3 +28,4 @@ parts:
       - file: weeks/week7.md         
       - file: weeks/week8.md
       - file: weeks/week9.md         
+      - file: weeks/week10.md         
