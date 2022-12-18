@@ -59,7 +59,7 @@ Assessment for the course is comprised of three components:
 
 - [application exercises](application-exercises)
 - [homework assignments](hw) 
-- [exams](exams)
+- [exam](exams)
 
 (application-exercises)=
 ### Application exercises
@@ -89,18 +89,18 @@ Homework must be completed in the provided Jupyter Notebooks in your course GitH
 
 
 (exams)=
-### Exams
+### Exam
 
-There will be two, "take-home", open-note exams in Moodle.
+There will be one, "take-home", open-note exam in Moodle.
 
-Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
+Through the exam you have the opportunity to demonstrate what you've learned in the course.
 
 
 :::{Note}
-The exams will focus on the conceptual understanding of the content
+The exam will focus on the conceptual understanding of the content
 :::
 
-More details about the exams will be given during the semester.
+More details about the exam will be given during the semester.
 
 
 ## Grading
@@ -111,8 +111,8 @@ The final course grade will be calculated as follows:
 |-----------------------|-----------------|
 | Application exercises | 20%             |
 | Homeworks             | 30%             |
-| Exam 01               | 25%             |
-| Exam 02               | 25%             |
+| Exam 01               | 50%             |
+
 
 The final grade will be determined based on the following thresholds:
 
@@ -185,7 +185,7 @@ The due dates for assignments are there to help you keep up with the course mate
 -   *Application exercises* may be submitted up to 2 days late.
     There will be a 10% deduction for each 24-hour period the assignment is late.
 
--   There is no late work policy for *exams* (they need to be completed in a specific timeframe)
+-   There is no late work policy for the *exam* (need to be completed in a specific timeframe)
 
 
 If there are important circumstances that prevent you from completing a lab or homework assignment by the stated due date, you may email me at [kirenz@hdm-stuttgart.de](mailto:kirenz@hdm-stuttgart.de) before the deadline.
