@@ -26,10 +26,10 @@ For a more detailed semester overview, take a look at the [course-schedule](../d
 |	8	|	30.11.	|	Web metrics II	|	[📑](https://drive.google.com/file/d/102ETVyf_u6osdgRJ2Fv6guipMjcXrmWM/view?usp=sharing)	|	[📁](../weeks/week8.md)	|	
 |	9	|	07.12.	|	Facebook and Instagram	|	[📑](https://drive.google.com/file/d/10HbFeze2pe48N-9jTg8Ffcxu1JYzDYEe/view?usp=sharing)	|	[📁](../weeks/week9.md)	|	
 |	10	|	14.12.	|	Social Media Metrics I	|	[📑](https://drive.google.com/file/d/10j_iwEcquhQMZtG3dFd1Hc8wmWpZKIkm/view?usp=sharing)	|	[📁](../weeks/week10.md)	|	
-|	11	|	21.12.	|	Social Media Metrics II	|		|		|	
-|	12	|	11.01.	|	Web analytics I	|		|		|	
-|	13	|	18.01.	|	Web analytics II	|		|		|	
-|	14	|	25.01.	|	Clustering	|		|		|	
+|	11	|	21.12.	|	Besprechungen	|		|		|	
+|	12	|	11.01.	|	Web Analytics I	|		|		|	
+|	13	|	18.01.	|	Web Analytics II	|		|		|	
+|	14	|	25.01.	|	Web Analytics III	|		|		|			
 
 <br>
 
