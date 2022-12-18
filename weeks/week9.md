@@ -42,7 +42,7 @@ Slides: [📑](https://drive.google.com/file/d/10HbFeze2pe48N-9jTg8Ffcxu1JYzDYEe
 ## Perform
 
 
-Social Media Analyse
+📄 **Homework 3: Facebook Ads**
 
 Analysieren Sie den Kampagnendatensatz "Facebook" ([Excel Daten](https://github.com/kirenz/bigdata/blob/main/cases/facebook/Facebook.xlsx)) mit Hilfe von Excel Pivot oder Google Pivot.
 
