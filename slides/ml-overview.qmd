@@ -1,0 +1,136 @@
+---
+title: Analytics & Machine Learning 
+subtitle: Overview
+author: Jan Kirenz
+format:
+  revealjs:
+    theme: default
+    transition: fade
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/logo.png
+    css: styles.css
+    footer: Big Data & Web Analytics | Jan Kirenz
+    incremental: true 
+#jupyter: python3
+---
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+
+## Machine Learning
+
+![](images/fig-1-2-patterns.png)
+
+
+## Machine Learning characteristics
+
+Machine learning is an approach to (1) learn (2) complex patterns from (3) existing data and use these patterns to make (4) predictions on (5) unseen data.
+
+
+## When to use Machine Learning
+
+- The system has the capacity to learn  
+
+- There are patterns to learn, and they are complex  
+
+- Data is available, or it’s possible to collect data
+
+- It's a predicitve problem
+
+- Unseen data shares patterns with the training data
+
+
+
+## Typical Machine Learning Use Cases
+
+- Recommender system   
+
+- Machine translation 
+
+- Computer vision
+
+- Chat bots
+
+## ML Use Cases: Booking.com
+
+{{< video https://www.youtube.com/embed/DEjyUkbVVHA width="1920" height="1080" >}}
+
+
+[150 Successful Machine Learning Models: 6 Lessons Learned at Booking.com](https://booking.ai/150-successful-machine-learning-models-6-lessons-learned-at-booking-com-681e09107bec)
+
+
+## Enterprise Machine Learning Use Cases
+
+- Fraud detection  
+
+- Price optimization
+
+- Customer acquisition
+
+- Churn prediction 
+
+- Customer service support
+
+- Brand monitoring (sentiment analysis)
+
+
+## State of AI
+
+[State of AI in 2022 by McKinsey & Company](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2022-and-a-half-decade-in-review#review)
+
+
+# Understanding Machine Learning Systems {background-color="#0ca37f"}
+
+## Different Stakeholders and requirements
+
+- Consider a mobile app that recommends restaurants to users. 
+- The app makes money by charging restaurants a 10% service fee on each order. 
+- This means that expensive orders give the app more money than cheap orders.
+
+
+## ML engineers
+
+Want a model that recommends restaurants that users will most likely order
+from, and they believe they can do so by using a more complex model with more
+data.
+
+## Sales team
+
+Wants a model that recommends the more expensive restaurants since these
+restaurants bring in more service fees.
+
+## Product team
+
+Notices that every increase in latency leads to a drop in orders through the
+service, so they want a model that can return the recommended restaurants in
+less than 100 milliseconds.
+
+
+## ML platform team
+
+As the traffic grows, this team has been woken up in the middle of the night
+because of problems with scaling their existing system, so they want to hold off
+on model updates to prioritize improving the ML platform.
+
+
+## Manager
+
+Wants to maximize the margin, and one way to achieve this might be to let go of
+the ML team.
+
+## Different Model Objectives
+
+- Model A: Recommending the restaurants that users are most likely to click on
+
+- Model B: Recommending the restaurants that will bring in the most money for the app
+
+- Which model should be deployed to the users?
+
+- Must-have vs nice-to-have requirements 

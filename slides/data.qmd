@@ -1,0 +1,515 @@
+---
+title: Big Data Fundamentals
+subtitle: Overview
+author: Jan Kirenz
+format:
+  revealjs:
+    theme: default
+    transition: fade
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/logo.png
+    css: slides.scss
+    footer: Big Data & Web Analytics | Jan Kirenz
+    incremental: true 
+#jupyter: python3
+---
+
+
+# Basics of Data Engineering
+
+*How to collect, process, store, retrieve, and process data*
+
+
+# Data sources {background-color="#0ca37f"}
+
+## Data Sources
+
+
+- User input data
+  - text, images, videos, uploaded files, etc.
+
+- Internal databases (services and applications)
+  - Inventory
+  - Customer relationship
+  - ... 
+
+- System-generated data
+  - Logs (tell you how the system is doing) 
+  - System outputs (like model predictions)
+
+- Third-party data
+
+:::{.notes}
+- Log everything you can (makes debugging easier)
+   - What exactly?
+   - How?
+   - How long?
+   - Privacy regulations?
+:::
+
+## Data Sources
+
+- First-party data
+  - Data that your company already collects about your users or customers S
+
+- Second-party data 
+  - Data collected by another company on their own customers that they make available to you, though you’ll probably have to pay for it
+  
+- Third-party data
+  - Companies collect data on the public who aren’t their direct customers
+
+
+# Data Formats {background-color="#0ca37f"}
+
+## Data Formats 
+
+- How do I store multimodal data, e.g., a sample that might contain both images and texts?
+
+- Where do I store my data so that it’s cheap and still fast to access?
+
+- How do I store complex models so that they can be loaded and run correctly on different hardware?
+
+## Data Formats
+
+- Store ("persist") data
+
+- Data serialization
+  - Converting data into a specific format
+
+- Format depends on how data will be used 
+  - Human readability
+  - Access patterns
+  - ...
+
+
+## Some common data formats
+
+| **Format** | **Binary/Text** | **Human-readable** | **Example** **use** **cases** |
+| ---------- | --------------- | ------------------ | ----------------------------- |
+| JSON       | Text            | Yes                | Everywhere                    |
+| _CSV_      | _Text_          | _Yes_              | _Everywhere_                  |
+| _Parquet_  | _Binary_        | _No_               | _Hadoop,_ _Amazon_ _Redshift_ |
+| Avro       | Binary primary  | No                 | Hadoop                        |
+| Protobuf   | Binary primary  | No                 | Google, TensorFlow (TFRecord) |
+| Pickle     | Binary          | No                 | Python, PyTorch serialization |
+
+
+## JSON
+
+```JSON
+{
+"firstName": "Boatie",
+"lastName": "McBoatFace",
+"isVibing": true,
+"age": 12,
+"address": {
+  "streetAddress": "12 Ocean Drive",
+  "city": "Port Royal",
+  "postalCode": "10021-3100"
+}
+}
+```
+
+ JSON (JavaScript Object Notation)
+  - Human-readable
+  - Key-value pair
+
+## Row-Major Versus Column-Major Format
+
+- CSV (comma-separated values) is row-major
+
+- Parquet is column-major
+
+![](images/data/fig-3-1-row-column.png)
+
+- Row-major formats
+  - better when you have to do a lot of writes
+
+- Column-major
+  - better when you have to do a lot of column-based reads.
+
+## NumPy vs pandas
+
+- pandas: built around DataFrame
+  - Column-major
+
+- NumPy: 
+  - Major order can be specified
+
+![](images/data/fig-3-2-pandas.png)
+
+
+## Text vs Binary Format
+
+  - **Text files**
+    - Plain text
+    - Human-readable
+    - Not very efficient
+    - E.g. CSV
+  
+  - **Binary format**
+    - Nontext (only 0s and 1s)
+    - Very compact
+    - Not human-readable
+    - E.g. Parquet files
+
+## Text vs Binary Format
+
+Store the number `1000000`
+
+- **Text file**
+  - 7 characters 
+  - Each character 1 byte
+  - 7 byte
+  
+- **Binary file** (as int32)
+  - 32 bits or 4 bytes
+
+## Text vs Binary Format
+
+- File with 17,654 rows and 10 columns
+  - CSV: 14 MB
+  - Parquet: 6 MB 
+
+- Parquet format is up to 2x faster to unload and consumes up to 6x less storage in Amazon S3, compared to text formats.
+
+
+# Data models {background-color="#0ca37f"}
+
+*Describe how data is represented*
+
+## Relational Models
+
+![](images/data/fig-3-4-relational.png)
+
+- Normalization
+  - Reduces data redundancy 
+  - Improves data integrity
+
+## Relational Models {.smaller}
+
+Initial book relation:
+
+| Title | Author| Format | Publisher | Country | Price |
+|--- | --- |  --- | --- | --- | --- |
+| Harry Potter | J.K. Rowling | Paperback | Banana Press | UK | $20 |
+| Harry Potter |J.K. Rowling | E-book  | Banana Press | UK | $10 |
+| Sherlock Holmes | Conan Doyle | Paperback | Guava Press | US |$30 |
+| The Hobbit | J.R.R. Tolkien | Paperback  | Banana Press | UK  | $30 |
+| Sherlock Holmes | Conan Doyle | Paperback | Guava Press | US | $15 |
+
+## Relational Models {.smaller}
+
+Updated book relation:
+
+| Title | Author| Format | Publisher ID  | Price |
+| --- | --- |  --- | --- | --- | --- |
+| Harry Potter | J.K. Rowling | Paperback | 1 | $20 |
+| Harry Potter |J.K. Rowling | E-book  | 1  | $10 |
+| Sherlock Holmes | Conan Doyle | Paperback | 2 |$30 |
+| The Hobbit | J.R.R. Tolkien | Paperback  | 1  | $30 |
+| Sherlock Holmes | Conan Doyle | Paperback | 2 | $15 |
+
+<br>
+
+| Publisher ID | Publisher | Country | 
+| --- | --- |  --- | 
+| 1 | Banana Press | UK |
+| 1 | Guava Press | US |
+
+- Downside: data is now spread across multiple relations
+
+## Relational Models
+
+- Data follows a predefined data model (schema)
+
+- Relational databases 
+  - PostgreSQL
+  - MySQL
+
+
+## Relational Models
+
+Ranking of the most popular relational database management systems worldwide, as of January 2022:
+
+![](images/data/fig-ranking-databases.png)
+
+Source: [Statista](https://www.statista.com/statistics/1131568/worldwide-popularity-ranking-relational-database-management-systems/)
+
+
+## Relational Model
+
+- Query language for relational databases
+
+- Structured query language (SQL)
+  - Declarative language
+
+- SQL queries can become quite long and complex
+
+
+## NoSQL
+
+- Not only SQL
+
+- Nonrelational models
+  - Document model
+  - Graph model (focus on relationships)
+
+
+## Document model
+
+- Usally based on JSON, XML or BSON (Binary JSON)
+
+- Each document has a unique key
+
+- No enforced schema
+
+- Better locality 
+  - All information can be stored in one document
+  - Content of each document is the priority
+
+- Less efficient to execute joins across documents
+
+## Graph model
+
+
+![](images/data/fig-3-5-graph.png)
+
+- Graph model
+  - Nodes 
+  - Edges represent the relationships between the nodes
+
+- Graph database
+  - Relationships between data items are the priority 
+
+## Structured vs Unstructured Data
+
+- Structured data 
+  - Follows a predefined data model (data schema)
+  - Easier to analyze
+  - Storage in data warehouse
+
+- Unstructured data
+  - Text, numbers, dates, images, audi etc.
+  - Predefined data schema not necessary
+  - Storage in data lake
+
+## Structured vs Unstructured Data
+
+| Structured data | Unstructured data |
+| Schema clearly defined  | Data doesn’t have to follow a schema |
+| Easy to search and analyze | Fast arrival |
+| Can only handle data with a specific schema | Can handle data from any source |
+| Schema changes will cause a lot of troubles | No need to worry about schema changes (yet), as the worry is shifted to the
+downstream applications that use this data |
+| Stored in data warehouses | Stored in data lakes | 
+
+# Data Storage Engines and Processing {background-color="#0ca37f"}
+
+
+## OLTP
+
+- Online *transaction* processing (OLTP)
+  - Online transactions
+  - Row-major
+  - Low latency and high availability important
+
+- ACID
+  - Atomicity (all or nothing)
+  - Consistency (follows certain rules)
+  - Isolation (multiple transactions)
+  - Durability
+
+## OLAP
+
+- Online *analytical* processing (OLAP)
+  - Column-major
+
+- OLTP and OLAP: Storage and processing is coupled
+
+## Data Storage Engines and Processing
+
+![](images/data/fig-3-6-olap.png)
+
+
+## Data Storage Engines and Processing
+
+*Today, we have transactional databases that can handle analytical queries and analytical
+databases that can handle transactional queries*
+
+- Decouple storage from processing
+  - Data stored in same place
+  - Processing layer on top
+
+- Google's BigQuery, Snowflwake, Terradata
+
+
+## Data Storage Engines and Processing
+
+- Online
+
+- Nearline
+
+- Offline
+
+## ETL: Extract, Transfom, and Load
+
+![](images/data/fig-3-7-ETL.png)
+
+- Data warehouse
+
+## ELT: Extract, Load, and eventually Transform
+
+- Data lake
+
+- Can be inefficient
+
+
+## Data warehouse + Data Lake = Data lakehouse
+
+- Structured data + unstructured data
+
+- Databricks lakehouse
+
+- Snowflake
+
+
+# Modes of Dataflow {background-color="#0ca37f"}
+
+## Modes of Dataflow
+
+Data passing through:
+
+- Databases
+
+- Services using requests (e.g., GET)
+  - REST (representational state transfer) API 
+  - RPC (remote procedure call) API 
+
+- Real-time transport
+  - e.g., Apache Kafka and Amazon Kinesis
+
+
+## Data Passing Through Databases
+
+- Problem of accessing
+
+- Easy but slow
+
+
+## Data Passing Through Services
+
+- Request-driven
+
+- Service-oriented architecture
+
+- Microservice architecture
+
+## Data Passing Through Services
+
+- Example Lyft
+
+- Driver management service
+  - Predicts how many drivers will be available in the next minute in a given area.
+
+- Ride management service
+  - Predicts how many rides will be requested in the next minute in a given area.
+
+- Price optimization service
+  - Predicts the optimal price for each ride. 
+
+
+## Data Passing Through Services
+
+
+![](images/data/fig-3-8-services.png)
+
+- Request-driven data passing is synchronous
+
+## Data Passing Through Real-Time Transport
+
+![](images/data/fig-3-9-broker.png)
+
+
+- Broker
+  - Coordinates data passing among services
+  - In-memory storage to broker data
+
+- Event-driven architecture
+  - Event: Data broadcast to a real-time transport
+  - Event bus: Real-time transport
+
+
+## Data Passing Through Real-Time Transport
+
+- pubsup (publish-subscribe)
+  - Service publishs to topic in a real-time transport
+  - Service can subscribe to topic and read events
+
+![](images/data/fig-3-10-pubsub.png)
+
+
+## Data Passing Through Real-Time Transport
+
+
+- message queue
+ - Responsible for getting a to the right consumers
+
+
+## Data Passing Through Real-Time Transport
+
+
+![](images/data/fig-3-11-kafka.png)
+
+
+## Batch Processing Versus Stream Processing
+
+- Historical data vs streaming data
+
+- Batch processing vs stream processing
+
+- Batch (static) features vs streaming (dynamic) features
+
+
+## Batch Processing Versus Stream Processing
+
+
+- Spark, MapReduce
+
+- Apache Flink, KSQL, Spark Streaming
+
+
+## Summary
+
+- Data sources (first, second and third party)
+
+- Data formats
+  - Row-major vs column-major
+  - Text vs binary 
+  - Structured vs unstructured 
+
+- Data models
+  - Relational
+  - Document
+  - Graph
+
+Data storage engines
+  - Data warehouse
+  - Data lake
+  - Graph database
+
+## Summary
+
+- Data processing
+  - Transactional vs analytical
+
+- Data passing through
+  - Databases
+  - Services
+  - Real-time-transport (Apache KAfka, RabbitMQ)
+
+- Batch and streaming data
+  - Static features vs dynamic features

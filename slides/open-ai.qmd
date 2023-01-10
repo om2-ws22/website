@@ -1,0 +1,61 @@
+---
+title: Machine Learning Applications 
+subtitle: Examples from OpenAI
+author: Jan Kirenz
+format:
+  revealjs:
+    theme: default
+    transition: fade
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    logo: images/logo.png
+    css: styles.css
+    footer: Big Data & Web Analytics | Jan Kirenz
+    incremental: true 
+#jupyter: python3
+---
+
+```{r}
+#| echo: false
+
+library(countdown)
+```
+
+
+## OpenAI {background-image="images/openai-hero.png"}
+
+<https://openai.com/>
+
+
+## DALL-E2
+
+{{< video https://www.youtube.com/embed/qTgPSKKjfVg width="900" height="800"  >}}
+
+
+
+## Creat an account at OpenAI 
+
+- Go to the website: <https://openai.com/api/>
+
+- Sign up
+
+
+
+## Text completion use case
+
+
+:::{.callout-tip}
+# Use case text completion 
+- User inputs some text as a prompt
+- A model will generate a text completion
+:::
+
+- Open the website: <https://beta.openai.com/overview>
+
+![](images/open-ai/welcome.png)
+
+- Select **Text completion**
+
+A good rule of thumb is to think about how you would write a word problem for a middle schooler to solve. 
