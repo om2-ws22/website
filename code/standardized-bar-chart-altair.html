@@ -512,12 +512,12 @@ title="Print to PDF"
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
-import altair as alt
-import warnings
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
 
-warnings.simplefilter(action=&#39;ignore&#39;, category=FutureWarning)
-alt.data_transformers.disable_max_rows()
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">disable_max_rows</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -527,13 +527,13 @@ alt.data_transformers.disable_max_rows()
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ROOT = &quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;
-DATA = &quot;loans.csv&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
+<span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
-df = pd.read_csv(ROOT + DATA)
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
 
-df.homeownership = df.homeownership.astype(&quot;category&quot;)
-df.application_type = df.application_type.astype(&quot;category&quot;)
+<span class="n">df</span><span class="o">.</span><span class="n">homeownership</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">application_type</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -543,14 +543,14 @@ df.application_type = df.application_type.astype(&quot;category&quot;)
 <h2>Chart<a class="headerlink" href="#chart" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_bar().encode(
-    x=___,
-    y= ___,
-            stack=&quot;normalize&quot;, 
-            sort=&quot;ascending&quot;, 
-            ,
-    color= ___
-    )
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">___</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span> <span class="n">___</span><span class="p">,</span>
+            <span class="n">stack</span><span class="o">=</span><span class="s2">&quot;normalize&quot;</span><span class="p">,</span> 
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;ascending&quot;</span><span class="p">,</span> 
+            <span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span> <span class="n">___</span>
+    <span class="p">)</span>
 </pre></div>
 </div>
 </div>

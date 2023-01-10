@@ -670,8 +670,8 @@ title="Print to PDF"
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
-import altair as alt
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
 </pre></div>
 </div>
 </div>
@@ -703,9 +703,9 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from vega_datasets import data  # import vega_datasets
-cars = data.cars()              # load cars data as a Pandas data frame
-cars.head()                     # display the first five rows
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vega_datasets</span> <span class="kn">import</span> <span class="n">data</span>  <span class="c1"># import vega_datasets</span>
+<span class="n">cars</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">cars</span><span class="p">()</span>              <span class="c1"># load cars data as a Pandas data frame</span>
+<span class="n">cars</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>                     <span class="c1"># display the first five rows</span>
 </pre></div>
 </div>
 </div>
@@ -809,7 +809,7 @@ cars.head()                     # display the first five rows
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.cars.url
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">cars</span><span class="o">.</span><span class="n">url</span>
 </pre></div>
 </div>
 </div>
@@ -824,7 +824,7 @@ cars.head()                     # display the first five rows
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>pd.read_json(data.cars.url).head() # load JSON data into a data frame
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">cars</span><span class="o">.</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1"># load JSON data into a data frame</span>
 </pre></div>
 </div>
 </div>
@@ -932,13 +932,13 @@ cars.head()                     # display the first five rows
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>df = pd.DataFrame({
-    &#39;city&#39;: [&#39;Seattle&#39;, &#39;Seattle&#39;, &#39;Seattle&#39;, &#39;New York&#39;, &#39;New York&#39;, &#39;New York&#39;, &#39;Chicago&#39;, &#39;Chicago&#39;, &#39;Chicago&#39;],
-    &#39;month&#39;: [&#39;Apr&#39;, &#39;Aug&#39;, &#39;Dec&#39;, &#39;Apr&#39;, &#39;Aug&#39;, &#39;Dec&#39;, &#39;Apr&#39;, &#39;Aug&#39;, &#39;Dec&#39;],
-    &#39;precip&#39;: [2.68, 0.87, 5.31, 3.94, 4.13, 3.58, 3.62, 3.98, 2.56]
-})
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Seattle&#39;</span><span class="p">,</span> <span class="s1">&#39;Seattle&#39;</span><span class="p">,</span> <span class="s1">&#39;Seattle&#39;</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">,</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;month&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;precip&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.68</span><span class="p">,</span> <span class="mf">0.87</span><span class="p">,</span> <span class="mf">5.31</span><span class="p">,</span> <span class="mf">3.94</span><span class="p">,</span> <span class="mf">4.13</span><span class="p">,</span> <span class="mf">3.58</span><span class="p">,</span> <span class="mf">3.62</span><span class="p">,</span> <span class="mf">3.98</span><span class="p">,</span> <span class="mf">2.56</span><span class="p">]</span>
+<span class="p">})</span>
 
-df
+<span class="n">df</span>
 </pre></div>
 </div>
 </div>
@@ -1034,7 +1034,7 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>chart = alt.Chart(df)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1060,7 +1060,7 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1131,9 +1131,9 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point().encode(
-  y=&#39;city&#39;,
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+  <span class="n">y</span><span class="o">=</span><span class="s1">&#39;city&#39;</span><span class="p">,</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1207,10 +1207,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point().encode(
-    x=&#39;precip&#39;,
-    y=&#39;city&#39;
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;precip&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;city&#39;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1284,10 +1284,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point().encode(
-    alt.X(&#39;precip&#39;),
-    alt.Y(&#39;city&#39;)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;precip&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1389,10 +1389,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point().encode(
-    x=&#39;average(precip)&#39;,
-    y=&#39;city&#39;
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;average(precip)&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;city&#39;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1472,10 +1472,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_bar().encode(
-    x=&#39;average(precip)&#39;,
-    y=&#39;city&#39;
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;average(precip)&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;city&#39;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1536,10 +1536,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_bar().encode(
-    x=&#39;city&#39;,
-    y=&#39;average(precip)&#39;
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;city&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;average(precip)&#39;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1605,10 +1605,10 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(df).mark_point(color=&#39;firebrick&#39;).encode(
-  alt.X(&#39;precip&#39;, scale=alt.Scale(type=&#39;log&#39;), axis=alt.Axis(title=&#39;Log-Scaled Values&#39;)),
-  alt.Y(&#39;city&#39;, axis=alt.Axis(title=&#39;Category&#39;)),
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;firebrick&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+  <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;precip&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Log-Scaled Values&#39;</span><span class="p">)),</span>
+  <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Category&#39;</span><span class="p">)),</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1674,10 +1674,10 @@ df
 <p>As a starting point, let’s plot the cars dataset in a line chart showing the average mileage by the year of manufacture:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(cars).mark_line().encode(
-    alt.X(&#39;Year&#39;),
-    alt.Y(&#39;average(Miles_per_Gallon)&#39;)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;average(Miles_per_Gallon)&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1745,17 +1745,17 @@ df
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>line = alt.Chart(cars).mark_line().encode(
-    alt.X(&#39;Year&#39;),
-    alt.Y(&#39;average(Miles_per_Gallon)&#39;)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">line</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;average(Miles_per_Gallon)&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 
-point = alt.Chart(cars).mark_circle().encode(
-    alt.X(&#39;Year&#39;),
-    alt.Y(&#39;average(Miles_per_Gallon)&#39;)
-)
+<span class="n">point</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;average(Miles_per_Gallon)&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 
-line + point
+<span class="n">line</span> <span class="o">+</span> <span class="n">point</span>
 </pre></div>
 </div>
 </div>
@@ -1822,12 +1822,12 @@ line + point
 <p>Rather than completely re-write a chart, we can start with the line chart, then invoke the <code class="docutils literal notranslate"><span class="pre">mark_point</span></code> method to generate a new chart definition with a different mark type:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>mpg = alt.Chart(cars).mark_line().encode(
-    alt.X(&#39;Year&#39;),
-    alt.Y(&#39;average(Miles_per_Gallon)&#39;)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mpg</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;average(Miles_per_Gallon)&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 
-mpg + mpg.mark_circle()
+<span class="n">mpg</span> <span class="o">+</span> <span class="n">mpg</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1896,12 +1896,12 @@ mpg + mpg.mark_circle()
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>hp = alt.Chart(cars).mark_line().encode(
-    alt.X(&#39;Year&#39;),
-    alt.Y(&#39;average(Horsepower)&#39;)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hp</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;average(Horsepower)&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 
-(mpg + mpg.mark_circle()) | (hp + hp.mark_circle())
+<span class="p">(</span><span class="n">mpg</span> <span class="o">+</span> <span class="n">mpg</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">())</span> <span class="o">|</span> <span class="p">(</span><span class="n">hp</span> <span class="o">+</span> <span class="n">hp</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -1976,11 +1976,11 @@ mpg + mpg.mark_circle()
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(cars).mark_point().encode(
-    x=&#39;Horsepower&#39;,
-    y=&#39;Miles_per_Gallon&#39;,
-    color=&#39;Origin&#39;,
-).interactive()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Horsepower&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Miles_per_Gallon&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Origin&#39;</span><span class="p">,</span>
+<span class="p">)</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2046,12 +2046,12 @@ mpg + mpg.mark_circle()
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>alt.Chart(cars).mark_point().encode(
-    x=&#39;Horsepower&#39;,
-    y=&#39;Miles_per_Gallon&#39;,
-    color=&#39;Origin&#39;,
-    tooltip=[&#39;Name&#39;, &#39;Origin&#39;] # show Name and Origin in a tooltip
-).interactive()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Horsepower&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Miles_per_Gallon&#39;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;Origin&#39;</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Origin&#39;</span><span class="p">]</span> <span class="c1"># show Name and Origin in a tooltip</span>
+<span class="p">)</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2125,38 +2125,38 @@ mpg + mpg.mark_circle()
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># create an interval selection over an x-axis encoding
-brush = alt.selection_interval(encodings=[&#39;x&#39;])
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create an interval selection over an x-axis encoding</span>
+<span class="n">brush</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">(</span><span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">])</span>
 
-# determine opacity based on brush
-opacity = alt.condition(brush, alt.value(0.9), alt.value(0.1))
+<span class="c1"># determine opacity based on brush</span>
+<span class="n">opacity</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">brush</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.9</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
 
-# an overview histogram of cars per year
-# add the interval brush to select cars over time
-overview = alt.Chart(cars).mark_bar().encode(
-    alt.X(&#39;Year:O&#39;, timeUnit=&#39;year&#39;, # extract year unit, treat as ordinal
-      axis=alt.Axis(title=None, labelAngle=0) # no title, no label angle
-    ),
-    alt.Y(&#39;count()&#39;, title=None), # counts, no axis title
-    opacity=opacity
-).add_selection(
-    brush      # add interval brush selection to the chart
-).properties(
-    width=400, # set the chart width to 400 pixels
-    height=50  # set the chart height to 50 pixels
-)
+<span class="c1"># an overview histogram of cars per year</span>
+<span class="c1"># add the interval brush to select cars over time</span>
+<span class="n">overview</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Year:O&#39;</span><span class="p">,</span> <span class="n">timeUnit</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="c1"># extract year unit, treat as ordinal</span>
+      <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">labelAngle</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># no title, no label angle</span>
+    <span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span> <span class="c1"># counts, no axis title</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span>
+<span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
+    <span class="n">brush</span>      <span class="c1"># add interval brush selection to the chart</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="c1"># set the chart width to 400 pixels</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">50</span>  <span class="c1"># set the chart height to 50 pixels</span>
+<span class="p">)</span>
 
-# a detail scatterplot of horsepower vs. mileage
-# modulate point opacity based on the brush selection
-detail = alt.Chart(cars).mark_point().encode(
-    alt.X(&#39;Horsepower&#39;),
-    alt.Y(&#39;Miles_per_Gallon&#39;),
-    # set opacity based on brush selection
-    opacity=opacity
-).properties(width=400) # set chart width to match the first chart
+<span class="c1"># a detail scatterplot of horsepower vs. mileage</span>
+<span class="c1"># modulate point opacity based on the brush selection</span>
+<span class="n">detail</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_point</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Horsepower&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Miles_per_Gallon&#39;</span><span class="p">),</span>
+    <span class="c1"># set opacity based on brush selection</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="n">opacity</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span> <span class="c1"># set chart width to match the first chart</span>
 
-# vertically concatenate (vconcat) charts using the &#39;&amp;&#39; operator
-overview &amp; detail
+<span class="c1"># vertically concatenate (vconcat) charts using the &#39;&amp;&#39; operator</span>
+<span class="n">overview</span> <span class="o">&amp;</span> <span class="n">detail</span>
 </pre></div>
 </div>
 </div>
@@ -2226,11 +2226,11 @@ overview &amp; detail
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>chart = alt.Chart(df).mark_bar().encode(
-    x=&#39;average(precip)&#39;,
-    y=&#39;city&#39;,
-)
-print(chart.to_json())
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;average(precip)&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;city&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chart</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -2316,8 +2316,8 @@ print(chart.to_json())
 <p>As we saw earlier, Altair’s shorthand syntax includes a way to specify the type of the field as well:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>x = alt.X(&#39;average(precip):Q&#39;)
-print(x.to_json())
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;average(precip):Q&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -2334,8 +2334,8 @@ print(x.to_json())
 <p>This short-hand is equivalent to spelling-out the attributes by name:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>x = alt.X(aggregate=&#39;average&#39;, field=&#39;precip&#39;, type=&#39;quantitative&#39;)
-print(x.to_json())
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">aggregate</span><span class="o">=</span><span class="s1">&#39;average&#39;</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="s1">&#39;precip&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;quantitative&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -2378,23 +2378,23 @@ print(x.to_json())
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;vis&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">vegaEmbed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"> </span><span class="cm">/* JSON output for your chart&#39;s specification */</span><span class="w"></span>
-<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">embedOpt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;mode&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;vega-lite&quot;</span><span class="p">};</span><span class="w"> </span><span class="cm">/* Options for the embedding */</span><span class="w"></span>
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">vegaEmbed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"> </span><span class="cm">/* JSON output for your chart&#39;s specification */</span>
+<span class="w">      </span><span class="kd">var</span><span class="w"> </span><span class="nx">embedOpt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;mode&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;vega-lite&quot;</span><span class="p">};</span><span class="w"> </span><span class="cm">/* Options for the embedding */</span>
 
-<span class="w">      </span><span class="kd">function</span><span class="w"> </span><span class="nx">showError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">){</span><span class="w"></span>
-<span class="w">          </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;&lt;div style=&quot;color:red;&quot;&gt;&#39;</span><span class="w"></span>
-<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;p&gt;JavaScript Error: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;/p&gt;&#39;</span><span class="w"></span>
-<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;p&gt;This usually means there&#39;s a typo in your chart specification. &quot;</span><span class="w"></span>
-<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;See the javascript console for the full traceback.&lt;/p&gt;&quot;</span><span class="w"></span>
-<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;/div&gt;&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="w">          </span><span class="k">throw</span><span class="w"> </span><span class="nx">error</span><span class="p">;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;vis&#39;</span><span class="p">);</span><span class="w"></span>
-<span class="w">      </span><span class="nx">vegaEmbed</span><span class="p">(</span><span class="s2">&quot;#vis&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">spec</span><span class="p">,</span><span class="w"> </span><span class="nx">embedOpt</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">showError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span><span class="w"></span>
-<span class="w">    </span><span class="p">})(</span><span class="nx">vegaEmbed</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="kd">function</span><span class="w"> </span><span class="nx">showError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">){</span>
+<span class="w">          </span><span class="nx">el</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;&lt;div style=&quot;color:red;&quot;&gt;&#39;</span>
+<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;p&gt;JavaScript Error: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;/p&gt;&#39;</span>
+<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;p&gt;This usually means there&#39;s a typo in your chart specification. &quot;</span>
+<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;See the javascript console for the full traceback.&lt;/p&gt;&quot;</span>
+<span class="w">                          </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;/div&gt;&#39;</span><span class="p">);</span>
+<span class="w">          </span><span class="k">throw</span><span class="w"> </span><span class="nx">error</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;vis&#39;</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">vegaEmbed</span><span class="p">(</span><span class="s2">&quot;#vis&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">spec</span><span class="p">,</span><span class="w"> </span><span class="nx">embedOpt</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">showError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+<span class="w">    </span><span class="p">})(</span><span class="nx">vegaEmbed</span><span class="p">);</span>
 <span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>

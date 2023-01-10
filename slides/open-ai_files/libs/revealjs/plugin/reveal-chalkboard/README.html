@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Chalkboard &#8212; Big Data &amp; Web Analytics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../../_static/jquery.js"></script>
+    <script src="../../../../../../_static/underscore.js"></script>
+    <script src="../../../../../../_static/doctools.js"></script>
+    <script src="../../../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../../../_static/copybutton.js"></script>
+    <script src="../../../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../../../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Big Data & Web Analytics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../../../../docs/course-overview.html">
+                    Course overview
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Course information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../docs/course-schedule.html">
+   Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../docs/course-syllabus.html">
+   Course syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../docs/course-support.html">
+   Course support
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Programming
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../../../docs/programming-toolkit.html">
+   Programming toolkit
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../../docs/programming-environment.html">
+   Anaconda environments
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../docs/programming-fundamentals.html">
+     Fundamentals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../docs/programming-syntax.html">
+     Python Syntax
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../docs/programming-semantics.html">
+     Python Semantics
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Weekly materials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../../../weeks/weeks-overview.html">
+   Overview
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week1.html">
+     Week 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week2.html">
+     Week 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week3.html">
+     Week 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week4.html">
+     Week 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week5.html">
+     Week 5
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week6.html">
+     Week 6
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week7.html">
+     Week 7
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week8.html">
+     Week 8
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week9.html">
+     Week 9
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../../../weeks/week10.html">
+     Week 10
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/orgs/om2-ws22/repositories"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fslides/open-ai_files/libs/revealjs/plugin/reveal-chalkboard/README.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../../../_sources/slides/open-ai_files/libs/revealjs/plugin/reveal-chalkboard/README.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage">
+   Usage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mouse-or-touch">
+     Mouse or touch
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keyboard">
+     Keyboard
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#playback">
+   Playback
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplexing">
+   Multiplexing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdf-export">
+   PDF-Export
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Chalkboard</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage">
+   Usage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mouse-or-touch">
+     Mouse or touch
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keyboard">
+     Keyboard
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#playback">
+   Playback
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiplexing">
+   Multiplexing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pdf-export">
+   PDF-Export
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   License
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="chalkboard">
+<h1>Chalkboard<a class="headerlink" href="#chalkboard" title="Permalink to this headline">#</a></h1>
+<p>With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:</p>
+<ul class="simple">
+<li><p>you can make notes directly on the slides, e.g. to comment on certain aspects,</p></li>
+<li><p>you can open a chalkboard or whiteboard on which you can make notes.</p></li>
+</ul>
+<p>The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</p>
+<p>The plugin records all drawings made so that they can be play backed using the <code class="docutils literal notranslate"><span class="pre">autoSlide</span></code> feature or the <code class="docutils literal notranslate"><span class="pre">audio-slideshow</span></code> plugin.</p>
+<p><a class="reference external" href="https://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html">Check out the live demo</a></p>
+<p>The chalkboard effect is based on <a class="reference external" href="https://github.com/mmoustafa/Chalkboard">Chalkboard</a> by Mohamed Moustafa.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
+<p>Copy the file <code class="docutils literal notranslate"><span class="pre">plugin.js</span></code> and the  <code class="docutils literal notranslate"><span class="pre">img</span></code> directory into the plugin folder of your reveal.js presentation, i.e. <code class="docutils literal notranslate"><span class="pre">plugin/chalkboard</span></code> and load the plugin as shown below.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;plugin/chalkboard/plugin.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;plugin/customcontrols/plugin.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="nx">Reveal</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span>
+<span class="w">        </span><span class="c1">// ...</span>
+<span class="w">        </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nx">RevealChalkboard</span><span class="p">,</span><span class="w"> </span><span class="nx">RevealCustomControls</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="c1">// ...</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>The following stylesheet</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;plugin/chalkboard/style.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;plugin/customcontrols/style.css&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>has to be included to the <code class="docutils literal notranslate"><span class="pre">head</span></code> section of you HTML-file.</p>
+<p>In order to include buttons for opening and closing the notes canvas or the chalkboard you should make sure that <code class="docutils literal notranslate"><span class="pre">font-awesome</span></code> is available. The easiest way is to include</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>to the <code class="docutils literal notranslate"><span class="pre">head</span></code> section of you HTML-file.</p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h2>
+<section id="mouse-or-touch">
+<h3>Mouse or touch<a class="headerlink" href="#mouse-or-touch" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Click on the pen symbols at the bottom left to toggle the notes canvas or chalkboard</p></li>
+<li><p>Click on the color picker at the left to change the color (the color picker is only visible if the notes canvas or chalkboard is active)</p></li>
+<li><p>Click on the up/down arrows on the left to the switch among multiple chalkboardd (the up/down arrows are only available for the chlakboard)</p></li>
+<li><p>Click the left mouse button and drag to write on notes canvas or chalkboard</p></li>
+<li><p>Click the right mouse button and drag to wipe away previous drawings</p></li>
+<li><p>Touch and move to write on notes canvas or chalkboard</p></li>
+<li><p>Touch and hold for half a second, then move to wipe away previous drawings</p></li>
+</ul>
+</section>
+<section id="keyboard">
+<h3>Keyboard<a class="headerlink" href="#keyboard" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Press the ‘BACKSPACE’ key to delete all chalkboard drawings</p></li>
+<li><p>Press the ‘DEL’ key to clear the notes canvas or chalkboard</p></li>
+<li><p>Press the ‘c’ key to toggle the notes canvas</p></li>
+<li><p>Press the ‘b’ key to toggle the chalkboard</p></li>
+<li><p>Press the ‘d’ key to download drawings</p></li>
+<li><p>Press the ‘x’ key to cycle colors forward</p></li>
+<li><p>Press the ‘y’ key to cycle colors backward</p></li>
+</ul>
+</section>
+</section>
+<section id="playback">
+<h2>Playback<a class="headerlink" href="#playback" title="Permalink to this headline">#</a></h2>
+<p>If the <code class="docutils literal notranslate"><span class="pre">autoSlide</span></code> feature is set or if the <code class="docutils literal notranslate"><span class="pre">audio-slideshow</span></code> plugin is used, pre-recorded chalkboard drawings can be played. The slideshow plays back the user interaction with the chalkboard in the same way as it was conducted when recording the data.</p>
+</section>
+<section id="multiplexing">
+<h2>Multiplexing<a class="headerlink" href="#multiplexing" title="Permalink to this headline">#</a></h2>
+<p>The plugin supports multiplexing via the <a class="reference external" href="https://github.com/reveal/multiplex"><code class="docutils literal notranslate"><span class="pre">multiplex</span></code> plugin</a> or the <a class="reference external" href="https://github.com/rajgoel/reveal.js-plugins/tree/master/seminar"><code class="docutils literal notranslate"><span class="pre">seminar</span></code> plugin</a>.</p>
+</section>
+<section id="pdf-export">
+<h2>PDF-Export<a class="headerlink" href="#pdf-export" title="Permalink to this headline">#</a></h2>
+<p>If the slideshow is opened in <a class="reference external" href="https://revealjs.com/pdf-export/">print mode</a>, the chalkboard drawings in the session storage (see <code class="docutils literal notranslate"><span class="pre">storage</span></code> option - print version must be opened in the same tab or window as the original slideshow) or provided in a file (see <code class="docutils literal notranslate"><span class="pre">src</span></code> option) are included in the PDF-file. Each drawing on the chalkboard is added after the slide that was shown when opening the chalkboard. Drawings on the notes canvas are not included in the PDF-file.</p>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">#</a></h2>
+<p>The plugin has several configuration options:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">boardmarkerWidth</span></code>: an integer, the drawing width of the boardmarker; larger values draw thicker lines.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chalkWidth</span></code>: an integer, the drawing width of the chalk; larger values draw thicker lines.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chalkEffect</span></code>: a float in the range <code class="docutils literal notranslate"><span class="pre">[0.0,</span> <span class="pre">1.0]</span></code>, the intesity of the chalk effect on the chalk board. Full effect (default) <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, no effect <code class="docutils literal notranslate"><span class="pre">0.0</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">storage</span></code>: Optional variable name for session storage of drawings.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src</span></code>: Optional filename for pre-recorded drawings.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">readOnly</span></code>: Configuation option allowing to prevent changes to existing drawings. If set to <code class="docutils literal notranslate"><span class="pre">true</span></code> no changes can be made, if set to false <code class="docutils literal notranslate"><span class="pre">false</span></code> changes can be made, if unset or set to <code class="docutils literal notranslate"><span class="pre">undefined</span></code> no changes to the drawings can be made after returning to a slide or fragment for which drawings had been recorded before. In any case the recorded drawings for a slide or fragment can be cleared by pressing the ‘DEL’ key (i.e. by using the <code class="docutils literal notranslate"><span class="pre">RevealChalkboard.clear()</span></code> function).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transition</span></code>: Gives the duration (in milliseconds) of the transition for a slide change, so that the notes canvas is drawn after the transition is completed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">theme</span></code>: Can be set to either <code class="docutils literal notranslate"><span class="pre">&quot;chalkboard&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;whiteboard&quot;</span></code>.</p></li>
+</ul>
+<p>The following configuration options allow to change the appearance of the notes canvas and the chalkboard. All of these options require two values, the first gives the value for the notes canvas, the second for the chalkboard.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">background</span></code>: The first value expects a (semi-)transparent color which is used to provide visual feedback that the notes canvas is enabled, the second value expects a filename to a background image for the chalkboard.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">grid</span></code>: By default whiteboard and chalkboard themes include a grid pattern on the background. This pattern can be modified by setting the color, the distance between lines, and the line width, e.g. <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">color:</span> <span class="pre">'rgb(127,127,255,0.1)',</span> <span class="pre">distance:</span> <span class="pre">40,</span> <span class="pre">width:</span> <span class="pre">2}</span></code>. Alternatively, the grid can be removed by setting the value to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eraser</span></code>: An image path and radius for the eraser.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boardmarkers</span></code>: A list of boardmarkers with given color and cursor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chalks</span></code>: A list of chalks with given color and cursor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rememberColor</span></code>: Whether to remember the last selected color for the slide canvas or the board.</p></li>
+</ul>
+<p>All of the configurations are optional and the default values shown below are used if the options are not provided.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">Reveal</span><span class="p">.</span><span class="nx">initialize</span><span class="p">({</span>
+<span class="w">	</span><span class="c1">// ...</span>
+<span class="w">    </span><span class="nx">chalkboard</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">boardmarkerWidth</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">chalkWidth</span><span class="o">:</span><span class="w"> </span><span class="mf">7</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">chalkEffect</span><span class="o">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">storage</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">src</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">readOnly</span><span class="o">:</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">transition</span><span class="o">:</span><span class="w"> </span><span class="mf">800</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">theme</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;chalkboard&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">background</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s1">&#39;rgba(127,127,127,.1)&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/blackboard.png&#39;</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="nx">grid</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgb(50,50,10,0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">distance</span><span class="o">:</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">},</span>
+<span class="w">        </span><span class="nx">eraser</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">src</span><span class="o">:</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/sponge.png&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">},</span>
+<span class="w">        </span><span class="nx">boardmarkers</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(100,100,100,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-black.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(30,144,255, 1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-blue.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(220,20,60,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-red.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(50,205,50,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-green.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(255,140,0,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-orange.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(150,0,20150,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-purple.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(255,220,0,1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/boardmarker-yellow.png), auto&#39;</span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nx">chalks</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(255,255,255,0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-white.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(96, 154, 244, 0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-blue.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(237, 20, 28, 0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-red.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(20, 237, 28, 0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-green.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(220, 133, 41, 0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-orange.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(220,0,220,0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-purple.png), auto&#39;</span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span><span class="w"> </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rgba(255,220,0,0.5)&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">cursor</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;url(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">path</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;img/chalk-yellow.png), auto&#39;</span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">customcontrols</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  		</span><span class="nx">controls</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  			</span><span class="p">{</span><span class="w"> </span><span class="nx">icon</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;i class=&quot;fa fa-pen-square&quot;&gt;&lt;/i&gt;&#39;</span><span class="p">,</span>
+<span class="w">  			  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Toggle chalkboard (B)&#39;</span><span class="p">,</span>
+<span class="w">  			  </span><span class="nx">action</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;RevealChalkboard.toggleChalkboard();&#39;</span>
+<span class="w">  			</span><span class="p">},</span>
+<span class="w">  			</span><span class="p">{</span><span class="w"> </span><span class="nx">icon</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;i class=&quot;fa fa-pen&quot;&gt;&lt;/i&gt;&#39;</span><span class="p">,</span>
+<span class="w">  			  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Toggle notes canvas (C)&#39;</span><span class="p">,</span>
+<span class="w">  			  </span><span class="nx">action</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;RevealChalkboard.toggleNotesCanvas();&#39;</span>
+<span class="w">  			</span><span class="p">}</span>
+<span class="w">  		</span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// ...</span>
+
+<span class="p">});</span>
+</pre></div>
+</div>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">#</a></h2>
+<p>MIT licensed</p>
+<p>Copyright (C) 2021 Asvin Goel</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./slides/open-ai_files/libs/revealjs/plugin/reveal-chalkboard"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Jan Kirenz<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

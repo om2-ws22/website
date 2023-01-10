@@ -546,12 +546,12 @@ title="Print to PDF"
 <h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
-import altair as alt
-import warnings
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
 
-warnings.simplefilter(action=&#39;ignore&#39;, category=FutureWarning)
-alt.data_transformers.disable_max_rows()
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">disable_max_rows</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -568,10 +568,10 @@ alt.data_transformers.disable_max_rows()
 <h3>Data import<a class="headerlink" href="#data-import" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ROOT = &quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;
-DATA = &quot;loans.csv&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/kirenz/datasets/master/&quot;</span>
+<span class="n">DATA</span> <span class="o">=</span> <span class="s2">&quot;loans.csv&quot;</span>
 
-df = pd.read_csv(ROOT + DATA)
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">ROOT</span> <span class="o">+</span> <span class="n">DATA</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -581,8 +581,8 @@ df = pd.read_csv(ROOT + DATA)
 <h3>Data corrections<a class="headerlink" href="#data-corrections" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>df.homeownership = df.homeownership.astype(&quot;category&quot;)
-df.application_type = df.application_type.astype(&quot;category&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">homeownership</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">application_type</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">application_type</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -592,31 +592,31 @@ df.application_type = df.application_type.astype(&quot;category&quot;)
 <h3>Variable lists<a class="headerlink" href="#variable-lists" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># create data for pie chart
-source = pd.DataFrame(df.homeownership.value_counts())
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create data for pie chart</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">homeownership</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># set index to column
-source = source.reset_index()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set index to column</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">source</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># rename columns
-source.rename(columns={&quot;index&quot;: &quot;category&quot;, &quot;homeownership&quot;: &quot;value&quot;}, inplace=True)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># rename columns</span>
+<span class="n">source</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="s2">&quot;category&quot;</span><span class="p">,</span> <span class="s2">&quot;homeownership&quot;</span><span class="p">:</span> <span class="s2">&quot;value&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>source
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">source</span>
 </pre></div>
 </div>
 </div>
@@ -669,15 +669,15 @@ source.rename(columns={&quot;index&quot;: &quot;category&quot;, &quot;homeowners
 <h2>Chart<a class="headerlink" href="#chart" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>chart = alt.Chart(source).encode(
-    theta=alt.Theta(&quot;value:Q&quot;, stack=True), 
-    color=alt.Color(&quot;category:N&quot;, legend=None)
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">theta</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Theta</span><span class="p">(</span><span class="s2">&quot;value:Q&quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> 
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;category:N&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="p">)</span>
 
-pie = chart.mark_arc(outerRadius=100)
-text = chart.mark_text(radius=130, size=12).encode(text=&quot;category:N&quot;)
+<span class="n">pie</span> <span class="o">=</span> <span class="n">chart</span><span class="o">.</span><span class="n">mark_arc</span><span class="p">(</span><span class="n">outerRadius</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">chart</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">130</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;category:N&quot;</span><span class="p">)</span>
 
-___ + ___
+<span class="n">___</span> <span class="o">+</span> <span class="n">___</span>
 </pre></div>
 </div>
 </div>
