@@ -24,9 +24,11 @@ library(countdown)
 ```
 
 
-## OpenAI {background-image="images/openai-hero.png"}
+## OpenAI {background-image="images/open-ai/openai-hero.png"}
 
 <https://openai.com/>
+
+
 
 
 ## DALL-E2
@@ -35,27 +37,57 @@ library(countdown)
 
 
 
-## Creat an account at OpenAI 
+## Create an account at OpenAI 
 
-- Go to the website: <https://openai.com/api/>
-
-- Sign up
+Go to the website: <https://openai.com/api/> and create an account
 
 
+```{r}
+countdown(minutes = 5)
+```
 
-## Text completion use case
+
+## Text generation
 
 
 :::{.callout-tip}
-# Use case text completion 
-- User inputs some text as a prompt
-- A model will generate a text completion
+# Use case text generation 
+- Input some text as a prompt
+- A model will generate a text
 :::
 
 - Open the website: <https://beta.openai.com/overview>
 
+
+## Select Text completion
+
 ![](images/open-ai/welcome.png)
 
-- Select **Text completion**
 
-A good rule of thumb is to think about how you would write a word problem for a middle schooler to solve. 
+## Text completion playground
+
+
+- Open the [example playground](https://beta.openai.com/playground/p/8P6JA6XEx74NTvcRUngWKEYW)
+
+- Experiment with the service
+
+- *A good rule of thumb is to think about how you would write a word problem for a middle schooler to solve* 
+
+
+```{r}
+countdown(minutes = 5)
+```
+
+
+## API setup
+
+
+
+- open <https://beta.openai.com/docs/api-reference/introduction>
+
+
+- Python bindings: <https://beta.openai.com/docs/libraries/python-bindings>
+
+## DALL E2
+
+DALL-E2: <https://beta.openai.com/docs/guides/images>
