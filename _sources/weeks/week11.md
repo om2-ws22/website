@@ -16,7 +16,7 @@ None
 (participate)=
 ## Participate
 
-Slides: 
+Slides: tbd
 
 [OpenAI setup](https://github.com/kirenz/open-ai-setup)
 
