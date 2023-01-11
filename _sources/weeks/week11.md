@@ -6,7 +6,7 @@
 (prepare)=
 ## Prepare
 
-
+None
 
 ---
 
@@ -18,7 +18,7 @@
 
 Slides: 
 
-
+[OpenAI setup](https://github.com/kirenz/open-ai-setup)
 
 ---
 
@@ -26,7 +26,7 @@ Slides:
 (practice)=
 ## Practice
 
-
+None
 
 ---
 
