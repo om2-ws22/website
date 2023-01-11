@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Applications 
-subtitle: Examples from OpenAI
+subtitle: OpenAI
 author: Jan Kirenz
 format:
   revealjs:
@@ -82,12 +82,18 @@ countdown(minutes = 5)
 ## API setup
 
 
+Live demo
 
 - open <https://beta.openai.com/docs/api-reference/introduction>
 
 
-- Python bindings: <https://beta.openai.com/docs/libraries/python-bindings>
 
-## DALL E2
+```{r}
+countdown(minutes = 15)
+```
+
+
+
+## DALL E2 set up
 
 DALL-E2: <https://beta.openai.com/docs/guides/images>
