@@ -16,9 +16,16 @@ None
 (participate)=
 ## Participate
 
-Slides: tbd
+Slides (you can use the Download button in GitHub): 
 
-[OpenAI setup](https://github.com/kirenz/open-ai-setup)
+- [Machine Learning Overview](https://github.com/om2-ws22/website/blob/main/slides/ml-overview.pdf)
+
+- [OpenAI](https://github.com/om2-ws22/website/blob/main/slides/open-ai.pdf)
+
+
+GitHub-Repo: 
+
+- [OpenAI setup](https://github.com/kirenz/open-ai-setup)
 
 ---
 
