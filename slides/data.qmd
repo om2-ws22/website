@@ -1,6 +1,6 @@
 ---
-title: Big Data Fundamentals
-subtitle: Overview
+title: Analytics II
+subtitle: Big Data Fundamentals
 author: Jan Kirenz
 format:
   revealjs:
@@ -18,7 +18,7 @@ format:
 ---
 
 
-# Basics of Data Engineering
+# Basics of Big Data
 
 *How to collect, process, store, retrieve, and process data*
 
@@ -42,23 +42,16 @@ format:
 
 - Third-party data
 
-:::{.notes}
-- Log everything you can (makes debugging easier)
-   - What exactly?
-   - How?
-   - How long?
-   - Privacy regulations?
-:::
 
 ## Data Sources
 
-- First-party data
+- **First-party data**
   - Data that your company already collects about your users or customers S
 
-- Second-party data 
+- **Second-party data** 
   - Data collected by another company on their own customers that they make available to you, though you’ll probably have to pay for it
   
-- Third-party data
+- **Third-party data**
   - Companies collect data on the public who aren’t their direct customers
 
 
@@ -76,7 +69,7 @@ format:
 
 - Store ("persist") data
 
-- Data serialization
+- Data *serialization*
   - Converting data into a specific format
 
 - Format depends on how data will be used 
@@ -476,10 +469,11 @@ Data passing through:
 
 ## Batch Processing Versus Stream Processing
 
+- Batch Processing
+  - Spark, MapReduce
 
-- Spark, MapReduce
-
-- Apache Flink, KSQL, Spark Streaming
+- Stream Procressing
+  - Apache Flink, KSQL, Spark Streaming
 
 
 ## Summary
