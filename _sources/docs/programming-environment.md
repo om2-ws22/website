@@ -23,6 +23,29 @@ conda activate webscraping
 ```
 
 
+## Create environment: tf
+
+We install some modules in a new Anaconda environment. We call this new environment `tf` (TensorFlow). 
+
+> On *Windows* open the Start menu and open the "Anaconda Command Prompt". 
+
+> On *macOS*: Open a terminal ([learn how to open a terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac)) 
+
+
+- Copy this code and run it in your terminal: 
+
+
+```bash
+conda create -n tf python=3.9 pandas jupyter tensorflow
+```
+
+Activate the new environment:
+
+```bash
+conda activate tf
+```
+
+
 ## How to select your environment
 
 In Visual Studio Code:

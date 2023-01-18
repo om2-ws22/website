@@ -446,6 +446,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-environment-tf">
+   Create environment: tf
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-to-select-your-environment">
    How to select your environment
   </a>
@@ -472,6 +477,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#create-environment-webscraping">
    Create environment: webscraping
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-environment-tf">
+   Create environment: tf
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -508,6 +518,26 @@ title="Print to PDF"
 </div>
 <p>Activate the new environment:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>webscraping
+</pre></div>
+</div>
+</section>
+<section id="create-environment-tf">
+<h2>Create environment: tf<a class="headerlink" href="#create-environment-tf" title="Permalink to this headline">#</a></h2>
+<p>We install some modules in a new Anaconda environment. We call this new environment <code class="docutils literal notranslate"><span class="pre">tf</span></code> (TensorFlow).</p>
+<blockquote>
+<div><p>On <em>Windows</em> open the Start menu and open the “Anaconda Command Prompt”.</p>
+</div></blockquote>
+<blockquote>
+<div><p>On <em>macOS</em>: Open a terminal (<a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">learn how to open a terminal</a>)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Copy this code and run it in your terminal:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>tf<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>pandas<span class="w"> </span>jupyter<span class="w"> </span>tensorflow
+</pre></div>
+</div>
+<p>Activate the new environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>tf
 </pre></div>
 </div>
 </section>
