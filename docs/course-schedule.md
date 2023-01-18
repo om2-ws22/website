@@ -10,7 +10,6 @@ This overview will be updated as the semester progresses.
 
 For a semester overview, take a look at the [course-overview](../docs/course-overview.md). 
 
-
 |		|	Week	|	Nr.	|	Date	|	Topic	|	Prepare	|	Resources	|	AE	|	HW	|	Exam	|	
 |	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	---	|	
 |	Lecture	|	1	|	1	|	05.10.	|	Introduction	|	[📚](../weeks/week1.md)	|	[📑](https://docs.google.com/presentation/d/14mDixoFHReJhc7D3G0ooC_CZJ8R14AcjJLXqFfUmKgo/export/pdf)	|		|		|		|	
@@ -41,3 +40,9 @@ For a semester overview, take a look at the [course-overview](../docs/course-ove
 |	Lecture	|	10	|	26	|	14.12.	|	YouTube Booklet	|		|		|		|		|		|	
 |	Lab	|	10	|	27	|	14.12.	|	UTM Tracking	|		|		|		|		|		|	
 |	Lab	|	10	|	28	|	14.12.	|	Fallstudie Google Merchandise Pivot 	|		|		|		|		|		|	
+|	Lecture	|	11	|	29	|	21.12.	|	Besprechungen	|		|	[📁](../weeks/week11.md)	|		|		|		|	
+|	Lecture	|	12	|	30	|	11.01.	|	Analytics & Machine Learning	|		|	[📁](../weeks/week12.md)	|		|		|		|	
+|	Lab	|	12	|	31	|	11.01.	|	OpenAI Models	|		|		|		|		|		|	
+|	Lecture	|	13	|	32	|	18.01.	|	Deep Learning	|		|	[📁](../weeks/week13.md)	|		|		|		|	
+|	Lab	|	13	|	33	|	18.01.	|	Deep Learning	|		|		|		|		|		|	
+|	Lecture	|	14	|	34	|	25.01.	|	Besprechungen	|		|	[📁](../weeks/week14.md)	|		|		|		|	

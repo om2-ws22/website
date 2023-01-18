@@ -1,4 +1,4 @@
-# Week 11
+# Week 14
 
 
 ---
@@ -16,7 +16,7 @@
 (participate)=
 ## Participate
 
-Appointments (book a timeslot in Moodle)
+Optional appointments (book a timeslot in Moodle)
 
 ---
 
