@@ -20,7 +20,7 @@
 
 - [32. Deep learning code](../code/32-tf-example.ipynb)
 
-- [33. Deep Learning image classification](../code/39-fashion-mnist.ipynb)
+- [33. Deep Learning image classification](../code/33-fashion-mnist.ipynb)
 
 
 ---
