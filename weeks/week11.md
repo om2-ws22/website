@@ -1,4 +1,4 @@
-# Week 11
+# Week 10
 
 
 ---
@@ -6,7 +6,7 @@
 (prepare)=
 ## Prepare
 
-None
+
 
 ---
 
@@ -16,16 +16,7 @@ None
 (participate)=
 ## Participate
 
-Slides (you can use the Download button in GitHub): 
-
-- [Machine Learning Overview](https://github.com/om2-ws22/website/blob/main/slides/ml-overview.pdf)
-
-- [OpenAI](https://github.com/om2-ws22/website/blob/main/slides/open-ai.pdf)
-
-
-GitHub-Repo: 
-
-- [OpenAI setup](https://github.com/kirenz/open-ai-setup)
+Appointments (book a timeslot in Moodle)
 
 ---
 
@@ -33,7 +24,6 @@ GitHub-Repo:
 (practice)=
 ## Practice
 
-None
 
 ---
 
