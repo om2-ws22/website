@@ -100,12 +100,6 @@ Type this in your terminal to add `conda-forge`:
 conda config --add channels conda-forge
 ```
 
-Then make `conda-forge` the priority channel: 
-
-```bash
-conda config --set channel_priority strict
-```
-
 ````
 
 ---

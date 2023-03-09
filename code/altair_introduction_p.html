@@ -1,49 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction to Altair &#8212; Big Data &amp; Web Analytics</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,59 +62,91 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'code/altair_introduction_p';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../docs/course-overview.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Big Data & Web Analytics</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -112,560 +155,298 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course information
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../docs/course-schedule.html">
-   Course schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../docs/course-syllabus.html">
-   Course syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../docs/course-support.html">
-   Course support
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/course-support.html">Course support</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Programming
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../docs/programming-toolkit.html">
-   Programming toolkit
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../docs/programming-environment.html">
-   Anaconda environments
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs/programming-fundamentals.html">
-     Fundamentals
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs/programming-syntax.html">
-     Python Syntax
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs/programming-semantics.html">
-     Python Semantics
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../docs/programming-toolkit.html">Programming toolkit</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../docs/programming-environment.html">Anaconda environments</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../docs/programming-fundamentals.html">Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docs/programming-syntax.html">Python Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docs/programming-semantics.html">Python Semantics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Weekly materials
- </span>
-</p>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../weeks/weeks-overview.html">
-   Overview
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week1.html">
-     Week 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week2.html">
-     Week 2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week3.html">
-     Week 3
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week4.html">
-     Week 4
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week5.html">
-     Week 5
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week6.html">
-     Week 6
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week7.html">
-     Week 7
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week8.html">
-     Week 8
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week9.html">
-     Week 9
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week10.html">
-     Week 10
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week11.html">
-     Week 11
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week12.html">
-     Week 12
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week13.html">
-     Week 13
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week14.html">
-     Week 14
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weeks/weeks-overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week1.html">Week 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week2.html">Week 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week3.html">Week 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week4.html">Week 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week5.html">Week 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week6.html">Week 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week7.html">Week 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week8.html">Week 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week9.html">Week 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week10.html">Week 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week11.html">Week 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week12.html">Week 12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week13.html">Week 13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week14.html">Week 14</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://colab.research.google.com/github/orgs/om2-ws22/blob/main/code/altair_introduction_p.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/om2-ws22/repositories/blob/main/code/altair_introduction_p.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/orgs/om2-ws22/repositories" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fcode/altair_introduction_p.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/code/altair_introduction_p.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fcode/altair_introduction_p.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/code/altair_introduction_p.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#imports">
-   Imports
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#renderers">
-   Renderers
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data">
-   Data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#weather-data">
-     Weather Data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-chart-object">
-   The Chart Object
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#marks">
-   Marks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#encodings">
-   Encodings
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-types">
-     Data types
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-transformation-aggregation">
-   Data Transformation: Aggregation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#changing-the-mark-type">
-   Changing the Mark Type
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customizing-a-visualization">
-   Customizing a Visualization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multiple-views">
-   Multiple Views
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interactivity">
-   Interactivity
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aside-examining-the-json-output">
-   Aside: Examining the JSON Output
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#publishing-a-visualization">
-   Publishing a Visualization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#next-steps">
-   Next Steps
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to Altair</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#imports">
-   Imports
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#renderers">
-   Renderers
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data">
-   Data
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#weather-data">
-     Weather Data
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-chart-object">
-   The Chart Object
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#marks">
-   Marks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#encodings">
-   Encodings
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-types">
-     Data types
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-transformation-aggregation">
-   Data Transformation: Aggregation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#changing-the-mark-type">
-   Changing the Mark Type
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customizing-a-visualization">
-   Customizing a Visualization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multiple-views">
-   Multiple Views
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interactivity">
-   Interactivity
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aside-examining-the-json-output">
-   Aside: Examining the JSON Output
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#publishing-a-visualization">
-   Publishing a Visualization
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#next-steps">
-   Next Steps
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Altair</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderers">Renderers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-data">Weather Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-chart-object">The Chart Object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marks">Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encodings">Encodings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data types</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transformation-aggregation">Data Transformation: Aggregation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-mark-type">Changing the Mark Type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-a-visualization">Customizing a Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-views">Multiple Views</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interactivity">Interactivity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aside-examining-the-json-output">Aside: Examining the JSON Output</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publishing-a-visualization">Publishing a Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-altair">
-<h1>Introduction to Altair<a class="headerlink" href="#introduction-to-altair" title="Permalink to this headline">#</a></h1>
+<h1>Introduction to Altair<a class="headerlink" href="#introduction-to-altair" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p><em>This introduction is based on the excellent <a class="reference external" href="https://github.com/uwdata/visualization-curriculum">data visualization curriculum</a> by Jeffrey Heer, Dominik Moritz, Jake VanderPlas, and Brock Craft.</em></p>
 </div></blockquote>
@@ -679,7 +460,7 @@ title="Print to PDF"
 <li><p>Altair is based on <a class="reference external" href="https://vega.github.io/vega-lite/">Vega-Lite</a>, a high-level grammar of interactive graphics.</p></li>
 </ul>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>To start, we must import the necessary libraries</p>
 <ul>
@@ -698,7 +479,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="renderers">
-<h2>Renderers<a class="headerlink" href="#renderers" title="Permalink to this headline">#</a></h2>
+<h2>Renderers<a class="headerlink" href="#renderers" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Depending on your environment, you may need to specify a <a class="reference external" href="https://altair-viz.github.io/user_guide/display_frontends.html">renderer</a> for Altair.</p></li>
 <li><p>If you are using <strong>JupyterLab</strong>, <strong>Jupyter Notebook</strong>, or <strong>Google Colab</strong> with a live Internet connection you should not need to do anything.</p></li>
@@ -706,7 +487,7 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">#</a></h2>
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Data in Altair is built around the Pandas data frame, which consists of a set of named data <em>columns</em>.</p></li>
 </ul>
@@ -945,7 +726,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </div>
 <p>For more information about data frames - and some useful transformations to prepare Pandas data frames for plotting with Altair! - see the <a class="reference external" href="https://altair-viz.github.io/user_guide/data.html">Specifying Data with Altair documentation</a>.</p>
 <section id="weather-data">
-<h3>Weather Data<a class="headerlink" href="#weather-data" title="Permalink to this headline">#</a></h3>
+<h3>Weather Data<a class="headerlink" href="#weather-data" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Statistical visualization in Altair begins with <a class="reference external" href="http://vita.had.co.nz/papers/tidy-data.html">“tidy”</a> data frames.</p></li>
 <li><p>Here, we’ll start by creating a simple data frame (<code class="docutils literal notranslate"><span class="pre">df</span></code>) containing the average precipitation 🌧️ (<code class="docutils literal notranslate"><span class="pre">precip</span></code>) for a given <code class="docutils literal notranslate"><span class="pre">city</span></code> and <code class="docutils literal notranslate"><span class="pre">month</span></code> :</p></li>
@@ -1048,7 +829,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </section>
 </section>
 <section id="the-chart-object">
-<h2>The Chart Object<a class="headerlink" href="#the-chart-object" title="Permalink to this headline">#</a></h2>
+<h2>The Chart Object<a class="headerlink" href="#the-chart-object" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The fundamental object in Altair is the <code class="docutils literal notranslate"><span class="pre">Chart</span></code>, which takes a data frame as a single argument:</p></li>
 </ul>
@@ -1065,7 +846,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </ul>
 </section>
 <section id="marks">
-<h2>Marks<a class="headerlink" href="#marks" title="Permalink to this headline">#</a></h2>
+<h2>Marks<a class="headerlink" href="#marks" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>With a chart object in hand, we can now specify how we would like the data to be visualized.</p></li>
 </ul>
@@ -1141,7 +922,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </ul>
 </section>
 <section id="encodings">
-<h2>Encodings<a class="headerlink" href="#encodings" title="Permalink to this headline">#</a></h2>
+<h2>Encodings<a class="headerlink" href="#encodings" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>To visually separate the points, we can map various <strong>encoding channels</strong>, or <strong>channels</strong> for short, to fields in the dataset.</p></li>
 </ul>
@@ -1376,7 +1157,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </li>
 </ul>
 <section id="data-types">
-<h3>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">#</a></h3>
+<h3>Data types<a class="headerlink" href="#data-types" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>In the examples, the data type for each field is inferred automatically based on its type within the Pandas data frame.</p></li>
 </ul>
@@ -1402,7 +1183,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </section>
 </section>
 <section id="data-transformation-aggregation">
-<h2>Data Transformation: Aggregation<a class="headerlink" href="#data-transformation-aggregation" title="Permalink to this headline">#</a></h2>
+<h2>Data Transformation: Aggregation<a class="headerlink" href="#data-transformation-aggregation" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>To allow for more flexibility in how data are visualized, Altair has a built-in syntax for <em>aggregation</em> of data.</p></li>
 <li><p>For example, we can compute the average of all values by specifying an aggregation function along with the field name:</p></li>
@@ -1485,7 +1266,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 <p>In a later notebook, we will take a tour of data transformations, including aggregation, sorting, filtering, and creation of new derived fields using calculation formulas.</p>
 </section>
 <section id="changing-the-mark-type">
-<h2>Changing the Mark Type<a class="headerlink" href="#changing-the-mark-type" title="Permalink to this headline">#</a></h2>
+<h2>Changing the Mark Type<a class="headerlink" href="#changing-the-mark-type" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Let’s say we want to represent our aggregated values using rectangular bars rather than circular points.</p></li>
 <li><p>We can do this by replacing <code class="docutils literal notranslate"><span class="pre">Chart.mark_point</span></code> with <code class="docutils literal notranslate"><span class="pre">Chart.mark_bar</span></code>:</p></li>
@@ -1617,7 +1398,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </div>
 </section>
 <section id="customizing-a-visualization">
-<h2>Customizing a Visualization<a class="headerlink" href="#customizing-a-visualization" title="Permalink to this headline">#</a></h2>
+<h2>Customizing a Visualization<a class="headerlink" href="#customizing-a-visualization" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>By default Altair / Vega-Lite make some choices about properties of the visualization</p></li>
 <li><p>but these can be changed using methods to customize the look of the visualization.</p></li>
@@ -1689,7 +1470,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </ul>
 </section>
 <section id="multiple-views">
-<h2>Multiple Views<a class="headerlink" href="#multiple-views" title="Permalink to this headline">#</a></h2>
+<h2>Multiple Views<a class="headerlink" href="#multiple-views" title="Permalink to this heading">#</a></h2>
 <p>As we’ve seen above, the Altair <code class="docutils literal notranslate"><span class="pre">Chart</span></code> object represents a plot with a single mark type. What about more complicated diagrams, involving multiple charts or layers? Using a set of <em>view composition</em> operators, Altair can take multiple chart definitions and combine them to create more complex views.</p>
 <p>As a starting point, let’s plot the cars dataset in a line chart showing the average mileage by the year of manufacture:</p>
 <div class="cell docutils container">
@@ -1986,7 +1767,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 <p>A later notebook will focus on <em>view composition</em>, including not only layering and concatenation, but also the <code class="docutils literal notranslate"><span class="pre">facet</span></code> operator for splitting data into sub-plots and the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> operator to concisely generate concatenated charts from a template.</p>
 </section>
 <section id="interactivity">
-<h2>Interactivity<a class="headerlink" href="#interactivity" title="Permalink to this headline">#</a></h2>
+<h2>Interactivity<a class="headerlink" href="#interactivity" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>In addition to basic plotting and view composition, one of Altair and Vega-Lite’s most exciting features is its support for interaction.</p></li>
 </ul>
@@ -2239,7 +2020,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </div>
 </section>
 <section id="aside-examining-the-json-output">
-<h2>Aside: Examining the JSON Output<a class="headerlink" href="#aside-examining-the-json-output" title="Permalink to this headline">#</a></h2>
+<h2>Aside: Examining the JSON Output<a class="headerlink" href="#aside-examining-the-json-output" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>As a Python API to Vega-Lite, Altair’s main purpose is to convert plot specifications to a JSON string that conforms to the Vega-Lite schema.</p></li>
 <li><p>Using the <code class="docutils literal notranslate"><span class="pre">Chart.to_json</span></code> method, we can inspect the JSON specification that Altair is exporting and sending to Vega-Lite:</p></li>
@@ -2371,7 +2152,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 </div>
 </section>
 <section id="publishing-a-visualization">
-<h2>Publishing a Visualization<a class="headerlink" href="#publishing-a-visualization" title="Permalink to this headline">#</a></h2>
+<h2>Publishing a Visualization<a class="headerlink" href="#publishing-a-visualization" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Once you have visualized your data, perhaps you would like to publish it somewhere on the web.</p></li>
 </ul>
@@ -2423,7 +2204,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
 <p>The <code class="docutils literal notranslate"><span class="pre">Chart.save</span></code> method provides a convenient way to save such HTML output to file. For more information on embedding Altair/Vega-Lite, see the <a class="reference external" href="https://github.com/vega/vega-embed">documentation of the vega-embed project</a>.</p>
 </section>
 <section id="next-steps">
-<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">#</a></h2>
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>🎉 Hooray, you’ve completed the introduction to Altair!</p></li>
 <li><p>In the next notebook, we will dive deeper into creating visualizations using Altair’s model of data types, graphical marks, and visual encoding channels.</p></li>
@@ -2443,7 +2224,7 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./code"
         },
         predefinedOutput: true
@@ -2451,36 +2232,100 @@ When using Altair, datasets are commonly provided as data frames. Alternatively,
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderers">Renderers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-data">Weather Data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-chart-object">The Chart Object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marks">Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encodings">Encodings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data types</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transformation-aggregation">Data Transformation: Aggregation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-mark-type">Changing the Mark Type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-a-visualization">Customizing a Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-views">Multiple Views</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interactivity">Interactivity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aside-examining-the-json-output">Aside: Examining the JSON Output</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publishing-a-visualization">Publishing a Visualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By Jan Kirenz<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
-</div>
+<p class="component-author">
+By Jan Kirenz
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
 
-      </div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

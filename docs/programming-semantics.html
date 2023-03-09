@@ -1,49 +1,60 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Python Semantics &#8212; Big Data &amp; Web Analytics</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -51,61 +62,93 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/programming-semantics';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Overview" href="../weeks/weeks-overview.html" />
     <link rel="prev" title="Python Syntax" href="programming-syntax.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="course-overview.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Big Data & Web Analytics</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -114,739 +157,327 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Course information
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course information</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="course-schedule.html">
-   Course schedule
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="course-syllabus.html">
-   Course syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="course-support.html">
-   Course support
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="course-schedule.html">Course schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="course-syllabus.html">Course syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="course-support.html">Course support</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Programming
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="programming-toolkit.html">
-   Programming toolkit
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="programming-environment.html">
-   Anaconda environments
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="programming-fundamentals.html">
-     Fundamentals
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="programming-syntax.html">
-     Python Syntax
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Python Semantics
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="programming-toolkit.html">Programming toolkit</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="programming-environment.html">Anaconda environments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="programming-fundamentals.html">Fundamentals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="programming-syntax.html">Python Syntax</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Python Semantics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Weekly materials
- </span>
-</p>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly materials</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../weeks/weeks-overview.html">
-   Overview
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week1.html">
-     Week 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week2.html">
-     Week 2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week3.html">
-     Week 3
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week4.html">
-     Week 4
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week5.html">
-     Week 5
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week6.html">
-     Week 6
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week7.html">
-     Week 7
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week8.html">
-     Week 8
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week9.html">
-     Week 9
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week10.html">
-     Week 10
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week11.html">
-     Week 11
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week12.html">
-     Week 12
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week13.html">
-     Week 13
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../weeks/week14.html">
-     Week 14
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weeks/weeks-overview.html">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week1.html">Week 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week2.html">Week 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week3.html">Week 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week4.html">Week 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week5.html">Week 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week6.html">Week 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week7.html">Week 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week8.html">Week 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week9.html">Week 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week10.html">Week 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week11.html">Week 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week12.html">Week 12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week13.html">Week 13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weeks/week14.html">Week 14</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://colab.research.google.com/github/orgs/om2-ws22/blob/main/docs/programming-semantics.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/om2-ws22/repositories/blob/main/docs/programming-semantics.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/orgs/om2-ws22/repositories" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fdocs/programming-semantics.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/programming-semantics.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/orgs/om2-ws22/repositories/issues/new?title=Issue%20on%20page%20%2Fdocs/programming-semantics.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/docs/programming-semantics.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#variables-as-pointers">
-   Variables as pointers
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#variables-of-simple-types">
-   Variables of simple types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-types">
-   Python types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#attributes-and-methods">
-   Attributes and methods
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#artihmetic-operations">
-   Artihmetic operations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#comparison-operations">
-   Comparison operations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#simple-value-types">
-   Simple value types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dates-and-time">
-   Dates and time
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#compound-types">
-   Compound types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#control-flow">
-   Control flow
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conditional-statements-if-elif-else">
-     Conditional statements: if-elif-else
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loops">
-     Loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#continue">
-     Continue
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#break">
-     Break
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#functions">
-   Functions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#defining-functions">
-     Defining functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#default-argument-values">
-     Default argument values
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#flexible-arguments">
-     Flexible arguments
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#asterisk">
-     Asterisk
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#anonymous-lambda-functions">
-     Anonymous (lambda) functions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iterator-syntax">
-   Iterator syntax
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#range">
-     Range
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iterating-over-lists">
-   Iterating over lists
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enumerate">
-     Enumerate
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip">
-     Zip
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#map">
-     Map
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#filter">
-     Filter
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-comprehensions">
-     List comprehensions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multiple-iteration">
-   Multiple iteration
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#manipulate-strings">
-   Manipulate strings
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#errors-and-exceptions">
-   Errors and Exceptions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#runtime-errors">
-     Runtime errors
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Python Semantics</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#variables-as-pointers">
-   Variables as pointers
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#variables-of-simple-types">
-   Variables of simple types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-types">
-   Python types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#attributes-and-methods">
-   Attributes and methods
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#artihmetic-operations">
-   Artihmetic operations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#comparison-operations">
-   Comparison operations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#simple-value-types">
-   Simple value types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dates-and-time">
-   Dates and time
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#compound-types">
-   Compound types
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#control-flow">
-   Control flow
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conditional-statements-if-elif-else">
-     Conditional statements: if-elif-else
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loops">
-     Loops
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#continue">
-     Continue
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#break">
-     Break
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#functions">
-   Functions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#defining-functions">
-     Defining functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#default-argument-values">
-     Default argument values
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#flexible-arguments">
-     Flexible arguments
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#asterisk">
-     Asterisk
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#anonymous-lambda-functions">
-     Anonymous (lambda) functions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iterator-syntax">
-   Iterator syntax
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#range">
-     Range
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#iterating-over-lists">
-   Iterating over lists
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#enumerate">
-     Enumerate
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#zip">
-     Zip
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#map">
-     Map
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#filter">
-     Filter
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-comprehensions">
-     List comprehensions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multiple-iteration">
-   Multiple iteration
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#manipulate-strings">
-   Manipulate strings
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#errors-and-exceptions">
-   Errors and Exceptions
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#runtime-errors">
-     Runtime errors
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Python Semantics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-as-pointers">Variables as pointers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-of-simple-types">Variables of simple types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-types">Python types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-and-methods">Attributes and methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artihmetic-operations">Artihmetic operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-operations">Comparison operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-value-types">Simple value types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dates-and-time">Dates and time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compound-types">Compound types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#control-flow">Control flow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-statements-if-elif-else">Conditional statements: if-elif-else</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continue">Continue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#break">Break</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-functions">Defining functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-argument-values">Default argument values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-arguments">Flexible arguments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asterisk">Asterisk</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anonymous-lambda-functions">Anonymous (lambda) functions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterator-syntax">Iterator syntax</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-over-lists">Iterating over lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate">Enumerate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip">Zip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map">Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-comprehensions">List comprehensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-iteration">Multiple iteration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulate-strings">Manipulate strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errors-and-exceptions">Errors and Exceptions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#runtime-errors">Runtime errors</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="python-semantics">
-<h1>Python Semantics<a class="headerlink" href="#python-semantics" title="Permalink to this headline">#</a></h1>
+<h1>Python Semantics<a class="headerlink" href="#python-semantics" title="Permalink to this heading">#</a></h1>
 <p><em>This short tutorial is a very brief exploration of the essential features of Python semantics. It is mainly based on content from the App <a class="reference external" href="https://tinkerstellar.com">Tinkerstellar</a> by Alex Staravoitau, Jack VanderPlas’s <a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/">Whirlwind Tour of Python</a> and <a class="reference external" href="https://wesmckinney.com/book/">Python for Data Analysis</a> by Wes McKinney.</em></p>
 <ul class="simple">
 <li><p>Semantics of a language involve the meaning of the statements</p></li>
 <li><p>This section will cover the semantics of variables and objects, which are the main ways you store, reference, and operate on data within a Python script.</p></li>
 </ul>
 <section id="variables-as-pointers">
-<h2>Variables as pointers<a class="headerlink" href="#variables-as-pointers" title="Permalink to this headline">#</a></h2>
+<h2>Variables as pointers<a class="headerlink" href="#variables-as-pointers" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Assigning variables: putting a variable name to the left of the equals (=) sign</p></li>
 <li><p>Variables are best thought of not as containers but as pointers.</p></li>
@@ -994,7 +625,7 @@ flush: whether to forcibly flush the stream.
 </div>
 </section>
 <section id="variables-of-simple-types">
-<h2>Variables of simple types<a class="headerlink" href="#variables-of-simple-types" title="Permalink to this headline">#</a></h2>
+<h2>Variables of simple types<a class="headerlink" href="#variables-of-simple-types" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Numbers, strings, and other simple types are immutable: you can’t change their value – you can only change what values the variables point to.</p></li>
 <li><p>So, for example, it’s perfectly safe to do operations like the following:</p></li>
@@ -1023,7 +654,7 @@ y = 10
 </ul>
 </section>
 <section id="python-types">
-<h2>Python types<a class="headerlink" href="#python-types" title="Permalink to this headline">#</a></h2>
+<h2>Python types<a class="headerlink" href="#python-types" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Python is an object-oriented programming language, and in Python everything is an object</p></li>
 <li><p>An object is an entity that contains data along with associated metadata and/or functionality.</p></li>
@@ -1054,7 +685,7 @@ x = 3.14159, type is float
 </ul>
 </section>
 <section id="attributes-and-methods">
-<h2>Attributes and methods<a class="headerlink" href="#attributes-and-methods" title="Permalink to this headline">#</a></h2>
+<h2>Attributes and methods<a class="headerlink" href="#attributes-and-methods" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>In Python everything is an object: every entity has some metadata (called attributes) and associated functionality (called methods).</p></li>
 <li><p>Methods are like attributes, except they are functions that you can call using opening and closing parentheses.</p></li>
@@ -1077,11 +708,11 @@ x = 3.14159, type is float
 </div>
 </section>
 <section id="artihmetic-operations">
-<h2>Artihmetic operations<a class="headerlink" href="#artihmetic-operations" title="Permalink to this headline">#</a></h2>
+<h2>Artihmetic operations<a class="headerlink" href="#artihmetic-operations" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Semantics of some arithmetic operators:</p></li>
 </ul>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Operator</p></th>
 <th class="head"><p>Name</p></th>
@@ -1158,9 +789,9 @@ Floor division:  5
 </div>
 </section>
 <section id="comparison-operations">
-<h2>Comparison operations<a class="headerlink" href="#comparison-operations" title="Permalink to this headline">#</a></h2>
+<h2>Comparison operations<a class="headerlink" href="#comparison-operations" title="Permalink to this heading">#</a></h2>
 <p>Standard comparison operators return Boolean values True and False:</p>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Description</p></th>
@@ -1223,12 +854,12 @@ Is 66 odd?  False
 </div>
 </section>
 <section id="simple-value-types">
-<h2>Simple value types<a class="headerlink" href="#simple-value-types" title="Permalink to this headline">#</a></h2>
+<h2>Simple value types<a class="headerlink" href="#simple-value-types" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>All Python objects have type information attached.</p></li>
 <li><p>Here are the built-in simple types offered by Python:</p></li>
 </ul>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Type</p></th>
 <th class="head"><p>Example</p></th>
@@ -1260,7 +891,7 @@ Is 66 odd?  False
 </table>
 </section>
 <section id="dates-and-time">
-<h2>Dates and time<a class="headerlink" href="#dates-and-time" title="Permalink to this headline">#</a></h2>
+<h2>Dates and time<a class="headerlink" href="#dates-and-time" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The built-in Python datetime module provides datetime, date, and time types.</p></li>
 <li><p>The datetime type combines the information stored in date and time and is the most commonly used:</p></li>
@@ -1345,12 +976,12 @@ Minute: 30
 </ul>
 </section>
 <section id="compound-types">
-<h2>Compound types<a class="headerlink" href="#compound-types" title="Permalink to this headline">#</a></h2>
+<h2>Compound types<a class="headerlink" href="#compound-types" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Python has several built-in compound types, which act as containers for other types.</p></li>
 <li><p>Round, square, and curly brackets have distinct meanings when it comes to the type of collection produced:</p></li>
 </ul>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Type</p></th>
 <th class="head"><p>Example</p></th>
@@ -1378,12 +1009,12 @@ Minute: 30
 </table>
 </section>
 <section id="control-flow">
-<h2>Control flow<a class="headerlink" href="#control-flow" title="Permalink to this headline">#</a></h2>
+<h2>Control flow<a class="headerlink" href="#control-flow" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>With control flow, you can execute certain code blocks conditionally and/or repeatedly.</p></li>
 </ul>
 <section id="conditional-statements-if-elif-else">
-<h3>Conditional statements: if-elif-else<a class="headerlink" href="#conditional-statements-if-elif-else" title="Permalink to this headline">#</a></h3>
+<h3>Conditional statements: if-elif-else<a class="headerlink" href="#conditional-statements-if-elif-else" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Conditional if-elif-else statements, often referred to as if-then statements, allow the programmer to execute certain pieces of code depending on some Boolean condition.</p></li>
 <li><p>A basic example of a Python conditional statement is this:</p></li>
@@ -1414,7 +1045,7 @@ Minute: 30
 </ul>
 </section>
 <section id="loops">
-<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h3>
+<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Loops are a way to repeatedly execute some code statement.</p></li>
 <li><p>So, for example, if we’d like to print each of the items in a list, we can use a for loop:</p></li>
@@ -1491,7 +1122,7 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 </ul>
 </section>
 <section id="continue">
-<h3>Continue<a class="headerlink" href="#continue" title="Permalink to this headline">#</a></h3>
+<h3>Continue<a class="headerlink" href="#continue" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>There are two useful statements that can be used within loops to fine-tune how they are executed:</p>
 <ul>
@@ -1520,7 +1151,7 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 </div>
 </section>
 <section id="break">
-<h3>Break<a class="headerlink" href="#break" title="Permalink to this headline">#</a></h3>
+<h3>Break<a class="headerlink" href="#break" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The break statement breaks-out of the loop entirely.</p></li>
 <li><p>Here is an example of a break statement used for a less trivial task:</p>
@@ -1557,7 +1188,7 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 </section>
 </section>
 <section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h2>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>One way to organize our Python code and to make it more readable and reusable is to factor-out useful pieces into reusable functions.</p></li>
 <li><p>In this section we will cover two ways of creating functions:</p>
@@ -1601,7 +1232,7 @@ Range from 0 to 10 by 2:  [0, 2, 4, 6, 8]
 <li><p>When non-keyword arguments are used together with keyword arguments, the keyword arguments must come at the end.</p></li>
 </ul>
 <section id="defining-functions">
-<h3>Defining functions<a class="headerlink" href="#defining-functions" title="Permalink to this headline">#</a></h3>
+<h3>Defining functions<a class="headerlink" href="#defining-functions" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Functions are defined with the def statement</p></li>
 <li><p>It is good practice to include a description of your function (<a class="reference external" href="https://www.python.org/dev/peps/pep-0257/#what-is-a-docstring">docstring</a>) at the top oy your function’s body:</p></li>
@@ -1759,7 +1390,7 @@ the_sum : type of arguments
 </div>
 </section>
 <section id="default-argument-values">
-<h3>Default argument values<a class="headerlink" href="#default-argument-values" title="Permalink to this headline">#</a></h3>
+<h3>Default argument values<a class="headerlink" href="#default-argument-values" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Often when defining a function, there are certain values that we want the function to use most of the time, but we’d also like to give the user some flexibility.</p></li>
 <li><p>In this case, we can use default values for arguments.</p></li>
@@ -1824,7 +1455,7 @@ the_sum : type of arguments
 </div>
 </section>
 <section id="flexible-arguments">
-<h3>Flexible arguments<a class="headerlink" href="#flexible-arguments" title="Permalink to this headline">#</a></h3>
+<h3>Flexible arguments<a class="headerlink" href="#flexible-arguments" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Sometimes you might wish to write a function in which you don’t initially know how many arguments the user will pass.</p></li>
 <li><p>In this case, you can use the special form *args and **kwargs to catch all arguments that are passed. Here is an example:</p></li>
@@ -1866,7 +1497,7 @@ kwargs =  {&#39;keyword&#39;: 2}
 </div>
 </section>
 <section id="asterisk">
-<h3>Asterisk<a class="headerlink" href="#asterisk" title="Permalink to this headline">#</a></h3>
+<h3>Asterisk<a class="headerlink" href="#asterisk" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>In case of *args and **kwargs, it is not the names args and kwargs that are important, but the * characters preceding them.</p></li>
 <li><p>args and kwargs are just the variable names often used by convention, short for “arguments” and “keyword arguments”:</p>
@@ -1895,7 +1526,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </div>
 </section>
 <section id="anonymous-lambda-functions">
-<h3>Anonymous (lambda) functions<a class="headerlink" href="#anonymous-lambda-functions" title="Permalink to this headline">#</a></h3>
+<h3>Anonymous (lambda) functions<a class="headerlink" href="#anonymous-lambda-functions" title="Permalink to this heading">#</a></h3>
 <p>A lambda function is a small anonymous function. We use lambda functions when a function is required only for a short period of time and we don’t want do define a regular function for the task.</p>
 <p>A lambda function can take any number of arguments, but can only have one expression:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">lambda</span> <span class="n">arguments</span> <span class="p">:</span> <span class="n">expression</span>
@@ -2002,10 +1633,10 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </section>
 </section>
 <section id="iterator-syntax">
-<h2>Iterator syntax<a class="headerlink" href="#iterator-syntax" title="Permalink to this headline">#</a></h2>
+<h2>Iterator syntax<a class="headerlink" href="#iterator-syntax" title="Permalink to this heading">#</a></h2>
 <p>Often an important piece of data analysis is repeating a similar calculation, over and over, in an automated fashion.</p>
 <section id="range">
-<h3>Range<a class="headerlink" href="#range" title="Permalink to this headline">#</a></h3>
+<h3>Range<a class="headerlink" href="#range" title="Permalink to this heading">#</a></h3>
 <p>For example, you may have a table of a names that you’d like to split into first and last, or perhaps of dates that you’d like to convert to some standard format.</p>
 <p>One of Python’s answers to this is the iterator syntax. We’ve seen this already with the range iterator:</p>
 <div class="cell docutils container">
@@ -2025,7 +1656,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </section>
 </section>
 <section id="iterating-over-lists">
-<h2>Iterating over lists<a class="headerlink" href="#iterating-over-lists" title="Permalink to this headline">#</a></h2>
+<h2>Iterating over lists<a class="headerlink" href="#iterating-over-lists" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Iterators are perhaps most easily understood in the concrete case of iterating through a list.</p></li>
 <li><p>Consider the following:</p></li>
@@ -2065,7 +1696,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 <li><p>The familiar “for x in y” syntax allows us to repeat some operation for each value in the list.</p></li>
 </ul>
 <section id="enumerate">
-<h3>Enumerate<a class="headerlink" href="#enumerate" title="Permalink to this headline">#</a></h3>
+<h3>Enumerate<a class="headerlink" href="#enumerate" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Sometimes you need to iterate not only the values in an array, but also keep track of the index:</p></li>
 </ul>
@@ -2089,7 +1720,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </div>
 </section>
 <section id="zip">
-<h3>Zip<a class="headerlink" href="#zip" title="Permalink to this headline">#</a></h3>
+<h3>Zip<a class="headerlink" href="#zip" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Other times, you may have multiple lists that you want to iterate over simultaneously.</p></li>
 <li><p>Use the zip iterator, which zips together iterables:</p></li>
@@ -2115,7 +1746,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </div>
 </section>
 <section id="map">
-<h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">#</a></h3>
+<h3>Map<a class="headerlink" href="#map" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The map iterator takes a function and applies it to the values in an iterator:</p></li>
 </ul>
@@ -2149,7 +1780,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </div>
 </section>
 <section id="filter">
-<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">#</a></h3>
+<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The filter iterator looks similar, except it only passes-through values for which the filter function evaluates to True:</p></li>
 </ul>
@@ -2171,7 +1802,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </div>
 </section>
 <section id="list-comprehensions">
-<h3>List comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this headline">#</a></h3>
+<h3>List comprehensions<a class="headerlink" href="#list-comprehensions" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>List comprehensions are a way to compress a list-building for-loop into a single short, readable line.</p></li>
 <li><p>For example, here is a loop that constructs a list of the first 12 square integers:</p></li>
@@ -2206,7 +1837,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </section>
 </section>
 <section id="multiple-iteration">
-<h2>Multiple iteration<a class="headerlink" href="#multiple-iteration" title="Permalink to this headline">#</a></h2>
+<h2>Multiple iteration<a class="headerlink" href="#multiple-iteration" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Sometimes you want to build a list not just from one value, but from two.</p></li>
 <li><p>To do this, simply add another for expression in the comprehension:</p></li>
@@ -2229,7 +1860,7 @@ kwargs =  {&#39;pi&#39;: 3.14}
 </ul>
 </section>
 <section id="manipulate-strings">
-<h2>Manipulate strings<a class="headerlink" href="#manipulate-strings" title="Permalink to this headline">#</a></h2>
+<h2>Manipulate strings<a class="headerlink" href="#manipulate-strings" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>First, we create a list of somewhat messy strings:</p></li>
 </ul>
@@ -2359,11 +1990,11 @@ West virginia
 </div>
 </section>
 <section id="errors-and-exceptions">
-<h2>Errors and Exceptions<a class="headerlink" href="#errors-and-exceptions" title="Permalink to this headline">#</a></h2>
+<h2>Errors and Exceptions<a class="headerlink" href="#errors-and-exceptions" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>No matter your skill as a programmer, you will eventually make a coding mistake. Such mistakes come in three basic flavors:</p></li>
 </ul>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><strong>Syntax</strong> errors: Errors where the code is not valid Python (generally easy to fix)</p></li>
 <li><p><strong>Runtime</strong> errors: Errors where syntactically valid code fails to execute, perhaps due to invalid user input (sometimes easy to fix)</p></li>
 <li><p><strong>Semantic</strong> errors: Errors in logic: code executes without a problem, but the result is not what you expect (often very difficult to track-down and fix)</p></li>
@@ -2373,7 +2004,7 @@ West virginia
 <li><p>As we’ll see, Python handles runtime errors via its exception handling framework.</p></li>
 </ul>
 <section id="runtime-errors">
-<h3>Runtime errors<a class="headerlink" href="#runtime-errors" title="Permalink to this headline">#</a></h3>
+<h3>Runtime errors<a class="headerlink" href="#runtime-errors" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>If you’ve done any coding in Python, you’ve likely come across runtime errors.</p></li>
 <li><p>They can happen in a lot of ways. For example, if you try to reference an undefined variable:</p></li>
@@ -2425,7 +2056,7 @@ West virginia
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./docs"
         },
         predefinedOutput: true
@@ -2433,50 +2064,140 @@ West virginia
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="programming-syntax.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python Syntax</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="programming-syntax.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python Syntax</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../weeks/weeks-overview.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../weeks/weeks-overview.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Overview</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-as-pointers">Variables as pointers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-of-simple-types">Variables of simple types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-types">Python types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-and-methods">Attributes and methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#artihmetic-operations">Artihmetic operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-operations">Comparison operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-value-types">Simple value types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dates-and-time">Dates and time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compound-types">Compound types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#control-flow">Control flow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-statements-if-elif-else">Conditional statements: if-elif-else</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continue">Continue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#break">Break</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-functions">Defining functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#default-argument-values">Default argument values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-arguments">Flexible arguments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asterisk">Asterisk</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anonymous-lambda-functions">Anonymous (lambda) functions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterator-syntax">Iterator syntax</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-over-lists">Iterating over lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate">Enumerate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip">Zip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#map">Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-comprehensions">List comprehensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-iteration">Multiple iteration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulate-strings">Manipulate strings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errors-and-exceptions">Errors and Exceptions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#runtime-errors">Runtime errors</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By Jan Kirenz<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
-</div>
+<p class="component-author">
+By Jan Kirenz
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
 
-      </div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
